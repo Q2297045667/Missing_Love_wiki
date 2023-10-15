@@ -2,79 +2,470 @@
 title: Minecraft
 description: 
 published: true
-date: 2023-10-10T14:28:30.947Z
+date: 2023-10-15T08:44:45.664Z
 tags: 
-editor: code
-dateCreated: 2023-10-10T14:28:30.947Z
--->
-
-<!--
-title: 服务端配置文件全解
-description: 尽量包含各大常见的服务端配置文件
-published: true
-date: 2022-12-21T11:39:26.275Z
-tags: server
 editor: ckeditor
-dateCreated: 2022-12-20T18:27:58.827Z
+dateCreated: 2023-10-10T15:10:08.091Z
 -->
 
-<h1>&nbsp;服务端各大版本区别和关系</h1>
+<h1>Minecraft-首页</h1>
 <p>&nbsp;</p>
-<p>很多刚接触服务端的萌新看到市面上很多让人眼花缭乱的服务端就懵逼了</p>
-<p>没关系，跟着我来了解他们的关系</p>
-<p style="text-align:center;"><span class="text-big"><strong>-----------------------------------插件端------------------------------------模组端------------------------------------混合端-----------------------------------</strong></span></p>
-<figure class="table" style="width:988pt;">
+<p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Minecraft（《我的世界》）</strong>是一款3D沙盒电子游戏，由Mojang Studios开发。玩家可无拘无束地与由方块、实体构成的3个维度环境互动。多种玩法供玩家选择，带来无限可能。<br>目前Minecraft可分为<strong>Java版</strong>、<strong>基岩版</strong>和<strong>教育版</strong>。</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; 本站主要记录和各大MOD，插件，服务端的配置文件解析和搬运并翻译各大服务端官方文档为主。</p>
+<p>&nbsp;</p>
+<p><strong>IP衍生作品</strong></p>
+<p><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong>《我的世界：地下城》，《我的世界：地下城》街机版），《我的世界：传奇》，《我的世界：故事模式》，《我的世界：故事模式 - 第二季》，《我的世界：地球》。</p>
+<p>&nbsp;</p>
+<p><strong>相关链接</strong></p>
+<p>Minecraft官方Wiki：<a href="https://minecraft.fandom.com/zh"> Minecraft Wiki</a> （未来官方wiki会从fandom迁移到<a href="https://minecraft.wiki/">The Minecraft Wiki</a> 目前暂无中文翻译）</p>
+<p>服务端相关：</p>
+<ul>
+  <li>&nbsp; &nbsp;—FastMirror服务端镜像下载（更新慢）：<a href="https://www.fastmirror.net/#/home">首页 | FastMirror</a></li>
+  <li>&nbsp; &nbsp;—PaperMC官方文档：<a href="https://docs.papermc.io/">Home | PaperMC Documentation</a></li>
+  <li>&nbsp; &nbsp;—PurpurMC官方文档：<a href="https://purpurmc.org/docs/">PurpurMC Documentation</a></li>
+  <li>&nbsp; &nbsp;—MohistMC官方文档：<a href="https://wiki.mohistmc.com/#/">Mohist (mohistmc.com)</a></li>
+  <li>&nbsp; &nbsp;—Pufferfish官方文档：<a href="https://docs.pufferfish.host/">Pufferfish Host | Knowledgebase</a></li>
+</ul>
+<figure class="table">
   <table>
+    <thead>
+      <tr>
+        <th colspan="5">
+          <p style="text-align:center;">插件端</p>
+        </th>
+        <th colspan="5">
+          <p style="text-align:center;">模组端</p>
+        </th>
+        <th colspan="5">
+          <p style="text-align:center;">混合端</p>
+        </th>
+      </tr>
+    </thead>
     <tbody>
       <tr>
-        <td style="height:27.6pt;padding:0.5rem 0.75rem;width:85pt;">兼容性</td>
-        <td style="border-left:none;padding:0.5rem 0.75rem;width:301pt;">TRUE</td>
-        <td style="border-left:none;padding:0.5rem 0.75rem;width:301pt;">TRUE</td>
-        <td style="border-left:none;padding:0.5rem 0.75rem;width:301pt;">FALSE</td>
+        <td>
+          <p style="text-align:center;">名称</p>
+        </td>
+        <td>
+          <p style="text-align:center;">本站页面</p>
+        </td>
+        <td>
+          <p style="text-align:center;">官方网站</p>
+        </td>
+        <td>
+          <p style="text-align:center;">支持版本</p>
+        </td>
+        <td>
+          <p style="text-align:center;">相关文档</p>
+        </td>
+        <td>
+          <p style="text-align:center;">名称</p>
+        </td>
+        <td>
+          <p style="text-align:center;">本站页面</p>
+        </td>
+        <td>
+          <p style="text-align:center;">官方网站</p>
+        </td>
+        <td>
+          <p style="text-align:center;">支持版本</p>
+        </td>
+        <td>
+          <p style="text-align:center;">相关文档</p>
+        </td>
+        <td>
+          <p style="text-align:center;">名称</p>
+        </td>
+        <td>
+          <p style="text-align:center;">本站页面</p>
+        </td>
+        <td>
+          <p style="text-align:center;">官方网站</p>
+        </td>
+        <td>
+          <p style="text-align:center;">支持版本</p>
+        </td>
+        <td>
+          <p style="text-align:center;">相关文档</p>
+        </td>
       </tr>
       <tr>
-        <td style="border-top:none;height:27.6pt;padding:0.5rem 0.75rem;width:85pt;">稳定性</td>
-        <td style="border-left:none;border-top:none;padding:0.5rem 0.75rem;width:301pt;">TRUE</td>
-        <td style="border-left:none;border-top:none;padding:0.5rem 0.75rem;width:301pt;">FALSE</td>
-        <td style="border-left:none;border-top:none;padding:0.5rem 0.75rem;width:301pt;">FALSE</td>
+        <td>
+          <p style="text-align:center;">GetBukkit</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;"><a href="https://www.getbukkit.org/">GetBukkit(非官方)</a></p>
+        </td>
+        <td>
+          <p style="text-align:center;">跟随官方</p>
+        </td>
+        <td>
+          <p style="text-align:center;">暂未找到</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
       </tr>
       <tr>
-        <td style="border-top:none;height:27.6pt;padding:0.5rem 0.75rem;width:85pt;">插件（Bukkit）</td>
-        <td style="border-left:none;border-top:none;padding:0.5rem 0.75rem;width:301pt;">TRUE</td>
-        <td style="border-left:none;border-top:none;padding:0.5rem 0.75rem;width:301pt;">FALSE</td>
-        <td style="border-left:none;border-top:none;padding:0.5rem 0.75rem;width:301pt;">TRUE</td>
+        <td>
+          <p style="text-align:center;">Spigot</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;"><a href="https://www.spigotmc.org/">SpigotMC</a></p>
+        </td>
+        <td>
+          <p style="text-align:center;">跟随官方</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
       </tr>
       <tr>
-        <td style="border-top:none;height:27.6pt;padding:0.5rem 0.75rem;width:85pt;">模组（MOD）</td>
-        <td style="border-left:none;border-top:none;padding:0.5rem 0.75rem;width:301pt;">FALSE</td>
-        <td style="border-left:none;border-top:none;padding:0.5rem 0.75rem;width:301pt;">TRUE</td>
-        <td style="border-left:none;border-top:none;padding:0.5rem 0.75rem;width:301pt;">TRUE</td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">跟随官方</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">跟随官方</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">跟随官方</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">跟随官方</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">跟随官方</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">跟随官方</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
+        <td>
+          <p style="text-align:center;">&nbsp;</p>
+        </td>
       </tr>
     </tbody>
   </table>
 </figure>
-<hr>
-<p><strong>Vanilla服务端-也叫原版端，香草端</strong></p>
-<hr>
-<p>MC的原版服务端，一般随着客户端版本更新</p>
-<p><strong>CraftBukkit-水桶端 地址：Github &nbsp;</strong><a href="https://dev.bukkit.org/"><strong>Bukkit</strong></a><strong> &nbsp;Wiki &nbsp;</strong><a href="https://getbukkit.org/"><strong>CraftBukkit</strong></a></p>
-<hr>
-<p>基于<strong>Bukkit-API</strong>开发的最基础的插件端之一</p>
-<p>不兼容基于其他API开发的插件</p>
-<p><strong>Spigot-水龙头 地址：Github &nbsp;</strong><a href="https://hub.spigotmc.org/jenkins/job/BuildTools/"><strong>BuildTools</strong></a><strong> &nbsp;</strong></p>
-<hr>
-<p>基于<strong>CraftBukkit</strong>开发的最基础的插件端之一</p>
-<p>兼容基于<strong>Bukkit-API</strong>，开发的插件并开放<strong>Spigot-API</strong>，对原版做了很多基础的优化和BUG修复</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 <p>&nbsp;</p>
