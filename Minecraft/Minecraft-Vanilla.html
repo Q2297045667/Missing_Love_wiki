@@ -2,21 +2,49 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-11-22T03:50:11.966Z
+date: 2023-11-22T04:01:24.792Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
 -->
 
-<h1 class="toc-header" id="原版文件解析" style="text-align:center;"> 原版文件解析</h1>
+<h1>原版配置文件解析说明</h1>
+<p><strong>任何基于原版的服务端都逃不开他</strong></p>
+<p>本片文章部分内容来自：<a href="https://zh.minecraft.wiki/">中文Minecraft Wiki</a></p>
 <p>&nbsp;</p>
-<p style="text-align:center;"><strong>任何基于原版的服务端都逃不开他</strong></p>
-<p>我们以1.19.3为例他的文件结构是这样的：</p>
+<p>我们以版本<strong>1.20.3-pre1</strong>为例它的文件结构是这样的：</p>
 <p>&nbsp;</p>
 <p>libraries---------------------------------------库文件夹</p>
+<ul class="todo-list">
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">com</span></label></li>
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">commons-io</span></label></li>
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">io</span></label></li>
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">it</span></label></li>
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">net</span></label></li>
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">org</span></label></li>
+</ul>
 <p>logs---------------------------------------------日志文件夹</p>
-<p>versions---------------------------------------执行文件夹</p>
+<ul class="todo-list">
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">latest.log</span></label></li>
+</ul>
+<p>versions---------------------------------------执行程序文件夹</p>
+<ul class="todo-list">
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">1.20.3-pre1</span></label></li>
+</ul>
 <p>world--------------------------------------------世界数据（地图，数据包等）</p>
+<ul class="todo-list">
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">data</span></label></li>
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">datapacks</span></label></li>
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">DIM1</span></label></li>
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">DIM-1</span></label></li>
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">entities</span></label></li>
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">playerdata</span></label></li>
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">poi</span></label></li>
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">region</span></label></li>
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">level.dat_old</span></label></li>
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">session.lock</span></label></li>
+  <li><label class="todo-list__label"><input type="checkbox" disabled="disabled"><span class="todo-list__label__description">level.dat</span></label></li>
+</ul>
 <p>banned-ips.json---------------------------存放被Ban的ip文件</p>
 <p>banned-players.json--------------------存放被的玩家的用户名和UUID的文件</p>
 <p>eula.txt-----------------------------------------Minecraft官方服务端使用协议</p>
