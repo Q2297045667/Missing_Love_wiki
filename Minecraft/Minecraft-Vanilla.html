@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-02T17:24:15.611Z
+date: 2023-12-02T17:31:28.244Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -207,13 +207,67 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>只是客户端的显示范围而已实际上实体的活动范围还是正常的，但他可以减少网络资源的占用，网络环境不好的可以适当的减少这个值，个人建议80左右</p>
 </blockquote>
 <p>&nbsp;</p>
+<h3>强制玩家加入时为默认游戏模式</h3>
+<pre><code class="language-plaintext">force-gamemode=false</code></pre>
+<ul>
+  <li><strong>false</strong> -&nbsp;玩家将以退出前的游戏模式加入</li>
+  <li><strong>true</strong> -&nbsp;玩家总是以默认游戏模式加入</li>
+</ul>
+<blockquote>
+  <p>一般不会用得到，小游戏或空岛服可以根据需要改动</p>
+</blockquote>
 <p>&nbsp;</p>
+<p>function-permission-level=2</p>
+<p>gamemode=survival</p>
+<p>generate-structures=true</p>
+<p>generator-settings={}</p>
+<p>hardcore=false</p>
+<p>hide-online-players=false</p>
+<p>initial-disabled-packs=</p>
+<p>initial-enabled-packs=vanilla</p>
+<p>level-name=world</p>
+<p>level-seed=</p>
+<p>level-type=minecraft\:normal</p>
+<p>log-ips=true</p>
+<p>max-chained-neighbor-updates=1000000</p>
+<p>max-chained-neighbor-updates=1000000</p>
+<p>max-players=20</p>
+<p>max-tick-time=60000</p>
+<p>max-world-size=29999984</p>
+<p>motd=A Minecraft Server</p>
+<p>network-compression-threshold=256</p>
+<p>online-mode=true</p>
+<p>op-permission-level=4</p>
+<p>player-idle-timeout=0</p>
+<p>prevent-proxy-connections=false</p>
+<p>pvp=true</p>
+<p>query.port=25565</p>
+<p>rate-limit=0</p>
+<p>rcon.password=</p>
+<p>rcon.port=25575</p>
+<p>require-resource-pack=false</p>
+<p>resource-pack-id=</p>
+<p>resource-pack-prompt=</p>
+<p>resource-pack-sha1=</p>
+<p>resource-pack=</p>
+<p>server-ip=</p>
+<p>server-port=25565</p>
+<p>simulation-distance=10</p>
+<p>spawn-animals=true</p>
+<p>spawn-monsters=true</p>
+<p>spawn-npcs=true</p>
+<p>spawn-protection=16</p>
+<p>sync-chunk-writes=true</p>
+<p>text-filtering-config=</p>
+<p>use-native-transport=true</p>
+<p>view-distance=10</p>
+<p>white-list=false</p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<h3>最大建筑高度（1.18时移除）</h3>
+<pre><code class="language-plaintext">max-build-height=256</code></pre>
+<blockquote>
+  <p>老版本用不上，新版本都没了</p>
+</blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
