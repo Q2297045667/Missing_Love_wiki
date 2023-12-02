@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-02T16:18:10.754Z
+date: 2023-12-02T16:22:41.440Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -74,10 +74,38 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <li><strong>true</strong> -&nbsp;允许飞行。玩家得以使用任何能飞行的mod飞行</li>
 </ul>
 <blockquote>
-  <p>注：不允许飞行时玩家悬空超过5秒会被踢出服务器，不过我个人测试贴地飞行可以（自带的飞行判定很鸡肋，但是误判最少）</p>
+  <p>不允许飞行时玩家悬空超过5秒会被踢出服务器，不过我个人测试贴地飞行可以（自带的飞行判定很鸡肋，但是误判最少）</p>
 </blockquote>
 <p>&nbsp;</p>
 <pre><code class="language-plaintext">allow-nether=true</code></pre>
+<ul>
+  <li><strong>false</strong> -&nbsp;<a href="https://minecraft-zh.gamepedia.com/%E4%B8%8B%E7%95%8C%E4%BC%A0%E9%80%81%E9%97%A8">下界传送门</a>不会生效并且不会生成下界</li>
+  <li><strong>true</strong> -&nbsp;玩家可以通过下界<a href="https://minecraft-zh.gamepedia.com/%E4%BC%A0%E9%80%81%E9%97%A8">传送门</a>前往下界</li>
+</ul>
+<blockquote>
+  <p>群组服视情况可关闭（比如你的子服是大厅且不需要下界时，也可以在单独世界禁用）</p>
+  <p>Bukkit&nbsp;的bukkit.yml里settings下的allow-end: true是控制末地的（为啥官方只提供下界的关闭选项？看不起末地？）</p>
+</blockquote>
+<p>&nbsp;</p>
+<pre><code class="language-plaintext">broadcast-console-to-ops=true</code></pre>
+<ul>
+  <li>true - 开启后管理员（OP）在控制台或者聊天栏输入的命令其他管理员也可以看到</li>
+  <li>false -&nbsp;</li>
+</ul>
+<blockquote>
+  <p>可以看到所有OP执行的指令（只有同样是OP的玩家才可以哦）</p>
+</blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
