@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-02T17:48:54.672Z
+date: 2023-12-02T17:51:32.124Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -322,8 +322,18 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <blockquote>
   <p>客户端可以根据服务端提供的SHA-1值来验证客户端资源包的完整性，填写错误的话玩家会进不来</p>
 </blockquote>
+<h3>资源包指定URI链接</h3>
+<pre><code class="language-plaintext">resource-pack=</code></pre>
+<p>以下为各版本数据包大小的限制</p>
+<ul>
+  <li>50 MiB（1.15-pre5前）</li>
+  <li>100 MiB（1.15-pre5到1.18-pre8）</li>
+  <li>250 MiB（1.18-rc1起）</li>
+</ul>
+<blockquote>
+  <p>客户端会根据此来链接来下载资源包，下载成功或失败由客户端记录，而非服务器，如果链接失效或无法访问的话就GG咯</p>
+</blockquote>
 <p>&nbsp;</p>
-<p>resource-pack=</p>
 <p>server-ip=</p>
 <p>server-port=25565</p>
 <p>simulation-distance=10</p>
