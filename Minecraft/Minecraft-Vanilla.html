@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-02T16:04:52.699Z
+date: 2023-12-02T16:15:05.388Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -66,8 +66,14 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>首先我们来介绍最核心也是最主要的配置文件（server.properties），这个文件包含最基本的配置和自定义功能</p>
 <p>server.properties是官方原版服务端自带的配置文件，所以任何基于官方服务端的第三方服务端基本都会有这个文件，他的每一项配置都关乎于服务端的运行也是大多数基于官方服务端的第三方服务端都自带的一个基础配置文件</p>
 <p>虽然配置很简陋但是同样很重要，让我们来看看都有哪些可以“优化”和“更改”的配置吧</p>
-<p>注：以下部分说明来自<a href="https://minecraft-zh.gamepedia.com/Server.properties">https://minecraft-zh.gamepedia.com/Server.properties</a></p>
-<p>&nbsp;</p>
+<p>注：以下部分说明来自<a href="https://zh.minecraft.wiki/w/Server.properties">中文WIki</a></p>
+<pre><code class="language-plaintext">allow-flight=false</code></pre>
+<p>是否允许玩家在安装带有飞行功能的mod前提下在生存模式下飞行</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;不允许飞行。悬空超过5秒的玩家会被踢出服务器。</li>
+  <li><strong>true</strong> -&nbsp;允许飞行。玩家得以使用任何能飞行的mod飞行</li>
+</ul>
+<p>注：不允许飞行时玩家悬空超过5秒会被踢出服务器，不过我个人测试贴地飞行可以（自带的飞行判定很鸡肋，但是误判最少）</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
