@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-02T17:34:24.634Z
+date: 2023-12-02T17:36:22.594Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -248,7 +248,18 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>max-tick-time=60000</p>
 <p>max-world-size=29999984</p>
 <p>motd=A Minecraft Server</p>
-<p>network-compression-threshold=256</p>
+<p>&nbsp;</p>
+<h3>服务器数据包压缩阈值</h3>
+<pre><code class="language-plaintext">network-compression-threshold=256</code></pre>
+<ul>
+  <li>-1 - 关闭 压缩</li>
+  <li>0 - 全部压缩</li>
+</ul>
+<blockquote>
+  <p>当群组端和子服处于一个网络下建议关闭，因为浪费性能且没什么卵用，数值越小（-1除外）需要耗费的CPU性能越多，同时越节省服务器带宽，反之亦然（看你的服务器性能和带宽适当调整）</p>
+</blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <p>online-mode=true</p>
 <p>op-permission-level=4</p>
 <p>player-idle-timeout=0</p>
