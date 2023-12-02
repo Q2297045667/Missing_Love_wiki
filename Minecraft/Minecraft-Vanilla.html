@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-02T17:54:09.362Z
+date: 2023-12-02T17:57:14.026Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -341,9 +341,13 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>意味着你只能接受来自该IP中的玩家，如果你的服务器是群组服的话还是建议绑定群组端（一般为127.0.0.1）IP，同时配合spigot.yml中的bungeecord: true可以避免亿些问题（比如玩家可以绕过群组端直接登录服务器）</p>
 </blockquote>
 <p>&nbsp;</p>
+<h3>服务器接入端口 整数（1-65534）</h3>
+<pre><code class="language-plaintext">server-port=25565</code></pre>
+<blockquote>
+  <p>玩家应该使用哪个端口登录服务器，在使用群组服的时候需要在相关群组端配置相同端口，注意不要与其他子服端口冲突</p>
+</blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>server-port=25565</p>
 <p>simulation-distance=10</p>
 <p>spawn-animals=true</p>
 <p>spawn-monsters=true</p>
