@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-02T16:48:30.482Z
+date: 2023-12-02T16:51:59.835Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -101,6 +101,10 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>向所有在线OP发送通过RCON执行的输出</h3>
 <pre><code class="language-plaintext">broadcast-rcon-to-ops=true</code></pre>
+<ul>
+  <li>true - 开启后管理员（OP）在控制台或者聊天栏输入的命令其他管理员也可以看到</li>
+  <li>false - 关闭后其他管理员将看不见管理员之间的执行指令</li>
+</ul>
 <blockquote>
   <p>与上面同理但是不同的是这个可以看到的是通过RCON执行的指令</p>
 </blockquote>
@@ -115,15 +119,20 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>该选项默认是隐藏的需要管理员手动添加（这功能没什么用处）</p>
 </blockquote>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
+<h3>玩家进入服务器的默认游戏难度</h3>
 <pre><code class="language-plaintext">difficulty=easy</code></pre>
-<p>&nbsp;</p>
+<ul>
+  <li>peaceful (0)=和平</li>
+  <li>easy (1)=简单</li>
+  <li>normal (2)=普通</li>
+  <li>hard (3)=困难</li>
+</ul>
 <blockquote>
-  <p>玩家进入服务器的默认游戏难度</p>
-  <p>定义服务器的游戏难度（例如生物对玩家造成的伤害，饥饿和中毒对玩家的影响方式等）</p>
+  <p>对性能的影响依次从0（低）到3（高），如果没什么特殊需要建议peaceful (0)=和平，难度越高意味着服务器需要越多的CPU性能来处理AI逻辑</p>
 </blockquote>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
+<h3>是否开启命令方块</h3>
+<pre><code class="language-plaintext">enable-command-block=false</code></pre>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
