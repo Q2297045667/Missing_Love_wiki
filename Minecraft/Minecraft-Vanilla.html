@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-02T16:27:18.302Z
+date: 2023-12-02T16:38:25.615Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -67,6 +67,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>server.properties是官方原版服务端自带的配置文件，所以任何基于官方服务端的第三方服务端基本都会有这个文件，他的每一项配置都关乎于服务端的运行也是大多数基于官方服务端的第三方服务端都自带的一个基础配置文件</p>
 <p>虽然配置很简陋但是同样很重要，让我们来看看都有哪些可以“优化”和“更改”的配置吧</p>
 <p>注：以下部分说明来自<a href="https://zh.minecraft.wiki/w/Server.properties">中文WIki</a></p>
+<p>&nbsp;</p>
 <pre><code class="language-plaintext">allow-flight=false</code></pre>
 <p>是否允许玩家在安装带有飞行功能（作弊）的mod前提下在生存模式下飞行</p>
 <ul>
@@ -78,6 +79,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 </blockquote>
 <p>&nbsp;</p>
 <pre><code class="language-plaintext">allow-nether=true</code></pre>
+<p>&nbsp;</p>
 <ul>
   <li><strong>false</strong> -&nbsp;<a href="https://minecraft-zh.gamepedia.com/%E4%B8%8B%E7%95%8C%E4%BC%A0%E9%80%81%E9%97%A8">下界传送门</a>不会生效并且不会生成下界</li>
   <li><strong>true</strong> -&nbsp;玩家可以通过下界<a href="https://minecraft-zh.gamepedia.com/%E4%BC%A0%E9%80%81%E9%97%A8">传送门</a>前往下界</li>
@@ -88,6 +90,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 </blockquote>
 <p>&nbsp;</p>
 <pre><code class="language-plaintext">broadcast-console-to-ops=true</code></pre>
+<p>&nbsp;</p>
 <ul>
   <li>true - 开启后管理员（OP）在控制台或者聊天栏输入的命令其他管理员也可以看到</li>
   <li>false - 关闭后其他管理员将看不见管理员之间的执行指令</li>
@@ -111,8 +114,12 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>该选项默认是隐藏的需要管理员手动添加</p>
 </blockquote>
 <p>&nbsp;</p>
+<pre><code class="language-plaintext">difficulty=easy</code></pre>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
+<blockquote>
+  <p>玩家进入服务器的默认游戏难度</p>
+  <p>定义服务器的游戏难度（例如生物对玩家造成的伤害，饥饿和中毒对玩家的影响方式等）</p>
+</blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
