@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-03T08:54:32.757Z
+date: 2023-12-03T08:59:15.348Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -75,11 +75,11 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <li><strong>true</strong> -&nbsp;允许飞行。玩家得以使用任何能飞行的mod飞行</li>
 </ul>
 <blockquote>
-  <p>不允许飞行时玩家悬空超过5秒会被踢出服务器，不过我个人测试贴地飞行可以（自带的飞行判定很鸡肋，但是误判最少）</p>
+  <p>不允许飞行时玩家悬空超过5秒会被踢出服务器，不过我个人测试贴地飞行也可以（自带的飞行判定很鸡肋，但是误判最少）</p>
 </blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<h3><strong>是否允许服务器生成下界，关闭时玩家仍然可以创建下界传送门但是无法使用</strong></h3>
+<h3><strong>是否允许服务器生成下界</strong></h3>
 <pre><code class="language-plaintext">allow-nether=true</code></pre>
 <ul>
   <li><strong>false</strong> -&nbsp;下界传送门不会生效并且不会生成下界</li>
@@ -91,7 +91,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 </blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<h3>向所有在线OP发送所执行命令的输出</h3>
+<h3>是否向所有在线OP发送所执行命令的输出</h3>
 <pre><code class="language-plaintext">broadcast-console-to-ops=true</code></pre>
 <ul>
   <li>true - 开启后管理员（OP）在控制台或者聊天栏输入的命令其他管理员也可以看到</li>
@@ -320,7 +320,15 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>在world/datapacks文件夹下放入数据包之后，还需要在此添加相应的名称来启动数据包</p>
 </blockquote>
 <p>&nbsp;</p>
-<p>level-name=world</p>
+<h3>默认世界的文件夹的名称</h3>
+<pre><code class="language-plaintext">level-name=world</code></pre>
+<ul>
+  <li>字符串</li>
+</ul>
+<blockquote>
+  <p>“level-name”的值将作为世界名称及其文件夹名，服务器就可以载入该存档，部分字符，例如 <code>'</code> （单引号）可能需要在前面加反斜杠号 <code>\</code> 才能被正常应用</p>
+</blockquote>
+<p>&nbsp;</p>
 <p>level-seed=</p>
 <p>level-type=minecraft\:normal</p>
 <p>log-ips=true</p>
