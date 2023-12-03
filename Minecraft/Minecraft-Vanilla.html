@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-03T08:24:42.836Z
+date: 2023-12-03T08:25:32.933Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -256,7 +256,9 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>服务器最大玩家人数</h3>
 <pre><code class="language-plaintext">max-players=20</code></pre>
-<p>&nbsp;</p>
+<ul>
+  <li>整数（1-9999999）</li>
+</ul>
 <blockquote>
   <p>无脑999就行了，反正你的机器也装不下那么多人</p>
 </blockquote>
@@ -267,7 +269,6 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>服务器数据包压缩阈值</h3>
 <pre><code class="language-plaintext">network-compression-threshold=256</code></pre>
-<p>&nbsp;</p>
 <ul>
   <li>-1 - 关闭压缩</li>
   <li>0 - 全部压缩</li>
@@ -278,7 +279,6 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否开启正版验证</h3>
 <pre><code class="language-plaintext">online-mode=true</code></pre>
-<p>&nbsp;</p>
 <ul>
   <li>false - 关闭</li>
   <li>true - 开启</li>
@@ -295,7 +295,6 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>玩家是否可以攻击其他玩家</h3>
 <pre><code class="language-plaintext">pvp=true</code></pre>
-<p>&nbsp;</p>
 <ul>
   <li>false - 关闭</li>
   <li>true - 开启</li>
@@ -304,9 +303,11 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>关闭状态下由玩家造成的间接伤害（例如熔岩，火，TNT，水，沙子和沙砾）还是可以造成伤害的</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>设置监听服务器的端口号 整数（1-65534）</h3>
+<h3>设置监听服务器的端口号</h3>
 <pre><code class="language-plaintext">query.port=25565</code></pre>
-<p>&nbsp;</p>
+<ul>
+  <li>整数（1-65534）</li>
+</ul>
 <blockquote>
   <p>需要将enable-query设为true</p>
 </blockquote>
