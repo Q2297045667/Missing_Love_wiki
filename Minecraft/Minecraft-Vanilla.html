@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-03T09:48:23.360Z
+date: 2023-12-03T10:01:11.927Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -501,11 +501,19 @@ dateCreated: 2023-11-22T03:49:03.197Z
 </blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>rate-limit=0</p>
+<h3>设置玩家被踢出服务器前可以发送的数据包数量</h3>
+<pre><code class="language-plaintext">rate-limit=0</code></pre>
+<ul>
+  <li>整数</li>
+  <li>0 - 关闭此功能</li>
+</ul>
+<blockquote>
+  <p>作用不大，都要踢人了还要你发什么数据包</p>
+</blockquote>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3>设置RCON远程访问的密码</h3>
 <pre><code class="language-plaintext">rcon.password=</code></pre>
-<p>&nbsp;</p>
 <ul>
   <li>数字 + 英文字母</li>
 </ul>
@@ -513,9 +521,9 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>需要将enable-rcon设为true</p>
 </blockquote>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 <h3>设置RCON远程访问的端口号</h3>
 <pre><code class="language-plaintext">rcon.port=25575</code></pre>
-<p>&nbsp;</p>
 <ul>
   <li>整数（1-65534)</li>
 </ul>
@@ -523,9 +531,9 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>需要将enable-rcon设为true</p>
 </blockquote>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 <h3>是否强制启用资源包</h3>
 <pre><code class="language-plaintext">require-resource-pack=false</code></pre>
-<p>&nbsp;</p>
 <ul>
   <li>false - 关闭</li>
   <li>true - 强制玩家使用服务器指定的资源包进入</li>
@@ -534,17 +542,37 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>当此选项启用（true）时，玩家会被提示作出选择（是否启用服务器资源包），如果玩家拒绝则会被强制断开与服务器的连接</p>
 </blockquote>
 <p>&nbsp;</p>
-<p>resource-pack-id=</p>
-<p>resource-pack-prompt=</p>
+<h3>设置资源包的ID</h3>
+<pre><code class="language-plaintext">resource-pack-id=</code></pre>
+<ul>
+  <li>字符串</li>
+</ul>
+<blockquote>
+  <p>具体作用未知猜测与资源包的ID有关</p>
+</blockquote>
 <p>&nbsp;</p>
-<h3>资源包的SHA-1值</h3>
+<p>&nbsp;</p>
+<h3>设置资源包的prompt</h3>
+<pre><code class="language-plaintext">resource-pack-prompt=</code></pre>
+<ul>
+  <li>字符串</li>
+</ul>
+<blockquote>
+  <p>具体作用未知猜测与资源包的prompt有关</p>
+</blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>设置资源包的SHA-1值</h3>
 <pre><code class="language-plaintext">resource-pack-sha1=</code></pre>
-<p>&nbsp;</p>
+<ul>
+  <li>&nbsp;字符串</li>
+</ul>
 <blockquote>
   <p>客户端可以根据服务端提供的SHA-1值来验证客户端资源包的完整性，填写错误的话玩家会进不来</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>资源包指定URI链接</h3>
+<p>&nbsp;</p>
+<h3>设置客户端下载资源包的URI链接</h3>
 <pre><code class="language-plaintext">resource-pack=</code></pre>
 <p>以下为各版本数据包大小的限制</p>
 <ul>
@@ -556,19 +584,19 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>客户端会根据此来链接来下载资源包，下载成功或失败由客户端记录，而非服务器，如果链接失效或无法访问的话就GG咯</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>绑定服务器接收玩家IP</h3>
-<pre><code class="language-plaintext">server-ip=</code></pre>
 <p>&nbsp;</p>
+<h3>设置服务器接收玩家的IP地址</h3>
+<pre><code class="language-plaintext">server-ip=</code></pre>
 <ul>
   <li>整数 XXX.XXX.XXX.XXX（例如233.252.102.33）</li>
 </ul>
 <blockquote>
-  <p>意味着你只能接受来自该IP中的玩家，如果你的服务器是群组服的话还是建议绑定群组端（一般为127.0.0.1）IP，同时配合spigot.yml中的bungeecord: true可以避免亿些问题（比如玩家可以绕过群组端直接登录服务器）</p>
+  <p>意味着你只能接受来自该IP地址中的玩家，如果你的服务器是群组服的话还是建议绑定群组端（一般为127.0.0.1）IP，同时配合spigot.yml中的bungeecord: true可以避免亿些问题（比如玩家可以绕过群组端直接登录服务器）</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>服务器接入端口</h3>
-<pre><code class="language-plaintext">server-port=25565</code></pre>
 <p>&nbsp;</p>
+<h3>设置玩家或群组端接入服务器的端口</h3>
+<pre><code class="language-plaintext">server-port=25565</code></pre>
 <ul>
   <li>整数（1-65534）</li>
 </ul>
@@ -576,9 +604,9 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>玩家应该使用哪个端口登录服务器，在使用群组服的时候需要在相关群组端配置相同端口，注意不要与其他子服端口冲突</p>
 </blockquote>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 <h3>设置服务端可更新实体范围的最大值</h3>
 <pre><code class="language-plaintext">simulation-distance=10</code></pre>
-<p>&nbsp;</p>
 <ul>
   <li>整数（3-32）</li>
 </ul>
@@ -586,42 +614,42 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>即玩家各个方向上的区块数量（是以玩家为中心的半径，不是直径）。超出此范围的实体不会被更新，对玩家也不可见</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>是否生成动物</h3>
-<pre><code class="language-plaintext">spawn-animals=true</code></pre>
 <p>&nbsp;</p>
+<h3>是否允许生成动物</h3>
+<pre><code class="language-plaintext">spawn-animals=true</code></pre>
 <ul>
   <li><strong>true</strong> -&nbsp;动物可以正常生成</li>
   <li><strong>false</strong> -&nbsp;动物生成后会立即消失</li>
 </ul>
 <blockquote>
-  <p>我不知道为啥Mojang的代码要这样写，关闭这个选项可以节省更多的CPU算力，但是生成后立即消失我还是没绷住，大厅服一般不需要可以关闭</p>
+  <p>我不知道为啥Mojang的代码要这样写，直接不生成也没关系吧？关闭这个选项可以节省更多的CPU算力，但是生成后立即消失我还是没绷住，大厅服一般不需要可以关闭</p>
 </blockquote>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3>是否生成攻击型生物（怪物）</h3>
 <pre><code class="language-plaintext">spawn-monsters=true</code></pre>
-<p>&nbsp;</p>
 <ul>
   <li><strong>true</strong> -&nbsp;怪物会生成于夜晚和黑暗处。</li>
   <li><strong>false</strong> -&nbsp;不会有任何怪物</li>
 </ul>
 <blockquote>
-  <p>如果difficulty=0（即难度设置为和平）的话，该属性值不会有任何影响，还好不会像上面那个那么<mark class="pen-green"><s><sub>智障</sub></s></mark><s>智慧</s>，大厅服一般不需要可以关闭</p>
+  <p>最消耗CPU性能的实体类型之二，如果difficulty=0（即难度设置为和平）的话，该属性值不会有任何影响，还好不会像上面那个那么<mark class="pen-green"><s><sub>智障</sub></s></mark><s>智慧</s>，大厅服一般不需要可以关闭</p>
 </blockquote>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3>是否允许村民生成</h3>
 <pre><code class="language-plaintext">spawn-npcs=true</code></pre>
-<p>&nbsp;</p>
 <ul>
   <li><strong>true</strong> -&nbsp;启用</li>
   <li><strong>false</strong> -&nbsp;禁用生成</li>
 </ul>
 <blockquote>
-  <p>大厅或空岛服，小游戏等一般不需要可以关闭（一些服务器主城地图之外也是有地方可以生成村民的，怪物和动物同理）</p>
+  <p>最消耗CPU性能的实体类型之二，大厅或空岛服，小游戏等一般不需要可以关闭（一些服务器主城地图之外也是有地方可以生成村民的，怪物和动物同理）</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>出生点区块保护范围</h3>
-<pre><code class="language-plaintext">spawn-protection=16</code></pre>
 <p>&nbsp;</p>
+<h3>设置出生点方块的保护范围</h3>
+<pre><code class="language-plaintext">spawn-protection=16</code></pre>
 <ul>
   <li>整数（0-29999984）</li>
 </ul>
@@ -629,9 +657,9 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>进行2x+1的运算来决定出生点的保护半径（为1=3x3&nbsp;为2=5x5&nbsp;为3=7x7&nbsp;以此类推）设置为0将不会禁用出生点保护，但会保护位于出生点中心的方快（13w05a前），设置为0会禁用出生点保护（13w05a后）</p>
 </blockquote>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 <h3>是否开启同步模式写入区块文件</h3>
 <pre><code class="language-plaintext">sync-chunk-writes=true</code></pre>
-<p>&nbsp;</p>
 <ul>
   <li><strong>true</strong> -&nbsp;启用同步模式</li>
   <li><strong>false</strong> -&nbsp;禁用（异步模式？）</li>
@@ -640,16 +668,19 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>个人感觉关闭之后“可能”是最好的（关闭之后貌似是异步化？）哪位勇士试一下？</p>
 </blockquote>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 <h3>暂时未知作用</h3>
 <pre><code class="language-plaintext">text-filtering-config=</code></pre>
-<p>&nbsp;</p>
+<ul>
+  <li>&nbsp;未知类型，猜测为字符串</li>
+</ul>
 <blockquote>
   <p>WIKI上没写我自己也没有研究明白</p>
 </blockquote>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 <h3>是否使用针对Linux平台的数据包收发优化</h3>
 <pre><code class="language-plaintext">use-native-transport=true</code></pre>
-<p>&nbsp;</p>
 <ul>
   <li><strong>true</strong> -&nbsp;启用</li>
   <li><strong>false</strong> -&nbsp;禁用</li>
@@ -658,9 +689,9 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>Windows下也会生成这个选项且默认也是开启状态，一般不用管他</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>玩家最大视距</h3>
-<pre><code class="language-plaintext">view-distance=10</code></pre>
 <p>&nbsp;</p>
+<h3>设置玩家的最大视距</h3>
+<pre><code class="language-plaintext">view-distance=10</code></pre>
 <ul>
   <li>整数（3-32）</li>
 </ul>
@@ -671,13 +702,13 @@ dateCreated: 2023-11-22T03:49:03.197Z
   </ul>
 </blockquote>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 <h3>是否启用服务器的白名单功能</h3>
 <pre><code class="language-plaintext">white-list=false</code></pre>
-<p>&nbsp;</p>
 <ul>
   <li><strong>false</strong> -&nbsp;不使用白名单</li>
   <li><strong>true</strong> -&nbsp;从whitelist.json文件加载白名单</li>
 </ul>
 <blockquote>
-  <p>当启用时，只有白名单上的玩家才能连接到服务器</p>
+  <p>当启用时，只有加入白名单上的玩家才能连接到服务器</p>
 </blockquote>
