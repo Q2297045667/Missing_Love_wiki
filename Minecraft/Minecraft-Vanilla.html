@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-03T08:48:26.445Z
+date: 2023-12-03T08:51:37.088Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -290,7 +290,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 </blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<h3>如果设为 <strong>true</strong>，服务端在响应客户端状态请求时不会返回在线玩家列表</h3>
+<h3>客户端状态请求时返回在线玩家列表</h3>
 <pre><code class="language-plaintext">hide-online-players=false</code></pre>
 <ul>
   <li><strong>false</strong> - 关闭</li>
@@ -303,8 +303,18 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>需要在创建世界过程中禁用的数据包名称</h3>
 <pre><code class="language-plaintext">initial-disabled-packs=</code></pre>
+<ul>
+  <li>字符串</li>
+</ul>
+<blockquote>
+  <p>数据包之间以逗号分隔，有些数据包禁用后可能会产生一些问题，不如关闭服务器之后直接删除，反正配置这个选项也需要关闭服务器</p>
+</blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <h3>需要在创建世界过程中启用的数据包名称</h3>
 <pre><code class="language-plaintext">initial-enabled-packs=vanilla</code></pre>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <p>level-name=world</p>
 <p>level-seed=</p>
 <p>level-type=minecraft\:normal</p>
