@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-03T07:00:15.681Z
+date: 2023-12-03T07:03:30.233Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -385,12 +385,17 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>use-native-transport=true</p>
 <h3>玩家最大视距 整数（3-32）</h3>
 <pre><code class="language-plaintext">view-distance=10</code></pre>
+<p>&nbsp;</p>
 <blockquote>
   <p>Paper中的world-settings下的viewdistances里面的no-tick-view-distance（新版已经去除这个功能）可以设置虚假视距范围（不能超过也不能小于这里的值）</p>
+  <ul>
+    <li>虚假视距范围：这个范围内的实体或红石不会被计算直到脱离“虚假视距范围”（当前视距内）才能正常工作</li>
+  </ul>
 </blockquote>
 <p>&nbsp;</p>
 <h3>是否启用服务器的白名单功能</h3>
 <pre><code class="language-plaintext">white-list=false</code></pre>
+<p>&nbsp;</p>
 <ul>
   <li><strong>false</strong> -&nbsp;不使用白名单</li>
   <li><strong>true</strong> -&nbsp;从whitelist.json文件加载白名单</li>
