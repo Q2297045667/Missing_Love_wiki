@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-03T09:23:00.832Z
+date: 2023-12-03T09:26:55.000Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -339,7 +339,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>可以为你的世界设置一个<a href="https://zh.minecraft.wiki/w/%E7%A7%8D%E5%AD%90%EF%BC%88%E4%B8%96%E7%95%8C%E7%94%9F%E6%88%90%EF%BC%89">种子</a>，</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>使用世界预设ID</h3>
+<h3>设置使用的世界预设ID</h3>
 <pre><code class="language-plaintext">level-type=minecraft\:normal</code></pre>
 <ul>
   <li>minecraft:normal - 带有丘陵、河谷、海洋等的标准的世界</li>
@@ -364,7 +364,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 </blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<h3>最大建筑高度（1.18时移除）</h3>
+<h3>设置最大建筑高度（1.18时移除）</h3>
 <pre><code class="language-plaintext">max-build-height=256</code></pre>
 <ul>
   <li>整数（0-256）</li>
@@ -374,7 +374,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 </blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<h3>限制连锁NC更新的数量</h3>
+<h3>设置限制连锁NC更新的数量</h3>
 <pre><code class="language-plaintext">max-chained-neighbor-updates=1000000</code></pre>
 <ul>
   <li>整数</li>
@@ -384,9 +384,8 @@ dateCreated: 2023-11-22T03:49:03.197Z
 </blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<h3>服务器最大玩家人数</h3>
+<h3>设置服务器最大玩家人数</h3>
 <pre><code class="language-plaintext">max-players=20</code></pre>
-<p>&nbsp;</p>
 <ul>
   <li>整数（1-9999999）</li>
 </ul>
@@ -394,7 +393,17 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>无脑999就行了，反正你的机器也装不下那么多人</p>
 </blockquote>
 <p>&nbsp;</p>
-<p>max-tick-time=60000</p>
+<h3>设置每个tick花费的最大毫秒数</h3>
+<pre><code class="language-plaintext">max-tick-time=60000</code></pre>
+<ul>
+  <li>整数（0–(2^63 - 1)）</li>
+  <li><strong>-1</strong> - 完全停用watchdog</li>
+</ul>
+<blockquote>
+  <p>超过该毫秒数时，服务器watchdog将停止服务器程序并附带上信息：服务器的一个tick花费了60.00秒（最长也应该只有0.05秒）；判断服务器已崩溃，它将被强制关闭。遇到这种情况的时候，它会调用 System.exit(1)</p>
+</blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <p>max-world-size=29999984</p>
 <p>motd=A Minecraft Server</p>
 <p>&nbsp;</p>
