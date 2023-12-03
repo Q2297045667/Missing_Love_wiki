@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-03T08:00:02.088Z
+date: 2023-12-03T08:02:33.746Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -376,7 +376,16 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>simulation-distance=10</p>
-<p>spawn-animals=true</p>
+<h3>是否生成动物</h3>
+<pre><code class="language-plaintext">spawn-animals=true</code></pre>
+<ul>
+  <li><strong>true</strong> -&nbsp;动物可以正常生成</li>
+  <li><strong>false</strong> -&nbsp;动物生成后会立即消失</li>
+</ul>
+<blockquote>
+  <p>我不知道为啥Mojang的代码要这样写，关闭这个选项可以节省更多的CPU算力，但是生成后立即消失我还是没绷住，大厅服一般不需要可以关闭</p>
+</blockquote>
+<p>&nbsp;</p>
 <h3>是否生成攻击型生物（怪物）</h3>
 <pre><code class="language-plaintext">spawn-monsters=true</code></pre>
 <ul>
