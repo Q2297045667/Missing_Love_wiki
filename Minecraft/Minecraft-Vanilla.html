@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-03T07:51:37.276Z
+date: 2023-12-03T07:52:36.351Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -382,8 +382,15 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>spawn-protection=16</p>
 <p>sync-chunk-writes=true</p>
 <p>text-filtering-config=</p>
-<p>&nbsp;</p>
-<p>use-native-transport=true</p>
+<h3>是否使用针对Linux平台的数据包收发优化</h3>
+<pre><code class="language-plaintext">use-native-transport=true</code></pre>
+<ul>
+  <li><strong>true</strong> -&nbsp;启用Linux数据包收发优化</li>
+  <li><strong>false</strong> -&nbsp;禁用Linux数据包收发优化</li>
+</ul>
+<blockquote>
+  <p>Windows下也会生成这个选项且默认也是开启状态，一般不用管他</p>
+</blockquote>
 <p>&nbsp;</p>
 <h3>玩家最大视距 整数（3-32）</h3>
 <pre><code class="language-plaintext">view-distance=10</code></pre>
