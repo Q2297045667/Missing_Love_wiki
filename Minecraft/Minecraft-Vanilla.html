@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-03T08:15:41.914Z
+date: 2023-12-03T08:24:42.836Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -315,21 +315,24 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置RCON远程访问的密码</h3>
 <pre><code class="language-plaintext">rcon.password=</code></pre>
-<p>&nbsp;</p>
+<ul>
+  <li>数字 + 英文字母</li>
+</ul>
 <blockquote>
   <p>需要将enable-rcon设为true</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>设置RCON远程访问的端口号 整数（1-65534)</h3>
+<h3>设置RCON远程访问的端口号</h3>
 <pre><code class="language-plaintext">rcon.port=25575</code></pre>
-<p>&nbsp;</p>
+<ul>
+  <li>整数（1-65534)</li>
+</ul>
 <blockquote>
   <p>需要将enable-rcon设为true</p>
 </blockquote>
 <p>&nbsp;</p>
 <h3>是否强制启用资源包</h3>
 <pre><code class="language-plaintext">require-resource-pack=false</code></pre>
-<p>&nbsp;</p>
 <ul>
   <li>false - 关闭</li>
   <li>true - 强制玩家使用服务器指定的资源包进入</li>
@@ -343,7 +346,6 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>资源包的SHA-1值</h3>
 <pre><code class="language-plaintext">resource-pack-sha1=</code></pre>
-<p>&nbsp;</p>
 <blockquote>
   <p>客户端可以根据服务端提供的SHA-1值来验证客户端资源包的完整性，填写错误的话玩家会进不来</p>
 </blockquote>
