@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-03T10:58:11.163Z
+date: 2023-12-03T11:33:15.236Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -565,7 +565,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <h3>设置资源包的SHA-1值</h3>
 <pre><code class="language-plaintext">resource-pack-sha1=</code></pre>
 <ul>
-  <li>&nbsp;字符串</li>
+  <li>字符串</li>
 </ul>
 <blockquote>
   <p>客户端可以根据服务端提供的SHA-1值来验证客户端资源包的完整性，填写错误的话玩家会进不来</p>
@@ -672,7 +672,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <h3>暂时未知作用</h3>
 <pre><code class="language-plaintext">text-filtering-config=</code></pre>
 <ul>
-  <li>&nbsp;未知类型，猜测为字符串</li>
+  <li>未知类型，猜测为字符串</li>
 </ul>
 <blockquote>
   <p>WIKI上没写我自己也没有研究明白</p>
@@ -718,7 +718,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>要熟悉这连个文件首先我们要知道这两个文件的内容和作用</p>
 <p>这两个文件主要存放服务器内违规的玩家用来禁止玩家永远不再进入服务器</p>
 <p>我们来看看他的工作命令</p>
-<figure class="image image-style-align-right image_resized" style="width:40.02%;"><img src="/minecraft/banned-ips与banned-players.png"></figure>
+<figure class="image image_resized image-style-align-right" style="width:40.02%;"><img src="/minecraft/banned-ips与banned-players.png"></figure>
 <ul>
   <li>/ban &nbsp;&lt;玩家名称&gt; &lt;理由&gt;（写入数据到banned-players.json文件）</li>
   <li>/pardon &nbsp;&lt;玩家名称&gt;（从banned-players.json文件内删除数据）</li>
