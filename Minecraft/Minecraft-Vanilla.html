@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-03T07:57:24.876Z
+date: 2023-12-03T08:00:02.088Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -377,8 +377,26 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <p>simulation-distance=10</p>
 <p>spawn-animals=true</p>
-<p>spawn-monsters=true</p>
-<p>spawn-npcs=true</p>
+<h3>是否生成攻击型生物（怪物）</h3>
+<pre><code class="language-plaintext">spawn-monsters=true</code></pre>
+<ul>
+  <li><strong>true</strong> -&nbsp;怪物会生成于夜晚和黑暗处。</li>
+  <li><strong>false</strong> -&nbsp;不会有任何怪物</li>
+</ul>
+<blockquote>
+  <p>如果difficulty=0（即难度设置为和平）的话，该属性值不会有任何影响，大厅服一般不需要可以关闭</p>
+</blockquote>
+<p>&nbsp;</p>
+<h3>是否允许村民生成</h3>
+<pre><code class="language-plaintext">spawn-npcs=true</code></pre>
+<ul>
+  <li><strong>true</strong> -&nbsp;启用</li>
+  <li><strong>false</strong> -&nbsp;禁用生成</li>
+</ul>
+<blockquote>
+  <p>大厅或空岛服，小游戏等一般不需要可以关闭（一些服务器主城地图之外也是有地方可以生成村民的，怪物和动物同理）</p>
+</blockquote>
+<p>&nbsp;</p>
 <h3>出生点区块保护范围</h3>
 <pre><code class="language-plaintext">spawn-protection=16</code></pre>
 <blockquote>
