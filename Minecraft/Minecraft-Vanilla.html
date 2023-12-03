@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-03T09:15:10.617Z
+date: 2023-12-03T09:17:13.736Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -339,7 +339,19 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>可以为你的世界设置一个<a href="https://zh.minecraft.wiki/w/%E7%A7%8D%E5%AD%90%EF%BC%88%E4%B8%96%E7%95%8C%E7%94%9F%E6%88%90%EF%BC%89">种子</a>，</p>
 </blockquote>
 <p>&nbsp;</p>
-<p>level-type=minecraft\:normal</p>
+<h3>使用世界预设ID</h3>
+<pre><code class="language-plaintext">level-type=minecraft\:normal</code></pre>
+<ul>
+  <li>minecraft:normal - 带有丘陵、河谷、海洋等的标准的世界</li>
+  <li>minecraft:flat - 一个没有特性的平坦世界，可用generator-settings修改</li>
+  <li>minecraft:large_biomes - 如同默认的世界，但所有生物群系都更大</li>
+  <li>minecraft:amplified - 如同默认的世界，但世界生成高度提高</li>
+  <li>minecraft:single_biome_surface - 单一生物群系世界，可用generator-settings修改</li>
+</ul>
+<blockquote>
+  <p>使用世界预设ID时，需要在其中的“:”前加“\”转义。原版世界预设ID可以省略其前面的“minecraft:”（即命名空间）</p>
+</blockquote>
+<p>&nbsp;</p>
 <p>log-ips=true</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
