@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-03T08:12:24.906Z
+date: 2023-12-03T08:12:51.817Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -367,14 +367,19 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>意味着你只能接受来自该IP中的玩家，如果你的服务器是群组服的话还是建议绑定群组端（一般为127.0.0.1）IP，同时配合spigot.yml中的bungeecord: true可以避免亿些问题（比如玩家可以绕过群组端直接登录服务器）</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>服务器接入端口 整数（1-65534）</h3>
+<h3>服务器接入端口</h3>
 <pre><code class="language-plaintext">server-port=25565</code></pre>
-<p>&nbsp;</p>
+<ul>
+  <li>&nbsp;整数（1-65534）</li>
+</ul>
 <blockquote>
   <p>玩家应该使用哪个端口登录服务器，在使用群组服的时候需要在相关群组端配置相同端口，注意不要与其他子服端口冲突</p>
 </blockquote>
-<h3>设置服务端可更新实体范围的最大值 整数（3-32）</h3>
+<h3>设置服务端可更新实体范围的最大值</h3>
 <pre><code class="language-plaintext">simulation-distance=10</code></pre>
+<ul>
+  <li>整数（3-32）</li>
+</ul>
 <blockquote>
   <p>即玩家各个方向上的区块数量（是以玩家为中心的半径，不是直径）。超出此范围的实体不会被更新，对玩家也不可见</p>
 </blockquote>
