@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-03T09:26:55.000Z
+date: 2023-12-03T09:42:58.543Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -393,6 +393,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>无脑999就行了，反正你的机器也装不下那么多人</p>
 </blockquote>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 <h3>设置每个tick花费的最大毫秒数</h3>
 <pre><code class="language-plaintext">max-tick-time=60000</code></pre>
 <ul>
@@ -404,12 +405,28 @@ dateCreated: 2023-11-22T03:49:03.197Z
 </blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>max-world-size=29999984</p>
-<p>motd=A Minecraft Server</p>
+<h3>设置世界的最大边界范围</h3>
+<pre><code class="language-plaintext">max-world-size=29999984</code></pre>
+<ul>
+  <li>整数（1-29999984）</li>
+</ul>
+<blockquote>
+  <p>设置可让<a href="https://zh.minecraft.wiki/w/%E4%B8%96%E7%95%8C%E8%BE%B9%E7%95%8C">世界边界</a>获得的最大半径值，单位为方块。通过成功执行的命令能把世界边界设置得更大，但不会超过这里设置的最大方块限制。如果设置的max-world-size超过默认值的大小，那将不会起任何效果</p>
+</blockquote>
 <p>&nbsp;</p>
-<h3>服务器数据包压缩阈值</h3>
+<p>&nbsp;</p>
+<h3>设置客户端服务器列表中显示的服务器信息</h3>
+<pre><code class="language-plaintext">motd=A Minecraft Server</code></pre>
+<ul>
+  <li>字符串 （0-59个字符）</li>
+</ul>
+<blockquote>
+  <p>玩家可以在服务器列表处看到你设置的消息，群组模式下毫无卵用，特殊符号或中文需要转换为Unicode转义字符，这里提供一个免费的<a href="https://www.wetools.com/unicode">转译网站</a></p>
+</blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>设置服务器网络数据包压缩阈值</h3>
 <pre><code class="language-plaintext">network-compression-threshold=256</code></pre>
-<p>&nbsp;</p>
 <ul>
   <li>-1 - 关闭压缩</li>
   <li>0 - 全部压缩</li>
@@ -418,9 +435,9 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>当群组端和子服处于一个网络下建议关闭，因为浪费性能且没什么卵用，数值越小（-1除外）需要耗费的CPU性能越多，同时越节省服务器带宽，反之亦然（看你的服务器性能和带宽适当调整）</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>是否开启正版验证</h3>
-<pre><code class="language-plaintext">online-mode=true</code></pre>
 <p>&nbsp;</p>
+<h3>是否开启正版验证（在线模式）</h3>
+<pre><code class="language-plaintext">online-mode=true</code></pre>
 <ul>
   <li>false - 关闭</li>
   <li>true - 开启</li>
@@ -429,9 +446,28 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>盗版（离线）服务器需要第三方验证系统（或插件）（不然谁都能进来）如果有正版的话还是建议开启</p>
 </blockquote>
 <p>&nbsp;</p>
+<h3>设置使用/<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/op">op</a>命令时OP的权限等级</h3>
+<pre><code class="language-plaintext">op-permission-level=4</code></pre>
+<ul>
+  <li>1 - OP可以绕过重生点保护破环出生点的方块</li>
+  <li>2 - OP可以使用所有单人游戏作弊命令（除了/<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/publish">publish</a>，因为不能在服务器上使用；/<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/debug">debug</a>也是）并使用命令方块</li>
+  <li>3 - OP可以使用大多数多人游戏中独有的命令，包括 /<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/debug">debug</a>，以及管理玩家的命令（/<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/ban">ban</a>，/<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/op">op</a>等等）</li>
+  <li>4 - OP可以使用所有命令，包括 /<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/stop">stop</a>, /<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/save-all">save-all</a>, /<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/save-on">save-on</a> 和 /<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/save-off">save-off</a></li>
+</ul>
+<blockquote>
+  <p>等级2是命令方块和领域服服主/管理员的默认等级权限</p>
+</blockquote>
 <p>&nbsp;</p>
-<p>op-permission-level=4</p>
-<p>player-idle-timeout=0</p>
+<p>&nbsp;</p>
+<h3>设置玩家在挂机（<strong>AFK</strong>）状态下多久被服务器踢出</h3>
+<pre><code class="language-plaintext">player-idle-timeout=0</code></pre>
+<ul>
+  <li>整数</li>
+</ul>
+<blockquote>
+  <p>一般应该没人显的发慌设置这个吧？玩家真的那么多吗？不会真有那么多吧？不会吧，不会吧？</p>
+</blockquote>
+<p>&nbsp;</p>
 <p>prevent-proxy-connections=false</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
