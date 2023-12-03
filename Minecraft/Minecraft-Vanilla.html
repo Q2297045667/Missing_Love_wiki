@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-03T08:26:01.798Z
+date: 2023-12-03T08:26:23.340Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -205,7 +205,6 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否强制执行白名单</h3>
 <pre><code class="language-plaintext">enforce-whitelist=false</code></pre>
-<p>&nbsp;</p>
 <ul>
   <li><strong>true</strong> -&nbsp;不在白名单上的用户会被踢出</li>
   <li><strong>false</strong> -&nbsp;不在白名单上的在线用户不会被踢出</li>
@@ -214,16 +213,17 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>设置为true时whitelist.json为白名单状态，false时为黑名单</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>控制服务端发到当客户端的实体数据显示范围（百分比）整数（10-1000）</h3>
+<h3>控制服务端发到当客户端的实体数据显示范围（百分比）</h3>
 <pre><code class="language-plaintext">entity-broadcast-range-percentage=100</code></pre>
-<p>&nbsp;</p>
+<ul>
+  <li>整数（10-1000）</li>
+</ul>
 <blockquote>
   <p>只是客户端的显示范围而已实际上实体的活动范围还是正常的，但他可以减少网络资源的占用，网络环境不好的可以适当的减少这个值，个人建议80左右</p>
 </blockquote>
 <p>&nbsp;</p>
 <h3>强制玩家加入时为默认游戏模式</h3>
 <pre><code class="language-plaintext">force-gamemode=false</code></pre>
-<p>&nbsp;</p>
 <ul>
   <li><strong>false</strong> -&nbsp;玩家将以退出前的游戏模式加入</li>
   <li><strong>true</strong> -&nbsp;玩家总是以默认游戏模式加入</li>
