@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-03T08:13:57.453Z
+date: 2023-12-03T08:15:41.914Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -419,6 +419,9 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>出生点区块保护范围</h3>
 <pre><code class="language-plaintext">spawn-protection=16</code></pre>
+<ul>
+  <li>整数（0-29999984）</li>
+</ul>
 <blockquote>
   <p>进行2x+1的运算来决定出生点的保护半径（为1=3x3&nbsp;为2=5x5&nbsp;为3=7x7&nbsp;以此类推）设置为0将不会禁用出生点保护，但会保护位于出生点中心的方快（13w05a前），设置为0会禁用出生点保护（13w05a后）</p>
 </blockquote>
@@ -449,8 +452,11 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>Windows下也会生成这个选项且默认也是开启状态，一般不用管他</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>玩家最大视距 整数（3-32）</h3>
+<h3>玩家最大视距</h3>
 <pre><code class="language-plaintext">view-distance=10</code></pre>
+<ul>
+  <li>整数（3-32）</li>
+</ul>
 <blockquote>
   <p>Paper中的world-settings下的viewdistances里面的no-tick-view-distance（新版已经去除这个功能）可以设置虚假视距范围（不能超过也不能小于这里的值）</p>
   <ul>
