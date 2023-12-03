@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-03T08:27:06.292Z
+date: 2023-12-03T08:34:17.700Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -78,6 +78,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>不允许飞行时玩家悬空超过5秒会被踢出服务器，不过我个人测试贴地飞行可以（自带的飞行判定很鸡肋，但是误判最少）</p>
 </blockquote>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 <h3><strong>是否允许服务器生成下界，关闭时玩家仍然可以创建下界传送门但是无法使用</strong></h3>
 <pre><code class="language-plaintext">allow-nether=true</code></pre>
 <ul>
@@ -89,6 +90,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>Bukkit&nbsp;的bukkit.yml里settings下的allow-end: true是控制末地的（为啥官方只提供下界的关闭选项？看不起末地？）</p>
 </blockquote>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 <h3>向所有在线OP发送所执行命令的输出</h3>
 <pre><code class="language-plaintext">broadcast-console-to-ops=true</code></pre>
 <ul>
@@ -98,6 +100,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <blockquote>
   <p>可以看到所有OP执行的指令（只有同样是OP的玩家才可以哦）不建议关闭</p>
 </blockquote>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3>向所有在线OP发送通过RCON执行的输出</h3>
 <pre><code class="language-plaintext">broadcast-rcon-to-ops=true</code></pre>
@@ -109,6 +112,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>与上面同理但是不同的是这个可以看到的是通过RCON执行的指令</p>
 </blockquote>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 <h3>开启Debug（调试模式）</h3>
 <pre><code class="language-plaintext">debug=false</code></pre>
 <ul>
@@ -118,6 +122,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <blockquote>
   <p>该选项默认是隐藏的需要管理员手动添加（这功能没什么用处）</p>
 </blockquote>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3>玩家进入服务器的默认游戏难度</h3>
 <pre><code class="language-plaintext">difficulty=easy</code></pre>
@@ -131,6 +136,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>对性能的影响依次从0（低）到3（高），如果没什么特殊需要建议peaceful，难度越高意味着服务器需要越多的CPU性能来处理AI逻辑</p>
 </blockquote>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 <h3>是否开启命令方块</h3>
 <pre><code class="language-plaintext">enable-command-block=false</code></pre>
 <ul>
@@ -140,6 +146,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <blockquote>
   <p>命令方块只能通过命令获取且玩家必须是OP权限，建议开启，因为你不清楚什么时候会用到他</p>
 </blockquote>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3>可以使用一些支持JMX参数的服务器监听软件配合使用</h3>
 <pre><code class="language-plaintext">enable-jmx-monitoring=false</code></pre>
@@ -151,6 +158,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>一般人用不上，很鸡肋的功能</p>
 </blockquote>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 <h3>是否允许使用GameSpy4协议的服务器监听器。用于获取服务器信息</h3>
 <pre><code class="language-plaintext">enable-query=false</code></pre>
 <ul>
@@ -160,6 +168,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <blockquote>
   <p>同上，鸡肋</p>
 </blockquote>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3>是否允许远程访问服务器控制台</h3>
 <pre><code class="language-plaintext">enable-rcon=false</code></pre>
@@ -171,6 +180,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>由于RCON协议传输数据时没有加密，所以不建议把RCON暴露在互联网上。RCON客户端和服务端交换的所有数据（包括RCON密码）都会泄露给正在监听此连接的人</p>
 </blockquote>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 <h3>使服务器在服务器列表中看起来是“在线”的</h3>
 <pre><code class="language-plaintext">enable-status=true</code></pre>
 <ul>
@@ -180,6 +190,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <blockquote>
   <p>就是将服务器状态上传到一个服务器用以缓存在线状态，可以加快服务器列表刷新，如果你的服务端是某个群组端（Velocity，Bungee）下的子服，建议关闭节省网络开销，因为此时服务器的在线状态由群组端（Velocity，Bungee）提供</p>
 </blockquote>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3>是否要求玩家必须具有Mojang签名的公钥才能进入服务器</h3>
 <pre><code class="language-plaintext">enforce-secure-profile=true</code></pre>
@@ -191,6 +202,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>验证玩家是否是使用的官方启动器登录的游戏，因为目前只有官启有公钥，建议关闭，卵用没有</p>
 </blockquote>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 <h3>是否强制执行白名单</h3>
 <pre><code class="language-plaintext">enforce-whitelist=false</code></pre>
 <ul>
@@ -201,6 +213,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>设置为true时whitelist.json为白名单状态，false时为黑名单</p>
 </blockquote>
 <p>&nbsp;</p>
+<p>&nbsp;</p>
 <h3>控制服务端发到当客户端的实体数据显示范围（百分比）</h3>
 <pre><code class="language-plaintext">entity-broadcast-range-percentage=100</code></pre>
 <ul>
@@ -209,6 +222,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <blockquote>
   <p>只是客户端的显示范围而已实际上实体的活动范围还是正常的，但他可以减少网络资源的占用，网络环境不好的可以适当的减少这个值，个人建议80左右</p>
 </blockquote>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3>强制玩家加入时为默认游戏模式</h3>
 <pre><code class="language-plaintext">force-gamemode=false</code></pre>
@@ -220,8 +234,30 @@ dateCreated: 2023-11-22T03:49:03.197Z
   <p>一般不会用得到，小游戏或空岛服可以根据需要改动</p>
 </blockquote>
 <p>&nbsp;</p>
-<p>function-permission-level=2</p>
-<p>gamemode=survival</p>
+<p>&nbsp;</p>
+<h3>设定<a href="https://zh.minecraft.wiki/w/Java%E7%89%88%E5%87%BD%E6%95%B0">函数</a>的默认权限等级</h3>
+<pre><code class="language-plaintext">function-permission-level=2</code></pre>
+<ul>
+  <li>整数（1-4）</li>
+</ul>
+<blockquote>
+  <p>具体可以参照<a href="https://zh.minecraft.wiki/w/Server.properties#op-permission-level">我的世界百科</a></p>
+</blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>定义默认<a href="https://zh.minecraft.wiki/w/%E6%B8%B8%E6%88%8F%E6%A8%A1%E5%BC%8F">游戏模式</a></h3>
+<pre><code class="language-plaintext">gamemode=survival</code></pre>
+<ul>
+  <li><strong>survival</strong> (0) - 生存模式</li>
+  <li><strong>creative</strong> (1) - 创造模式</li>
+  <li><strong>adventure</strong> (2) - 冒险模式</li>
+  <li><strong>spectator</strong> (3) - 旁观模式</li>
+</ul>
+<blockquote>
+  <p>玩家第一次加入服务器的时的游戏模式，如果值是用的数字，会静默转换为对应游戏模式的英文名称</p>
+</blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <p>generate-structures=true</p>
 <p>generator-settings={}</p>
 <p>hardcore=false</p>
