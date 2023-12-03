@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-03T09:19:40.581Z
+date: 2023-12-03T09:23:00.832Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -353,7 +353,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 </blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<h3>是否在日志里记录玩家IP地址</h3>
+<h3>是否在日志里记录新加入玩家的IP地址</h3>
 <pre><code class="language-plaintext">log-ips=true</code></pre>
 <ul>
   <li><strong>true</strong> - 在日志中记录新加入玩家的IP地址</li>
@@ -366,14 +366,23 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>最大建筑高度（1.18时移除）</h3>
 <pre><code class="language-plaintext">max-build-height=256</code></pre>
-<p>&nbsp;</p>
 <ul>
   <li>整数（0-256）</li>
 </ul>
 <blockquote>
-  <p>老版本用不上，新版本直接没了</p>
+  <p>老版本用不上，新版直接没了，总结就是没卵用，老版本就算设置超过256也不会提高世界高度上限</p>
 </blockquote>
-<p>max-chained-neighbor-updates=1000000</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>限制连锁NC更新的数量</h3>
+<pre><code class="language-plaintext">max-chained-neighbor-updates=1000000</code></pre>
+<ul>
+  <li>整数</li>
+</ul>
+<blockquote>
+  <p>超过此数量的连锁NC更新会被跳过。若为负数则无限制</p>
+</blockquote>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <h3>服务器最大玩家人数</h3>
 <pre><code class="language-plaintext">max-players=20</code></pre>
