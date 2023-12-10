@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端
 published: true
-date: 2023-12-03T12:23:23.396Z
+date: 2023-12-10T15:18:05.483Z
 tags: 
 editor: ckeditor
 dateCreated: 2023-11-22T03:49:03.197Z
@@ -70,6 +70,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3><strong>是否允许玩家在安装带有飞行功能（作弊）的mod前提下在生存模式下飞行</strong></h3>
 <pre><code class="language-plaintext">allow-flight=false</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li><strong>false</strong> -&nbsp;不允许飞行。悬空超过5秒的玩家会被踢出服务器。</li>
   <li><strong>true</strong> -&nbsp;允许飞行。玩家得以使用任何能飞行的mod飞行</li>
@@ -81,6 +82,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3><strong>是否允许服务器生成下界</strong></h3>
 <pre><code class="language-plaintext">allow-nether=true</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li><strong>false</strong> -&nbsp;下界传送门不会生效并且不会生成下界</li>
   <li><strong>true</strong> -&nbsp;玩家可以通过下界传送门前往下界</li>
@@ -93,6 +95,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否向所有在线OP发送所执行命令的输出</h3>
 <pre><code class="language-plaintext">broadcast-console-to-ops=true</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>true - 开启后管理员（OP）在控制台或者聊天栏输入的命令其他管理员也可以看到</li>
   <li>false - 关闭后其他管理员将看不见管理员之间的执行指令</li>
@@ -104,6 +107,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否向所有在线OP发送通过RCON执行的输出</h3>
 <pre><code class="language-plaintext">broadcast-rcon-to-ops=true</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>true - 开启后管理员（OP）在控制台或者聊天栏输入的命令其他管理员也可以看到</li>
   <li>false - 关闭后其他管理员将看不见管理员之间的执行指令</li>
@@ -115,6 +119,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否开启Debug（调试模式）</h3>
 <pre><code class="language-plaintext">debug=false</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>false - 关闭debug（调试模式）</li>
   <li>true - 开启</li>
@@ -126,6 +131,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>玩家进入服务器的默认游戏难度</h3>
 <pre><code class="language-plaintext">difficulty=easy</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>peaceful (0) - 和平</li>
   <li>easy (1) - 简单</li>
@@ -139,6 +145,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否开启命令方块</h3>
 <pre><code class="language-plaintext">enable-command-block=false</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>false - 关闭</li>
   <li>true - 开启</li>
@@ -150,6 +157,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否支持JMX参数</h3>
 <pre><code class="language-plaintext">enable-jmx-monitoring=false</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>false - 关闭</li>
   <li>true - 开启</li>
@@ -161,6 +169,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否允许使用GameSpy4协议的服务器监听器</h3>
 <pre><code class="language-plaintext">enable-query=false</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>false - 关闭</li>
   <li>true - 开启</li>
@@ -172,6 +181,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否允许远程访问服务器控制台</h3>
 <pre><code class="language-plaintext">enable-rcon=false</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>false - 关闭</li>
   <li>true - 开启</li>
@@ -183,6 +193,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否使服务器在服务器列表中看起来是“在线”的</h3>
 <pre><code class="language-plaintext">enable-status=true</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>false - 关闭 同时后台将不再上传在线状态</li>
   <li>true - 开启</li>
@@ -194,6 +205,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否要求玩家必须具有Mojang签名的公钥才能进入服务器</h3>
 <pre><code class="language-plaintext">enforce-secure-profile=true</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li><strong>true</strong> - 不具有Mojang签名的公钥的玩家不能进入服务器</li>
   <li><strong>false</strong> - 不具有Mojang签名的公钥的玩家也可进入服务器</li>
@@ -205,6 +217,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否强制执行白名单</h3>
 <pre><code class="language-plaintext">enforce-whitelist=false</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li><strong>true</strong> -&nbsp;不在白名单上的用户会被踢出</li>
   <li><strong>false</strong> -&nbsp;不在白名单上的在线用户不会被踢出</li>
@@ -216,6 +229,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>控制服务端发到当客户端的实体数据显示范围（百分比）</h3>
 <pre><code class="language-plaintext">entity-broadcast-range-percentage=100</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>整数（10-1000）</li>
 </ul>
@@ -226,6 +240,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>强制玩家加入时为默认游戏模式</h3>
 <pre><code class="language-plaintext">force-gamemode=false</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li><strong>false</strong> -&nbsp;玩家将以退出前的游戏模式加入</li>
   <li><strong>true</strong> -&nbsp;玩家总是以默认游戏模式加入</li>
@@ -237,6 +252,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设定<a href="https://zh.minecraft.wiki/w/Java%E7%89%88%E5%87%BD%E6%95%B0">函数</a>的默认权限等级</h3>
 <pre><code class="language-plaintext">function-permission-level=2</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>整数（1-4）</li>
 </ul>
@@ -247,6 +263,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>定义默认<a href="https://zh.minecraft.wiki/w/%E6%B8%B8%E6%88%8F%E6%A8%A1%E5%BC%8F">游戏模式</a></h3>
 <pre><code class="language-plaintext">gamemode=survival</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li><strong>survival</strong> (0) - 生存模式</li>
   <li><strong>creative</strong> (1) - 创造模式</li>
@@ -260,6 +277,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否允许生成<a href="https://zh.minecraft.wiki/w/%E7%BB%93%E6%9E%84">结构</a>（例如<a href="https://zh.minecraft.wiki/w/%E6%9D%91%E5%BA%84">村庄</a>）</h3>
 <pre><code class="language-plaintext">generate-structures=true</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li><strong>false</strong> - 新生成的区块中将不包含结构</li>
   <li><strong>true</strong> - 新生成的区块中将包含结构</li>
@@ -271,6 +289,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>用于自定义世界的生成</h3>
 <pre><code class="language-plaintext">generator-settings={}</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>字符串</li>
 </ul>
@@ -281,6 +300,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否启用冒险模式</h3>
 <pre><code class="language-plaintext">hardcore=false</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li><strong>false</strong> - 关闭冒险模式</li>
   <li><strong>true</strong> - 启用冒险模式</li>
@@ -292,6 +312,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否禁止客户端状态请求时返回在线玩家列表</h3>
 <pre><code class="language-plaintext">hide-online-players=false</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li><strong>false</strong> - 关闭</li>
   <li><strong>true</strong> - 启用</li>
@@ -303,6 +324,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>需要在创建世界过程中禁用的数据包名称</h3>
 <pre><code class="language-plaintext">initial-disabled-packs=</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>字符串</li>
 </ul>
@@ -313,6 +335,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>需要在创建世界过程中启用的数据包名称</h3>
 <pre><code class="language-plaintext">initial-enabled-packs=vanilla</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>字符串</li>
 </ul>
@@ -322,6 +345,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置默认世界的文件夹的名称</h3>
 <pre><code class="language-plaintext">level-name=world</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>字符串</li>
 </ul>
@@ -332,6 +356,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置主世界默认的世界种子</h3>
 <pre><code class="language-plaintext">level-seed=</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>字符串</li>
 </ul>
@@ -341,6 +366,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置使用的世界预设ID</h3>
 <pre><code class="language-plaintext">level-type=minecraft\:normal</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>minecraft:normal - 带有丘陵、河谷、海洋等的标准的世界</li>
   <li>minecraft:flat - 一个没有特性的平坦世界，可用generator-settings修改</li>
@@ -355,6 +381,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否在日志里记录新加入玩家的IP地址</h3>
 <pre><code class="language-plaintext">log-ips=true</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li><strong>true</strong> - 在日志中记录新加入玩家的IP地址</li>
   <li><strong>false</strong> - 在日志中隐藏新加入玩家的IP地址</li>
@@ -366,6 +393,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置最大建筑高度（1.18时移除）</h3>
 <pre><code class="language-plaintext">max-build-height=256</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>整数（0-256）</li>
 </ul>
@@ -376,6 +404,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置限制连锁NC更新的数量</h3>
 <pre><code class="language-plaintext">max-chained-neighbor-updates=1000000</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>整数</li>
 </ul>
@@ -386,6 +415,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置服务器最大玩家人数</h3>
 <pre><code class="language-plaintext">max-players=20</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>整数（1-9999999）</li>
 </ul>
@@ -396,6 +426,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置每个tick花费的最大毫秒数</h3>
 <pre><code class="language-plaintext">max-tick-time=60000</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>整数（0–(2^63 - 1)）</li>
   <li><strong>-1</strong> - 完全停用watchdog</li>
@@ -407,6 +438,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置世界的最大边界范围</h3>
 <pre><code class="language-plaintext">max-world-size=29999984</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>整数（1-29999984）</li>
 </ul>
@@ -417,6 +449,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置客户端服务器列表中显示的服务器信息</h3>
 <pre><code class="language-plaintext">motd=A Minecraft Server</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>字符串 （0-59个字符）</li>
 </ul>
@@ -427,6 +460,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置服务器网络数据包压缩阈值</h3>
 <pre><code class="language-plaintext">network-compression-threshold=256</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>-1 - 关闭压缩</li>
   <li>0 - 全部压缩</li>
@@ -438,6 +472,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否开启正版验证（在线模式）</h3>
 <pre><code class="language-plaintext">online-mode=true</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>false - 关闭</li>
   <li>true - 开启</li>
@@ -448,6 +483,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置使用/<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/op">op</a>命令时OP的权限等级</h3>
 <pre><code class="language-plaintext">op-permission-level=4</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>1 - OP可以绕过重生点保护破环出生点的方块</li>
   <li>2 - OP可以使用所有单人游戏作弊命令（除了/<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/publish">publish</a>，因为不能在服务器上使用；/<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/debug">debug</a>也是）并使用命令方块</li>
@@ -461,6 +497,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置玩家在挂机（<strong>AFK</strong>）状态下多久被服务器踢出</h3>
 <pre><code class="language-plaintext">player-idle-timeout=0</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>整数</li>
 </ul>
@@ -471,6 +508,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否验证服务器发送的ISP/AS和Mojang的验证服务器数据的一致性</h3>
 <pre><code class="language-plaintext">prevent-proxy-connections=false</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li><strong>true</strong> - 启用 服务器将会禁止玩家使用虚拟专用网络或代理</li>
   <li><strong>false</strong> - 禁用 服务器将不会禁止玩家使用虚拟专用网络或代理</li>
@@ -482,6 +520,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否允许玩家之间互相攻击</h3>
 <pre><code class="language-plaintext">pvp=true</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>false - 关闭</li>
   <li>true - 开启</li>
@@ -493,6 +532,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置监听服务器的端口号</h3>
 <pre><code class="language-plaintext">query.port=25565</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>整数（1-65534）</li>
 </ul>
@@ -503,6 +543,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置玩家被踢出服务器前可以发送的数据包数量</h3>
 <pre><code class="language-plaintext">rate-limit=0</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>整数</li>
   <li>0 - 关闭此功能</li>
@@ -514,6 +555,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置RCON远程访问的密码</h3>
 <pre><code class="language-plaintext">rcon.password=</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>数字 + 英文字母</li>
 </ul>
@@ -524,6 +566,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置RCON远程访问的端口号</h3>
 <pre><code class="language-plaintext">rcon.port=25575</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>整数（1-65534)</li>
 </ul>
@@ -534,6 +577,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否强制启用资源包</h3>
 <pre><code class="language-plaintext">require-resource-pack=false</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>false - 关闭</li>
   <li>true - 强制玩家使用服务器指定的资源包进入</li>
@@ -544,6 +588,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置资源包的ID</h3>
 <pre><code class="language-plaintext">resource-pack-id=</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>字符串</li>
 </ul>
@@ -554,6 +599,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置资源包的prompt</h3>
 <pre><code class="language-plaintext">resource-pack-prompt=</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>字符串</li>
 </ul>
@@ -564,6 +610,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置资源包的SHA-1值</h3>
 <pre><code class="language-plaintext">resource-pack-sha1=</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>字符串</li>
 </ul>
@@ -574,7 +621,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置客户端下载资源包的URI链接</h3>
 <pre><code class="language-plaintext">resource-pack=</code></pre>
-<p>以下为各版本数据包大小的限制</p>
+<p>以下为各版本数据包大小的限制：</p>
 <ul>
   <li>50 MiB（1.15-pre5前）</li>
   <li>100 MiB（1.15-pre5到1.18-pre8）</li>
@@ -587,6 +634,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置服务器接收玩家的IP地址</h3>
 <pre><code class="language-plaintext">server-ip=</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>整数 XXX.XXX.XXX.XXX（例如233.252.102.33）</li>
 </ul>
@@ -597,6 +645,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置玩家或群组端接入服务器的端口</h3>
 <pre><code class="language-plaintext">server-port=25565</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>整数（1-65534）</li>
 </ul>
@@ -607,6 +656,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置服务端可更新实体范围的最大值</h3>
 <pre><code class="language-plaintext">simulation-distance=10</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>整数（3-32）</li>
 </ul>
@@ -617,6 +667,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否允许生成动物</h3>
 <pre><code class="language-plaintext">spawn-animals=true</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li><strong>true</strong> -&nbsp;动物可以正常生成</li>
   <li><strong>false</strong> -&nbsp;动物生成后会立即消失</li>
@@ -628,6 +679,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否生成攻击型生物（怪物）</h3>
 <pre><code class="language-plaintext">spawn-monsters=true</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li><strong>true</strong> -&nbsp;怪物会生成于夜晚和黑暗处。</li>
   <li><strong>false</strong> -&nbsp;不会有任何怪物</li>
@@ -639,6 +691,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否允许村民生成</h3>
 <pre><code class="language-plaintext">spawn-npcs=true</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li><strong>true</strong> -&nbsp;启用</li>
   <li><strong>false</strong> -&nbsp;禁用生成</li>
@@ -650,6 +703,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置出生点方块的保护范围</h3>
 <pre><code class="language-plaintext">spawn-protection=16</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>整数（0-29999984）</li>
 </ul>
@@ -660,6 +714,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否开启同步模式写入区块文件</h3>
 <pre><code class="language-plaintext">sync-chunk-writes=true</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li><strong>true</strong> -&nbsp;启用同步模式</li>
   <li><strong>false</strong> -&nbsp;禁用（异步模式？）</li>
@@ -671,6 +726,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>暂时未知作用</h3>
 <pre><code class="language-plaintext">text-filtering-config=</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>未知类型，猜测为字符串</li>
 </ul>
@@ -681,6 +737,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否使用针对Linux平台的数据包收发优化</h3>
 <pre><code class="language-plaintext">use-native-transport=true</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li><strong>true</strong> -&nbsp;启用</li>
   <li><strong>false</strong> -&nbsp;禁用</li>
@@ -692,6 +749,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>设置玩家的最大视距</h3>
 <pre><code class="language-plaintext">view-distance=10</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li>整数（3-32）</li>
 </ul>
@@ -705,6 +763,7 @@ dateCreated: 2023-11-22T03:49:03.197Z
 <p>&nbsp;</p>
 <h3>是否启用服务器的白名单功能</h3>
 <pre><code class="language-plaintext">white-list=false</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li><strong>false</strong> -&nbsp;不使用白名单</li>
   <li><strong>true</strong> -&nbsp;从whitelist.json文件加载白名单</li>
