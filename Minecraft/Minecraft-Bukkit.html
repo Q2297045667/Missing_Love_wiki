@@ -2,7 +2,7 @@
 title: Minecraft-Bukkit
 description: CraftBukkit的配置文件解析说明
 published: true
-date: 2023-12-24T18:53:53.127Z
+date: 2023-12-24T18:55:07.175Z
 tags: bukkit
 editor: ckeditor
 dateCreated: 2023-12-22T18:08:04.920Z
@@ -113,6 +113,7 @@ dateCreated: 2023-12-22T18:08:04.920Z
 <p>&nbsp;</p>
 <h3>是否在查询时返回服务端的插件列表</h3>
 <pre><code class="language-plaintext">query-plugins: true</code></pre>
+<p>以下为具体参数：</p>
 <ul>
   <li><strong>false</strong> -&nbsp;禁止</li>
   <li><strong>true</strong> -&nbsp;允许</li>
@@ -121,8 +122,11 @@ dateCreated: 2023-12-22T18:08:04.920Z
   <p>建议禁止，国内基本用不到，功能比较鸡肋而且在玩家数量过多的时候会浪费微小的带宽资源（即便如此我也要省）</p>
 </blockquote>
 <p>&nbsp;</p>
+<h3>是否允许输出事件警告</h3>
+<pre><code class="language-plaintext">  deprecated-verbose: default</code></pre>
 <p>&nbsp;</p>
-<p>&nbsp; deprecated-verbose: default</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <p>&nbsp; shutdown-message: Server closed</p>
 <p>&nbsp; minimum-api: none</p>
 <p>&nbsp; use-map-color-cache: true</p>
