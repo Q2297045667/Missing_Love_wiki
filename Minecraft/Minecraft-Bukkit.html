@@ -2,172 +2,21 @@
 title: Minecraft-Bukkit
 description: CraftBukkit的配置文件解析说明
 published: true
-date: 2023-12-24T19:02:44.861Z
+date: 2023-12-24T19:08:45.775Z
 tags: bukkit
 editor: ckeditor
 dateCreated: 2023-12-22T18:08:04.920Z
 -->
 
 <h1>CraftBukkit配置解析</h1>
-<p>&nbsp; &nbsp; CraftBukkit 是什么？和Bukkit又是什么关系？</p>
-<p>Bukkit一种供开发者使用的API(应用程序接口)，而CraftBukkit是一种Minecraft官方服务器的拓展服务端，其使用的接口为Bukkit API</p>
-<p>可以说任何基于Bukkit系列的插件服务端都逃不开他</p>
-<p>本片文章部分内容来自：<a href="https://bukkit.fandom.com/wiki/Main_Page">BukkitWiki</a>，<a href="https://bukkit.windit.net/javadoc/">Bukkit 中文文档</a></p>
-<p>&nbsp;</p>
-<p>首先我们先做一下准备工作，生成配置文件</p>
-<ol>
-  <li>下载由<a href="https://getbukkit.org/download/craftbukkit">CraftBukkit (getbukkit.org)</a>提供的服务端文件，以1.20.4为例</li>
-  <li>编写启动脚本并启动服务端</li>
-  <li>修改eula.txt文件中的eula为true并再次启动服务端</li>
-</ol>
-<h1>基本文件结构</h1>
-<p>相比较<a href="/Minecraft/Minecraft-Vanilla">Minecraft-Vanilla</a>（原版服务端）我们会额外得到以下文件</p>
-<figure class="image image-style-align-right"><img src="/minecraft/craftbukkit服务端文件结构.png">
-  <figcaption>CraftBukkit服务端基础文件结构</figcaption>
-</figure>
-<p>bundler</p>
-<ul>
-  <li>libraries----------------------------------依赖库文件夹</li>
-  <li>versions---------------------------------执行程序文件夹</li>
-</ul>
-<p>world_nether-------------------------------从world/DIM1中分离出来的下界文件夹</p>
-<p>world_the_end-----------------------------从world/DIM-1中分离出来的末地文件夹</p>
-<p>bukkit.yml------------------------------------CraftBukkit的主要配置文件</p>
-<p>permissions.yml--------------------------自带的权限文件</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<h1>bukkit.yml</h1>
-<p>相比较server.properties，bukkit.yml的文件储存格式为yml</p>
-<p>我们将其内容分段解析</p>
-<h2>settings:（全局配置）</h2>
-<h3><i>是否允许末地生成</i></h3>
-<pre><code class="language-plaintext">allow-end: true</code></pre>
-<p>&nbsp;以下为具体参数：</p>
-<ul>
-  <li><strong>false</strong> -&nbsp;末地传送门不会生效并且不会生成末地</li>
-  <li><strong>true</strong> -&nbsp;玩家可以通过末地传送门前往末地</li>
-</ul>
-<blockquote>
-  <p><i>与 server.properties 文件中的 allow-nether=true 功能相似，在类似于大厅或者游戏服中可以直接禁止</i></p>
-</blockquote>
-<p>&nbsp;</p>
-<h3>是否允许那条烦人的"[WARNING] Can't keep up! Did the system time change, or is the server overloaded?"输出</h3>
-<pre><code class="language-plaintext">warn-on-overload: true</code></pre>
-<p>&nbsp;以下为具体参数：</p>
-<ul>
-  <li><strong>false</strong> -&nbsp;禁止输出</li>
-  <li><strong>true</strong> -&nbsp;允许输出</li>
-</ul>
-<blockquote>
-  <p>注：该输出只在服务端发生滞后之后输出到控制台和日志文件中（实际上没什么卵用，他的触发频率很高，无论你的服务器性能如何，建议直接禁用）</p>
-</blockquote>
-<p>&nbsp;</p>
-<h3>CraftBukkit权限文件路径和名称</h3>
-<pre><code class="language-plaintext">permissions-file: permissions.yml</code></pre>
-<p>以下为具体参数：</p>
-<ul>
-  <li>字符串 - 文件路径和文件名（需要yml格式）</li>
-</ul>
-<blockquote>
-  <p>CraftBukkit 自带的权限功能不是很好用配置起来麻烦，如果你的服务器功能比较少或者不想额外添加一个插件增加服务器负担的话，还是建议使用 CraftBukkit 自带的</p>
-</blockquote>
-<p>&nbsp;</p>
-<h3>插件更新文件夹</h3>
-<pre><code class="language-plaintext">update-folder: update</code></pre>
-<p>以下为具体参数：</p>
-<ul>
-  <li>字符串 - 文件夹路径</li>
-</ul>
-<blockquote>
-  <p>给插件提供的更新文件夹，在服务器重启之后会自动替换老版本插件，该文件夹必须位于 plugins 文件夹中，无法使用绝对路径</p>
-</blockquote>
-<p>&nbsp;</p>
-<h3>是否允许使用/timings命令</h3>
-<pre><code class="language-plaintext">plugin-profiling: false</code></pre>
-<p>以下为具体参数：</p>
-<ul>
-  <li><strong>false</strong> -&nbsp;禁止输出</li>
-  <li><strong>true</strong> -&nbsp;允许输出</li>
-</ul>
-<blockquote>
-  <p>用来分析服务端的各个事件的资源占用和性能消耗，一般来说大多数的问题都可以通过他来解决</p>
-</blockquote>
-<p>&nbsp;</p>
-<h3>设置玩家重新链接到服务器的间隔时间（毫秒）</h3>
-<pre><code class="language-plaintext">connection-throttle: 4000</code></pre>
-<p>以下为具体参数：</p>
-<ul>
-  <li>0 -&nbsp;禁止</li>
-  <li>4000 -&nbsp;默认</li>
-</ul>
-<blockquote>
-  <p>在使用群组端的情况下建议设置为0禁止，因为群组端自带这个功能，禁用该功能有助于玩家在子服之间快速切换</p>
-</blockquote>
-<p>&nbsp;</p>
-<h3>是否在查询时返回服务端的插件列表</h3>
-<pre><code class="language-plaintext">query-plugins: true</code></pre>
-<p>以下为具体参数：</p>
-<ul>
-  <li><strong>false</strong> -&nbsp;禁止</li>
-  <li><strong>true</strong> -&nbsp;允许</li>
-</ul>
-<blockquote>
-  <p>建议禁止，国内基本用不到，功能比较鸡肋而且在玩家数量过多的时候会浪费微小的带宽资源（即便如此我也要省）</p>
-</blockquote>
-<p>&nbsp;</p>
-<h3>是否允许输出事件警告</h3>
-<pre><code class="language-plaintext">deprecated-verbose: default</code></pre>
-<p>以下为具体参数：</p>
-<ul>
-  <li>default - 始终显示警告</li>
-  <li><strong>false</strong> -&nbsp;禁止</li>
-  <li><strong>true</strong> -&nbsp;允许</li>
-</ul>
-<blockquote>
-  <p>在插件注册了过时的事件或者不推荐的事件时会输出警告消息（一般人也看不懂，建议直接禁止）</p>
-</blockquote>
-<p>&nbsp;</p>
-<h3>设置服务端关闭时像玩家发送的消息</h3>
-<pre><code class="language-plaintext">shutdown-message: Server closed</code></pre>
+<p>世界名称</p>
+<pre><code class="language-plaintext">world:</code></pre>
 <p>以下为具体参数：</p>
 <ul>
   <li>字符串</li>
 </ul>
-<blockquote>
-  <p>虽然用处不大但还是建议翻译成中文，中文翻译“服务器关闭”</p>
-</blockquote>
-<p>&nbsp;</p>
-<h3>设置minimum-api的参数</h3>
-<pre><code class="language-plaintext">minimum-api: none</code></pre>
-<p>以下为具体参数：</p>
-<ul>
-  <li>字符串</li>
-</ul>
-<blockquote>
-  <p>意义不明，不过一般人用不到就是了</p>
-</blockquote>
-<p>&nbsp;</p>
-<h3>是否使用地图颜色缓存</h3>
-<pre><code class="language-plaintext">use-map-color-cache: true</code></pre>
-<p>以下为具体参数：</p>
-<ul>
-  <li><strong>false</strong> -&nbsp;禁止</li>
-  <li><strong>true</strong> -&nbsp;允许</li>
-</ul>
-<blockquote>
-  <p>&nbsp;</p>
-</blockquote>
-<p>&nbsp;</p>
-<h2>worlds:</h2>
-<p>&nbsp; world:</p>
-<p>&nbsp; &nbsp; generator: Terra:OVERWORLD</p>
+<p>地形生成器</p>
+<pre><code class="language-plaintext">    generator: Terra:OVERWORLD</code></pre>
 <p>spawn-limits:</p>
 <pre><code class="language-plaintext">monsters: 70</code></pre>
 <p>&nbsp; animals: 10</p>
