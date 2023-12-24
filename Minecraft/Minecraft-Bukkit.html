@@ -2,7 +2,7 @@
 title: Minecraft-Bukkit
 description: CraftBukkit的配置文件解析说明
 published: true
-date: 2023-12-24T18:23:49.526Z
+date: 2023-12-24T18:27:07.195Z
 tags: bukkit
 editor: ckeditor
 dateCreated: 2023-12-22T18:08:04.920Z
@@ -55,7 +55,7 @@ dateCreated: 2023-12-22T18:08:04.920Z
   <li><strong>true</strong> -&nbsp;玩家可以通过末地传送门前往末地</li>
 </ul>
 <blockquote>
-  <p><i>与server.properties文件中的allow-nether=true功能相似，在类似于大厅或者游戏服中可以直接禁止</i></p>
+  <p><i>与 server.properties 文件中的 allow-nether=true 功能相似，在类似于大厅或者游戏服中可以直接禁止</i></p>
 </blockquote>
 <p>&nbsp;</p>
 <h3>是否允许那条烦人的"[WARNING] Can't keep up! Did the system time change, or is the server overloaded?"输出</h3>
@@ -76,13 +76,21 @@ dateCreated: 2023-12-22T18:08:04.920Z
   <li>字符串 - 文件路径和文件名（需要yml格式）</li>
 </ul>
 <blockquote>
-  <p>CraftBukkit自带的权限功能不是很好用配置起来麻烦，如果你的服务器功能比较少或者不想额外添加一个插件增加服务器负担的话，还是建议使用CraftBukkit自带的</p>
+  <p>CraftBukkit 自带的权限功能不是很好用配置起来麻烦，如果你的服务器功能比较少或者不想额外添加一个插件增加服务器负担的话，还是建议使用 CraftBukkit 自带的</p>
+</blockquote>
+<p>&nbsp;</p>
+<h3>插件更新文件夹</h3>
+<pre><code class="language-plaintext">  update-folder: update</code></pre>
+<p>以下为具体参数：</p>
+<ul>
+  <li>字符串 - 文件夹路径</li>
+</ul>
+<blockquote>
+  <p>给插件提供的更新文件夹，在服务器重启之后会自动替换老版本插件（该文件夹必须位于 plugins 文件夹中，无法使用绝对路径）</p>
 </blockquote>
 <p>&nbsp;</p>
 <blockquote>
   <ul>
-    <li>&nbsp; #&nbsp;</li>
-    <li>&nbsp; update-folder: update</li>
     <li>&nbsp; plugin-profiling: false</li>
     <li>&nbsp; connection-throttle: 4000</li>
     <li>&nbsp; query-plugins: true</li>
