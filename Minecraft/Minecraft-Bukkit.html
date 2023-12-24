@@ -2,7 +2,7 @@
 title: Minecraft-Bukkit
 description: CraftBukkit的配置文件解析说明
 published: true
-date: 2023-12-24T18:32:09.369Z
+date: 2023-12-24T18:38:07.356Z
 tags: bukkit
 editor: ckeditor
 dateCreated: 2023-12-22T18:08:04.920Z
@@ -89,8 +89,16 @@ dateCreated: 2023-12-22T18:08:04.920Z
   <p>给插件提供的更新文件夹，在服务器重启之后会自动替换老版本插件（该文件夹必须位于 plugins 文件夹中，无法使用绝对路径）</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>&nbsp;</h3>
+<h3>是否允许使用/timings命令</h3>
 <pre><code class="language-plaintext">plugin-profiling: false</code></pre>
+<p>以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;禁止输出</li>
+  <li><strong>true</strong> -&nbsp;允许输出</li>
+</ul>
+<blockquote>
+  <p>用来分析服务端的各个事件的资源占用和性能消耗，一般来说大多数的问题都可以通过他来解决</p>
+</blockquote>
 <p>&nbsp;</p>
 <p>&nbsp; connection-throttle: 4000</p>
 <p>&nbsp;</p>
