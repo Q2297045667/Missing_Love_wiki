@@ -2,7 +2,7 @@
 title: Minecraft-Bukkit
 description: CraftBukkit的配置文件解析说明
 published: true
-date: 2023-12-24T18:47:07.787Z
+date: 2023-12-24T18:50:25.371Z
 tags: bukkit
 editor: ckeditor
 dateCreated: 2023-12-22T18:08:04.920Z
@@ -101,17 +101,27 @@ dateCreated: 2023-12-22T18:08:04.920Z
 </blockquote>
 <p>&nbsp;</p>
 <h3>设置玩家重新链接到服务器的间隔时间（毫秒）</h3>
-<pre><code class="language-plaintext">  connection-throttle: 4000</code></pre>
+<pre><code class="language-plaintext">connection-throttle: 4000</code></pre>
 <p>以下为具体参数：</p>
 <ul>
   <li>0 -&nbsp;禁止</li>
   <li>4000 -&nbsp;默认</li>
 </ul>
 <blockquote>
-  <p>在使用群组端的情况下建议设置为0禁止，因为群组端自带这个功能</p>
+  <p>在使用群组端的情况下建议设置为0禁止，因为群组端自带这个功能，禁用该功能有助于玩家在子服之间快速切换</p>
 </blockquote>
 <p>&nbsp;</p>
-<p>&nbsp; query-plugins: true</p>
+<h3>是否在查询时返回服务端的插件列表</h3>
+<pre><code class="language-plaintext">query-plugins: true</code></pre>
+<ul>
+  <li><strong>false</strong> -&nbsp;禁止</li>
+  <li><strong>true</strong> -&nbsp;允许</li>
+</ul>
+<blockquote>
+  <p>&nbsp;</p>
+</blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <p>&nbsp; deprecated-verbose: default</p>
 <p>&nbsp; shutdown-message: Server closed</p>
 <p>&nbsp; minimum-api: none</p>
