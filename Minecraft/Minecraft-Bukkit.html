@@ -2,7 +2,7 @@
 title: Minecraft-Bukkit
 description: CraftBukkit的配置文件解析说明
 published: true
-date: 2023-12-24T18:10:11.472Z
+date: 2023-12-24T18:11:24.868Z
 tags: bukkit
 editor: ckeditor
 dateCreated: 2023-12-22T18:08:04.920Z
@@ -49,15 +49,19 @@ dateCreated: 2023-12-22T18:08:04.920Z
 <p>settings:</p>
 <p># 全局配置</p>
 <p>&nbsp;</p>
-<pre><code class="language-plaintext">  allow-end: true</code></pre>
+<pre><code class="language-plaintext">allow-end: true</code></pre>
 <p>&nbsp; 以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;末地传送门不会生效并且不会生成末地</li>
+  <li><strong>true</strong> -&nbsp;玩家可以通过末地传送门前往末地</li>
+</ul>
 <blockquote>
-  <p><i>&nbsp; # 与server.properties文件中的allow-nether=true功能相似，是否允许末地生成</i></p>
-  <p><i>&nbsp; # 注：在类似于大厅或者游戏服中可以直接禁止</i></p>
+  <p><i>与server.properties文件中的allow-nether=true功能相似，是否允许末地生成</i></p>
+  <p><i>注：在类似于大厅或者游戏服中可以直接禁止</i></p>
 </blockquote>
+<p>&nbsp;</p>
 <blockquote>
   <ul>
-    <li>&nbsp;</li>
     <li>&nbsp; warn-on-overload: true</li>
     <li>&nbsp; # 是否允许那条烦人的"[WARNING] Can't keep up! Did the system time change, or is the server overloaded?"输出</li>
     <li>&nbsp; # 注：该输出只在服务端发生滞后之后输出到日志文件中（实际上没什么卵用，他的触发频率很高，无论你的服务器性能如何，建议直接禁用）</li>
