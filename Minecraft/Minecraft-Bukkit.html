@@ -2,7 +2,7 @@
 title: Minecraft-Bukkit
 description: CraftBukkit的配置文件解析说明
 published: true
-date: 2023-12-24T18:27:07.195Z
+date: 2023-12-24T18:28:43.941Z
 tags: bukkit
 editor: ckeditor
 dateCreated: 2023-12-22T18:08:04.920Z
@@ -89,58 +89,48 @@ dateCreated: 2023-12-22T18:08:04.920Z
   <p>给插件提供的更新文件夹，在服务器重启之后会自动替换老版本插件（该文件夹必须位于 plugins 文件夹中，无法使用绝对路径）</p>
 </blockquote>
 <p>&nbsp;</p>
-<blockquote>
-  <ul>
-    <li>&nbsp; plugin-profiling: false</li>
-    <li>&nbsp; connection-throttle: 4000</li>
-    <li>&nbsp; query-plugins: true</li>
-    <li>&nbsp; deprecated-verbose: default</li>
-    <li>&nbsp; shutdown-message: Server closed</li>
-    <li>&nbsp; minimum-api: none</li>
-    <li>&nbsp; use-map-color-cache: true</li>
-  </ul>
-</blockquote>
-<blockquote>
-  <p>worlds:</p>
-  <ul>
-    <li>&nbsp; world:</li>
-    <li>&nbsp; &nbsp; generator: Terra:OVERWORLD</li>
-  </ul>
-</blockquote>
-<blockquote>
-  <p>spawn-limits:</p>
-  <pre><code class="language-plaintext">  monsters: 70</code></pre>
-  <ul>
-    <li>&nbsp; animals: 10</li>
-    <li>&nbsp; water-animals: 5</li>
-    <li>&nbsp; water-ambient: 20</li>
-    <li>&nbsp; water-underground-creature: 5</li>
-    <li>&nbsp; axolotls: 5</li>
-    <li>&nbsp; ambient: 15</li>
-  </ul>
-</blockquote>
-<blockquote>
-  <p>chunk-gc:</p>
-  <ul>
-    <li>&nbsp; period-in-ticks: 600</li>
-  </ul>
-</blockquote>
-<blockquote>
-  <p>ticks-per:</p>
-  <ul>
-    <li>&nbsp; animal-spawns: 400</li>
-    <li>&nbsp; monster-spawns: 1</li>
-    <li>&nbsp; water-spawns: 1</li>
-    <li>&nbsp; water-ambient-spawns: 1</li>
-    <li>&nbsp; water-underground-creature-spawns: 1</li>
-    <li>&nbsp; axolotl-spawns: 1</li>
-    <li>&nbsp; ambient-spawns: 1</li>
-    <li>&nbsp; autosave: 6000</li>
-  </ul>
-</blockquote>
-<blockquote>
-  <p>aliases: now-in-commands.yml</p>
-</blockquote>
+<h3>&nbsp;</h3>
+<pre><code class="language-plaintext">  plugin-profiling: false</code></pre>
+<p>&nbsp;</p>
+<p>&nbsp; connection-throttle: 4000</p>
+<p>&nbsp;</p>
+<p>&nbsp; query-plugins: true</p>
+<p>&nbsp; deprecated-verbose: default</p>
+<p>&nbsp; shutdown-message: Server closed</p>
+<p>&nbsp; minimum-api: none</p>
+<p>&nbsp; use-map-color-cache: true</p>
+<h2>worlds:</h2>
+<ul>
+  <li>&nbsp; world:</li>
+  <li>&nbsp; &nbsp; generator: Terra:OVERWORLD</li>
+  <li>&nbsp;</li>
+</ul>
+<p>spawn-limits:</p>
+<pre><code class="language-plaintext">  monsters: 70</code></pre>
+<ul>
+  <li>&nbsp; animals: 10</li>
+  <li>&nbsp; water-animals: 5</li>
+  <li>&nbsp; water-ambient: 20</li>
+  <li>&nbsp; water-underground-creature: 5</li>
+  <li>&nbsp; axolotls: 5</li>
+  <li>&nbsp; ambient: 15</li>
+</ul>
+<p>chunk-gc:</p>
+<ul>
+  <li>&nbsp; period-in-ticks: 600</li>
+</ul>
+<p>ticks-per:</p>
+<ul>
+  <li>&nbsp; animal-spawns: 400</li>
+  <li>&nbsp; monster-spawns: 1</li>
+  <li>&nbsp; water-spawns: 1</li>
+  <li>&nbsp; water-ambient-spawns: 1</li>
+  <li>&nbsp; water-underground-creature-spawns: 1</li>
+  <li>&nbsp; axolotl-spawns: 1</li>
+  <li>&nbsp; ambient-spawns: 1</li>
+  <li>&nbsp; autosave: 6000</li>
+</ul>
+<p>aliases: now-in-commands.yml</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
