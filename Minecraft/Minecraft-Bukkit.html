@@ -2,7 +2,7 @@
 title: Minecraft-Bukkit
 description: CraftBukkit的配置文件解析说明
 published: true
-date: 2023-12-24T18:08:41.457Z
+date: 2023-12-24T18:10:11.472Z
 tags: bukkit
 editor: ckeditor
 dateCreated: 2023-12-22T18:08:04.920Z
@@ -46,14 +46,16 @@ dateCreated: 2023-12-22T18:08:04.920Z
 <h1>bukkit.yml</h1>
 <p>相比较server.properties，bukkit.yml的文件储存格式为yml</p>
 <p>我们将其内容分段解析</p>
+<p>settings:</p>
+<p># 全局配置</p>
+<p>&nbsp;</p>
+<pre><code class="language-plaintext">  allow-end: true</code></pre>
+<p>&nbsp; 以下为具体参数：</p>
 <blockquote>
-  <p>settings:</p>
-  <p># 全局配置</p>
-  <p>&nbsp;</p>
-  <pre><code class="language-plaintext">  allow-end: true</code></pre>
-  <p>&nbsp;</p>
-  <p>&nbsp; # 与server.properties文件中的allow-nether=true功能相似，是否允许末地生成</p>
-  <p>&nbsp; # 注：在类似于大厅或者游戏服中可以直接禁止</p>
+  <p><i>&nbsp; # 与server.properties文件中的allow-nether=true功能相似，是否允许末地生成</i></p>
+  <p><i>&nbsp; # 注：在类似于大厅或者游戏服中可以直接禁止</i></p>
+</blockquote>
+<blockquote>
   <ul>
     <li>&nbsp;</li>
     <li>&nbsp; warn-on-overload: true</li>
