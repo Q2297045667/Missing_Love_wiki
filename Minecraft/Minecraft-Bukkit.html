@@ -2,7 +2,7 @@
 title: Minecraft-Bukkit
 description: CraftBukkit的配置文件解析说明
 published: true
-date: 2023-12-24T18:02:56.098Z
+date: 2023-12-24T18:05:10.648Z
 tags: bukkit
 editor: ckeditor
 dateCreated: 2023-12-22T18:08:04.920Z
@@ -44,18 +44,20 @@ dateCreated: 2023-12-22T18:08:04.920Z
 <p>&nbsp;</p>
 <h1>bukkit.yml</h1>
 <p>相比较server.properties，bukkit.yml的文件储存格式为yml</p>
+<p>我们将其内容分段解析</p>
 <pre><code class="language-plaintext">settings:
 # 全局配置
 
   allow-end: true
- # 与server.properties文件中的allow-nether=true功能相似，是否允许末地生成
- # 注：在类似于大厅或者游戏服可以直接禁止
+  # 与server.properties文件中的allow-nether=true功能相似，是否允许末地生成
+  # 注：在类似于大厅或者游戏服中可以直接禁止
 
   warn-on-overload: true
- #  是否禁用那条烦人的"[WARNING] Can't keep up! Did the system time change, or is the server overloaded?"输出
- # 注：该输出只在服务端发生滞后之后输出到日志文件中（实际上没什么卵用，他的触发频率很高，无论你的服务器性能如何）
+  # 是否允许那条烦人的"[WARNING] Can't keep up! Did the system time change, or is the server overloaded?"输出
+  # 注：该输出只在服务端发生滞后之后输出到日志文件中（实际上没什么卵用，他的触发频率很高，无论你的服务器性能如何，建议直接禁用）
 
   permissions-file: permissions.yml
+  # 
   update-folder: update
   plugin-profiling: false
   connection-throttle: 4000
@@ -73,8 +75,8 @@ dateCreated: 2023-12-22T18:08:04.920Z
 </blockquote>
 <blockquote>
   <p>spawn-limits:</p>
+  <pre><code class="language-plaintext">  monsters: 70</code></pre>
   <ul>
-    <li>&nbsp; monsters: 70</li>
     <li>&nbsp; animals: 10</li>
     <li>&nbsp; water-animals: 5</li>
     <li>&nbsp; water-ambient: 20</li>
