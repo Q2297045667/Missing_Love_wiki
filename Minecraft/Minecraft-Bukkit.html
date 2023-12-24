@@ -2,7 +2,7 @@
 title: Minecraft-Bukkit
 description: CraftBukkit的配置文件解析说明
 published: true
-date: 2023-12-24T17:46:03.081Z
+date: 2023-12-24T18:02:07.817Z
 tags: bukkit
 editor: ckeditor
 dateCreated: 2023-12-22T18:08:04.920Z
@@ -44,23 +44,26 @@ dateCreated: 2023-12-22T18:08:04.920Z
 <p>&nbsp;</p>
 <h1>bukkit.yml</h1>
 <p>相比较server.properties，bukkit.yml的文件储存格式为yml</p>
-<blockquote>
-  <p>settings:</p>
-  <ul>
-    <li>&nbsp; allow-end: true</li>
-    <li>&nbsp; warn-on-overload: true</li>
-    <li>&nbsp;</li>
-    <li>&nbsp; permissions-file: permissions.yml</li>
-    <li>&nbsp; update-folder: update</li>
-    <li>&nbsp; plugin-profiling: false</li>
-    <li>&nbsp; connection-throttle: 4000</li>
-    <li>&nbsp; query-plugins: true</li>
-    <li>&nbsp; deprecated-verbose: default</li>
-    <li>&nbsp; shutdown-message: Server closed</li>
-    <li>&nbsp; minimum-api: none</li>
-    <li>&nbsp; use-map-color-cache: true</li>
-  </ul>
-</blockquote>
+<p>settings:</p>
+<pre><code class="language-plaintext"># 全局配置</code></pre>
+<p>&nbsp;</p>
+<p>&nbsp; allow-end: true</p>
+<p>&nbsp;# 与server.properties文件中的allow-nether=true功能相似，是否允许末地生成</p>
+<p>&nbsp;# 注：在类似于大厅或者游戏服可以直接禁止</p>
+<p>&nbsp;</p>
+<p>&nbsp; warn-on-overload: true</p>
+<p>&nbsp;# &nbsp;是否禁用那条烦人的"[WARNING] Can't keep up! Did the system time change, or is the server overloaded?"输出</p>
+<p>&nbsp;# 注：该输出只在服务端发生滞后之后输出到日志文件中（实际上没什么卵用，他的触发频率很高，无论你的服务器性能如何）</p>
+<p>&nbsp;</p>
+<p>&nbsp; permissions-file: permissions.yml</p>
+<p>&nbsp; update-folder: update</p>
+<p>&nbsp; plugin-profiling: false</p>
+<p>&nbsp; connection-throttle: 4000</p>
+<p>&nbsp; query-plugins: true</p>
+<p>&nbsp; deprecated-verbose: default</p>
+<p>&nbsp; shutdown-message: Server closed</p>
+<p>&nbsp; minimum-api: none</p>
+<p>&nbsp; use-map-color-cache: true</p>
 <blockquote>
   <p>worlds:</p>
   <ul>
