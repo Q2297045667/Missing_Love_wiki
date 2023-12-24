@@ -2,7 +2,7 @@
 title: Minecraft-Bukkit
 description: CraftBukkit的配置文件解析说明
 published: true
-date: 2023-12-24T18:38:47.954Z
+date: 2023-12-24T18:47:07.787Z
 tags: bukkit
 editor: ckeditor
 dateCreated: 2023-12-22T18:08:04.920Z
@@ -100,7 +100,16 @@ dateCreated: 2023-12-22T18:08:04.920Z
   <p>用来分析服务端的各个事件的资源占用和性能消耗，一般来说大多数的问题都可以通过他来解决</p>
 </blockquote>
 <p>&nbsp;</p>
-<p>&nbsp; connection-throttle: 4000</p>
+<h3>设置玩家重新链接到服务器的间隔时间（毫秒）</h3>
+<pre><code class="language-plaintext">  connection-throttle: 4000</code></pre>
+<p>以下为具体参数：</p>
+<ul>
+  <li>0 -&nbsp;禁止</li>
+  <li>4000 -&nbsp;默认</li>
+</ul>
+<blockquote>
+  <p>在使用群组端的情况下建议设置为0禁止，因为群组端自带这个功能</p>
+</blockquote>
 <p>&nbsp;</p>
 <p>&nbsp; query-plugins: true</p>
 <p>&nbsp; deprecated-verbose: default</p>
