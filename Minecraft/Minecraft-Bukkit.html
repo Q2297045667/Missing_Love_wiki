@@ -2,7 +2,7 @@
 title: Minecraft-Bukkit
 description: CraftBukkit的配置文件解析说明
 published: true
-date: 2023-12-25T16:03:25.930Z
+date: 2023-12-30T17:28:02.109Z
 tags: bukkit, minecraft, server
 editor: ckeditor
 dateCreated: 2023-12-22T18:08:04.920Z
@@ -178,8 +178,8 @@ dateCreated: 2023-12-22T18:08:04.920Z
 <p>以下为具体参数：</p>
 <ul>
   <li>worlds: &nbsp;---------------------------------------世界配置</li>
-  <li>&nbsp; world: &nbsp;---------------------------------------世界名称（列如world_nether等）</li>
-  <li>&nbsp; &nbsp; generator: XXXX-----------------------世界生成器</li>
+  <li>world: &nbsp;---------------------------------------世界名称（列如world_nether等）</li>
+  <li>generator: XXXX-----------------------世界生成器</li>
 </ul>
 <blockquote>
   <p>这个配置默认是隐藏的，如果想要自定义地形插件需要知道该插件的生成器名称和类型，上列以 Terra 为例</p>
@@ -240,7 +240,7 @@ autosave: 6000</code></pre>
   <li>autosave: ----------------------------------区块文件保存</li>
 </ul>
 <blockquote>
-  <p>原版默认的区块保存时间是900毫秒，在大厅或者小游戏服等对地图区块保存不敏感的可以尝试多加几个0，0或者0以下的值会自动重置为默认的6000</p>
+  <p>原版默认的区块保存时间是900毫秒，Bukkit这里默认为6000，在大厅或者小游戏服等对地图区块保存不敏感的可以尝试多加几个0，0或者0以下的值会自动重置为默认的6000</p>
 </blockquote>
 <p>&nbsp;</p>
 <h3>设置指令文件</h3>
