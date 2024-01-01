@@ -2,7 +2,7 @@
 title: Minecraft-Bukkit
 description: CraftBukkit的配置文件解析说明
 published: true
-date: 2024-01-01T18:14:55.204Z
+date: 2024-01-01T19:16:53.358Z
 tags: bukkit, minecraft, server
 editor: ckeditor
 dateCreated: 2023-12-22T18:08:04.920Z
@@ -273,9 +273,21 @@ aliases:
   <p>Bukkit提供过一些和原版一样的指令，第一个列表可以用来覆盖Bukkit指令以使用原版指令，详细可阅读<a href="https://bukkit.fandom.com/wiki/Commands.yml">BukkitWiki</a></p>
 </blockquote>
 <h1>permissions.yml</h1>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p>以下为文件格式配置内容</p>
+<pre><code class="language-plaintext">server.basics:
+       description: 基础权限
+       default: true
+       children:
+          essentials.afk: true
+</code></pre>
+<p>以下为具体参数：</p>
+<ul>
+  <li>server.basics:······················································使用mojang提供的原版指令列表</li>
+  <li>&nbsp; &nbsp; &nbsp; &nbsp;description: 基础权限···································</li>
+  <li>&nbsp; &nbsp; &nbsp; &nbsp;default: true···················································</li>
+  <li>&nbsp; &nbsp; &nbsp; &nbsp;children:·························································</li>
+  <li>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; essentials.afk: true····································</li>
+</ul>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
