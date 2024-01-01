@@ -2,7 +2,7 @@
 title: Minecraft-Bukkit
 description: CraftBukkit的配置文件解析说明
 published: true
-date: 2024-01-01T17:19:13.602Z
+date: 2024-01-01T18:04:58.711Z
 tags: bukkit, minecraft, server
 editor: ckeditor
 dateCreated: 2023-12-22T18:08:04.920Z
@@ -177,9 +177,9 @@ dateCreated: 2023-12-22T18:08:04.920Z
   	...</code></pre>
 <p>以下为具体参数：</p>
 <ul>
-  <li>worlds: &nbsp;---------------------------------------世界配置</li>
-  <li>world: &nbsp;---------------------------------------世界名称（列如world_nether等）</li>
-  <li>generator: XXXX-----------------------世界生成器</li>
+  <li>worlds: &nbsp;·······························································世界配置</li>
+  <li>world: &nbsp;·································································世界名称（列如world_nether等）</li>
+  <li>generator: XXXX··················································世界生成器</li>
 </ul>
 <blockquote>
   <p>这个配置默认是隐藏的，如果想要自定义地形插件需要知道该插件的生成器名称和类型，上列以 Terra 为例</p>
@@ -196,13 +196,13 @@ axolotls: 5
 ambient: 15</code></pre>
 <p>以下为具体参数：</p>
 <ul>
-  <li>monsters: -----------------------------------怪物（僵尸，骷髅，蜘蛛等）</li>
-  <li>animals: --------------------------------------动物（羊羊，牛牛，鸡鸡等）</li>
-  <li>water-animals: ----------------------------水生生物（鲫鱼，海豚等）</li>
-  <li>water-ambient: ---------------------------水生环境生物</li>
-  <li>water-underground-creature: -----水生地底生物</li>
-  <li>axolotls: -------------------------------------美西螈</li>
-  <li>ambient: ------------------------------------环境生物（蝙蝠）</li>
+  <li>monsters: ···························································怪物（僵尸，骷髅，蜘蛛等）</li>
+  <li>animals: ······························································动物（羊羊，牛牛，鸡鸡等）</li>
+  <li>water-animals: ···················································水生生物（鲫鱼，海豚等）</li>
+  <li>water-ambient: ···················································水生环境生物</li>
+  <li>water-underground-creature: ····························水生地底生物</li>
+  <li>axolotls: ······························································美西螈</li>
+  <li>ambient: ·····························································环境生物（蝙蝠）</li>
 </ul>
 <blockquote>
   <p>可以根据需要进行限制，个人建议直接把蝙蝠关闭（0为禁用生成），没有凋落物还占用生物上限</p>
@@ -230,14 +230,14 @@ ambient-spawns: 1
 autosave: 6000</code></pre>
 <p>以下为具体参数：</p>
 <ul>
-  <li>animal-spawns: -------------------------动物（羊羊，牛牛，鸡鸡等）</li>
-  <li>monster-spawns: ----------------------怪物（僵尸，骷髅，蜘蛛等）</li>
-  <li>water-spawns: --------------------------水生生物（鲫鱼，海豚等）</li>
-  <li>water-ambient-spawns: ------------水生环境生物</li>
-  <li>water-underground-creature-spawns: ---------水生地底生物</li>
-  <li>axolotl-spawns: ------------------------美西螈</li>
-  <li>ambient-spawns: ----------------------环境生物（蝙蝠）</li>
-  <li>autosave: ----------------------------------区块文件保存</li>
+  <li>animal-spawns: ·················································动物（羊羊，牛牛，鸡鸡等）</li>
+  <li>monster-spawns: ··············································怪物（僵尸，骷髅，蜘蛛等）</li>
+  <li>water-spawns: ···················································水生生物（鲫鱼，海豚等）</li>
+  <li>water-ambient-spawns: ····································水生环境生物</li>
+  <li>water-underground-creature-spawns: ·············水生地底生物</li>
+  <li>axolotl-spawns: ·················································美西螈</li>
+  <li>ambient-spawns: ···············································环境生物（蝙蝠）</li>
+  <li>autosave: ···························································区块文件保存</li>
 </ul>
 <blockquote>
   <p>原版默认的区块保存时间是900毫秒，Bukkit这里默认为6000，在大厅或者小游戏服等对地图区块保存不敏感的可以尝试多加几个0，0或者0以下的值会自动重置为默认的6000</p>
@@ -255,12 +255,23 @@ autosave: 6000</code></pre>
 <p>&nbsp;</p>
 <h1>commands.yml</h1>
 <h3>强制服务器使用原版命令和指定指令的别名</h3>
-<pre><code class="language-plaintext">command-block-overrides: []                #
-ignore-vanilla-permissions: false          #
-aliases:                                   #
-  icanhasbukkit:                           #
-  - version $1-                            #</code></pre>
-<p><br>&nbsp;</p>
+<p>以下为文件默认生成内容</p>
+<pre><code class="language-plaintext">command-block-overrides: []
+ignore-vanilla-permissions: false
+aliases:
+  icanhasbukkit:
+  - version $1-</code></pre>
+<p>以下为具体参数：</p>
+<ul>
+  <li>command-block-overrides: []·····························</li>
+  <li>ignore-vanilla-permissions: false······················</li>
+  <li>aliases:································································</li>
+  <li>&nbsp; icanhasbukkit:··················································</li>
+  <li>&nbsp; - version $1-······················································</li>
+</ul>
+<blockquote>
+  <p>详细可阅读<a href="https://bukkit.fandom.com/wiki/Commands.yml">BukkitWiki</a></p>
+</blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
