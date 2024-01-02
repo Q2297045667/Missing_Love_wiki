@@ -2,11 +2,21 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-01-02T16:18:57.942Z
+date: 2024-01-02T16:29:52.073Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-01-02T16:03:02.772Z
 -->
 
-<h1 class="toc-header" id="header"> Header</h1>
-<p>Your content here</p>
+<h1>Spigot配置解析</h1>
+<p>&nbsp; &nbsp; Spigot是SpigotMC团队基于CraftBukkit制作的一个整合了相关优化和BUG修复的服务端。</p>
+<p>Spigot在其BukkitAPI的基础上添加了很多自己的API接口（Spigot API）</p>
+<p>本片文章部分内容来自：<a href="https://www.spigotmc.org/wiki/spigot/">SpigotWiki</a>，<a href="https://lingluo-hub.gitee.io/spigotmc/">Spigot 中文开发指南</a></p>
+<p>&nbsp;</p>
+<p>首先我们先做一下准备工作，生成配置文件</p>
+<ol>
+  <li>下载由spigotmc提供的构建工具（<a href="https://hub.spigotmc.org/jenkins/job/BuildTools/">BuildTools</a>）</li>
+  <li>按照<a href="https://hub.spigotmc.org/jenkins/job/BuildTools/">BuildToolsWiki</a>编写工具启动脚本，例如版本1.20.4，我们需要在脚本中写入<code><strong>java</strong> -jar BuildTools.jar --rev 1.20.4</code></li>
+  <li>&nbsp;</li>
+  <li>修改eula.txt文件中的eula为true并再次启动服务端</li>
+</ol>
