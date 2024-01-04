@@ -2,7 +2,7 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-01-04T17:10:48.431Z
+date: 2024-01-04T17:15:55.360Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-01-02T16:03:02.772Z
@@ -126,13 +126,19 @@ dateCreated: 2024-01-02T16:03:02.772Z
   <li><strong>true</strong> -&nbsp;开启</li>
 </ul>
 <blockquote>
-  <p>和上一个选项的意思差不多，一般建议禁止，因为一些插件（如精英怪等）会给生物命名如果开启这个选项可能会造成刷屏</p>
+  <p>和上一个选项的意思差不多，一般建议禁止，因为一些插件（如精英怪等）会给生物命名如果开启这个选项可能会造成后台控制台刷屏</p>
 </blockquote>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<h3>是否切换在新玩家加入时实时储存数据</h3>
+<pre><code class="language-plaintext">save-user-cache-on-stop-only: false</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;实时储存玩家数据</li>
+  <li><strong>true</strong> -&nbsp;z只在服务器关闭时或玩家退出时储存数据</li>
+</ul>
+<blockquote>
+  <p>&nbsp;</p>
+</blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
