@@ -2,7 +2,7 @@
 title: Minecraft-Bukkit
 description: CraftBukkit的配置文件解析说明
 published: true
-date: 2024-01-02T17:03:41.048Z
+date: 2024-01-04T18:02:04.139Z
 tags: bukkit, minecraft, server
 editor: ckeditor
 dateCreated: 2023-12-22T18:08:04.920Z
@@ -264,11 +264,11 @@ aliases:
   - version $1-</code></pre>
 <p>以下为具体参数：</p>
 <ul>
-  <li>command-block-overrides: []·····························使用mojang提供的原版指令列表</li>
-  <li>ignore-vanilla-permissions: false······················忽略原版指令的权限</li>
-  <li>aliases:································································指定一些指令的其他别名</li>
-  <li>icanhasbukkit:··················································别名列表</li>
-  <li>- version $1-······················································指令版本</li>
+  <li>command-block-overrides: []····························使用mojang提供的原版指令列表</li>
+  <li>ignore-vanilla-permissions: false·····················忽略原版指令的权限</li>
+  <li>aliases:·······························································指定一些指令的其他别名</li>
+  <li>icanhasbukkit:···················································别名列表</li>
+  <li>- version $1-·······················································指令版本</li>
 </ul>
 <blockquote>
   <p>Bukkit提供过一些和原版一样的指令，第一个列表可以用来覆盖Bukkit指令以使用原版指令，详细可阅读<a href="https://bukkit.fandom.com/wiki/Commands.yml">BukkitWiki</a></p>
@@ -285,11 +285,11 @@ aliases:
 </code></pre>
 <p>以下为具体参数：</p>
 <ul>
-  <li>server.basics:······················································父节点（类似LuckPerms或其他权限插件的权限组）</li>
-  <li>description: 基础权限···································改权限组的描述</li>
-  <li>default: not-op··············································该节点的默认值（包括true, false, op, not-op）</li>
-  <li>children:·························································需要配置的权限列表</li>
-  <li>essentials.afk: true····································插件权限（true为启用权限，false为禁用权限）</li>
+  <li>server.basics:·····················································父节点（类似LuckPerms或其他权限插件的权限组）</li>
+  <li>description: 基础权限········································改权限组的描述</li>
+  <li>default: not-op···················································该节点的默认值（包括true, false, op, not-op）</li>
+  <li>children:·····························································需要配置的权限列表</li>
+  <li>essentials.afk: true···········································插件权限（true为启用权限，false为禁用权限）</li>
 </ul>
 <blockquote>
   <p>如果你的服务器没有多少插件而且对权限组等特殊的功能没有需求，个人建议使用Bukkit默认的权限功能以节省性能消耗</p>
