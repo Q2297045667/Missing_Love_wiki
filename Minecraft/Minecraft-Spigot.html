@@ -2,7 +2,7 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-01-04T17:04:41.736Z
+date: 2024-01-04T17:10:48.431Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-01-02T16:03:02.772Z
@@ -118,10 +118,16 @@ dateCreated: 2024-01-02T16:03:02.772Z
   <p>记录村民死亡的地点和原因（没了），在大厅或者生电服等村民死亡率比较高的服务器中建议关闭，一般人应该不会吃饱了撑的来日志文件中找被噶掉的村民吧？不会吧，不会吧？</p>
 </blockquote>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<h3>是否在日志中记录被玩家命名过的生物的死亡记录</h3>
+<pre><code class="language-plaintext">log-named-deaths: true</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>和上一个选项的意思差不多，一般建议禁止，因为一些插件（如精英怪等）会给生物命名如果开启这个选项可能会造成刷屏</p>
+</blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
