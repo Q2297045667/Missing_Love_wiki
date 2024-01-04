@@ -2,7 +2,7 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-01-04T16:28:17.161Z
+date: 2024-01-04T16:31:33.379Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-01-02T16:03:02.772Z
@@ -53,10 +53,16 @@ dateCreated: 2024-01-02T16:03:02.772Z
   <p>在控制台中执行<a href="https://cloud.tencent.com/developer/ask/sof/43446">线程转储</a>之前，服务器应无响应多长时间（以秒为单位），如果已配置，则需要关闭并重新启动服务端</p>
 </blockquote>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<h3>是否允许在服务端崩溃后调用脚本重启服务端</h3>
+<pre><code class="language-plaintext">restart-on-crash: true</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>控制发生崩溃时服务器是否会自动尝试重新启动服务器，需要搭配 restart-script: 选项使用</p>
+</blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
