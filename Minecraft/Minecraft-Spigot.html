@@ -2,7 +2,7 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-01-04T16:33:10.409Z
+date: 2024-01-04T16:38:43.347Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-01-02T16:03:02.772Z
@@ -48,7 +48,9 @@ dateCreated: 2024-01-02T16:03:02.772Z
 <h3>设置线程转储无响应的时间</h3>
 <pre><code class="language-plaintext">timeout-time: 60</code></pre>
 <p>&nbsp;以下为具体参数：</p>
-<p>1 - 999 整数型（秒）</p>
+<ul>
+  <li>1 - 999 整数型（秒）</li>
+</ul>
 <blockquote>
   <p>在控制台执行<a href="https://cloud.tencent.com/developer/ask/sof/43446">线程转储</a>之前，服务器应无响应多长时间（以秒为单位），如果已配置，则需要关闭并重新启动服务端</p>
 </blockquote>
@@ -64,9 +66,15 @@ dateCreated: 2024-01-02T16:03:02.772Z
   <p>控制发生崩溃时服务器是否会自动尝试重新启动服务器，需要搭配 restart-script: 选项使用，如果你使用面板或其他除脚本之外的启动方式，不建议使用这个功能</p>
 </blockquote>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<h3>设置启动/重启脚本</h3>
+<pre><code class="language-plaintext">restart-script: ./start.sh</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>字符串</li>
+</ul>
+<blockquote>
+  <p>服务器启动脚本的位置。此路径将用于 /restart 命令和崩溃时重新启动（restart-on-crash: true）选项，Windows文件后缀为.bat，Linux为.sh</p>
+</blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
