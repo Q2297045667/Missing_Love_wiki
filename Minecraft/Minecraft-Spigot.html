@@ -2,7 +2,7 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-01-04T18:08:29.962Z
+date: 2024-01-04T18:18:35.482Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-01-02T16:03:02.772Z
@@ -236,8 +236,19 @@ outdated-server: Outdated server! I'm still on {0}</code></pre>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <h2>advancements:（成就）</h2>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<h3>是否禁用成就以及单独禁用某个成就</h3>
+<pre><code class="language-plaintext">disable-saving: false
+disabled:
+- minecraft:story/disabled</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>disable-saving: false·········································禁用玩家成就系统</li>
+  <li>disabled:····························································单独禁用某个成就</li>
+  <li>- minecraft:story/disabled································要禁用的成就列表</li>
+</ul>
+<blockquote>
+  <p>&nbsp;</p>
+</blockquote>
 <p>&nbsp;</p>
 <h2>players:（玩家）</h2>
 <p>&nbsp;</p>
