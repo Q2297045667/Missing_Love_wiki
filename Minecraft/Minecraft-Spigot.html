@@ -2,7 +2,7 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-01-04T16:51:16.104Z
+date: 2024-01-04T16:58:12.485Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-01-02T16:03:02.772Z
@@ -96,14 +96,16 @@ dateCreated: 2024-01-02T16:03:02.772Z
       max: 2048.0</code></pre>
 <p>&nbsp;以下为具体参数：</p>
 <ul>
-  <li>&nbsp; &nbsp; maxHealth:</li>
-  <li>&nbsp; &nbsp; &nbsp; max: 2048.0</li>
-  <li>&nbsp; &nbsp; movementSpeed:</li>
-  <li>&nbsp; &nbsp; &nbsp; max: 2048.0</li>
-  <li>&nbsp; &nbsp; attackDamage:</li>
-  <li>&nbsp; &nbsp; &nbsp; max: 2048.0</li>
+  <li>maxHealth:·························································生命值</li>
+  <li>&nbsp; &nbsp; &nbsp; max: 2048.0··················································最大生命值设定（浮点数）</li>
+  <li>movementSpeed:···············································移动速度</li>
+  <li>&nbsp; &nbsp; &nbsp; max: 2048.0··················································最大移动速度设定（浮点数）</li>
+  <li>attackDamage:···················································攻击伤害</li>
+  <li>&nbsp; &nbsp; &nbsp; max: 2048.0··················································最大攻击伤害设定（浮点数）</li>
 </ul>
-<p>&nbsp;</p>
+<blockquote>
+  <p>这里的设置指的是BOSS生物属性的“上限”并非是强制性固定的数值，比方说某个插件或数据包给末影龙增加10000点攻击或生命，那么末影龙的最大攻击或生命只能被限制在2048，需要手动配置最高数值</p>
+</blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <h2>messages:（消息输出）</h2>
