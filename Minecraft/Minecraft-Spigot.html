@@ -2,7 +2,7 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-01-04T17:29:28.492Z
+date: 2024-01-04T17:30:57.359Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-01-02T16:03:02.772Z
@@ -143,14 +143,20 @@ dateCreated: 2024-01-02T16:03:02.772Z
 <p>&nbsp;</p>
 <h3>设置移动速度检查的阈值</h3>
 <pre><code class="language-plaintext">moved-wrongly-threshold: 0.0625</code></pre>
-<p>&nbsp;</p>
+<p>以下为具体参数：</p>
+<ul>
+  <li>浮点型</li>
+</ul>
 <blockquote>
   <p>控制 "错误移动 "（超出原版载具或物体的速度）检查的阈值，增加这个数字可以减少服务器上的“橡皮人”的数量，但也有可能被玩家滥用</p>
 </blockquote>
 <p>&nbsp;</p>
 <h3>设置移动过快检查的乘数</h3>
 <pre><code class="language-plaintext">moved-too-quickly-multiplier: 10.0</code></pre>
-<p>&nbsp;</p>
+<p>以下为具体参数：</p>
+<ul>
+  <li>浮点型</li>
+</ul>
 <blockquote>
   <p>控制“移动过快”检查的乘数，这实际上是服务器允许玩家移动的最大速度，这在某些情况下会造成问题，例如大型TNT大炮等</p>
 </blockquote>
