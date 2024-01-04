@@ -2,7 +2,7 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-01-04T17:47:00.536Z
+date: 2024-01-04T17:52:09.938Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-01-02T16:03:02.772Z
@@ -182,7 +182,7 @@ dateCreated: 2024-01-02T16:03:02.772Z
   <p>usercache.json文件一般用来储存玩家的 ID 和 UUID ，如果你的玩家数量超过这个数字那么我也不知道会发生什么，大概率是根据加入时间或者其他规则删除不活跃的玩家</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>&nbsp;</h3>
+<h3>设置客户端服务器列表中显示的玩家名称数量</h3>
 <pre><code class="language-plaintext">sample-count: 12</code></pre>
 <p>以下为具体参数：</p>
 <ul>
@@ -192,67 +192,16 @@ dateCreated: 2024-01-02T16:03:02.772Z
   <p>控制将鼠标悬停在客户端服务器列表中的玩家计数上时显示的（随机选择玩家）玩家名称的数量</p>
 </blockquote>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<h3>是否开启群组端（BungeeCord）支持</h3>
+<pre><code class="language-plaintext">bungeecord: false</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>在开启之后建议在<a href="/Minecraft/Minecraft-Spigot">server.properties</a>中“server-ip=”指定BungeeCord端的IP地址，如果是本机（及群组端和子服在同一台机器上）应当设置为内网环回地址（127.0.0.1）</p>
+</blockquote>
 <p>&nbsp;</p>
 <h2>messages:（消息输出）</h2>
 <p>&nbsp;</p>
