@@ -2,7 +2,7 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-01-09T23:03:08.635Z
+date: 2024-01-09T23:09:01.701Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-01-02T16:03:02.772Z
@@ -353,6 +353,35 @@ disabled:
 <blockquote>
   <p>关闭之后在命令方块执行的指令不会在控制台显示</p>
 </blockquote>
+<p>&nbsp;</p>
+<h3>是否将玩家指令输出到控制台</h3>
+<pre><code class="language-plaintext">log: true</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>默认开启状态，玩家在客户端执行的命令全部输出到控制台</p>
+</blockquote>
+<p>&nbsp;</p>
+<h3>设置垃圾消息过滤的指令白名单</h3>
+<pre><code class="language-plaintext">spam-exclusions:
+- /skill</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>spam-exclusions:··············································需要过滤的列表</li>
+  <li>- /skill·································································需要过滤的指令</li>
+</ul>
+<blockquote>
+  <p>执行此处列出的命令的玩家不会因垃圾消息而断开连接</p>
+</blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
