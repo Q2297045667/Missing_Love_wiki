@@ -2,7 +2,7 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-01-09T22:55:31.241Z
+date: 2024-01-09T23:01:22.170Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-01-02T16:03:02.772Z
@@ -330,9 +330,17 @@ disabled:
 </blockquote>
 <p>&nbsp;</p>
 <h2>players:（玩家）</h2>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<h3>是否禁用玩家数据保存</h3>
+<pre><code class="language-plaintext">players:
+  disable-saving: false</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>特定情况下才建议开启，如对用户数据完全不需要的服务器，不过一般不建议改动</p>
+</blockquote>
 <p>&nbsp;</p>
 <h2>commands:（指令）</h2>
 <p>&nbsp;</p>
