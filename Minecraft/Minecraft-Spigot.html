@@ -2,7 +2,7 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-01-09T23:09:01.701Z
+date: 2024-01-09T23:16:22.514Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-01-02T16:03:02.772Z
@@ -377,12 +377,23 @@ disabled:
   <p>执行此处列出的命令的玩家不会因垃圾消息而断开连接</p>
 </blockquote>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<h3>设置禁用 Bukkit 命令的列表</h3>
+<pre><code class="language-plaintext">replace-commands:
+- setblock
+- summon
+- testforblock
+- tellraw</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>replace-commands:··········································需要过滤的列表</li>
+  <li>- setblock···························································需要过滤的指令</li>
+  <li>- summon</li>
+  <li>- testforblock</li>
+  <li>- tellraw</li>
+</ul>
+<blockquote>
+  <p>禁用Bukkit的命令，恢复这个命令最原始的版本，列如Bukkit的自带的setblock指令就将原版的指令覆盖了，禁用之后将使用原版的指令</p>
+</blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
