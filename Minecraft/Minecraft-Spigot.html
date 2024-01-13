@@ -2,7 +2,7 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-01-13T18:55:34.806Z
+date: 2024-01-13T19:02:01.214Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-01-02T16:03:02.772Z
@@ -407,9 +407,16 @@ disabled:
   <p>默认的情况下在你输入“/”的情况下会直接列出所有指令，建议至少设置1</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>&nbsp;</h3>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<h3>设置按键TAB时是否补全带有指令来源的参数的提示</h3>
+<pre><code class="language-plaintext">send-namespaced: true</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>按下TAB的时候显示提供该指令的载体（如原版，服务端或插件）列如/minecraft:tp &nbsp;</p>
+</blockquote>
 <p>&nbsp;</p>
 <h2>config-version:（文件版本）</h2>
 <h3>服务端配置文件版本</h3>
