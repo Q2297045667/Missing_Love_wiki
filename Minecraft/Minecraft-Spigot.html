@@ -2,7 +2,7 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-01-13T23:49:52.026Z
+date: 2024-01-13T23:50:45.859Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-01-02T16:03:02.772Z
@@ -419,6 +419,9 @@ outdated-server: Outdated server! I'm still on {0}</code></pre>
 <h3>设置限制末影龙的死亡声音范围</h3>
 <pre><code class="language-plaintext">dragon-death-sound-radius: 0</code></pre>
 <p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>整数型</li>
+</ul>
 <blockquote>
   <p>这个同上“设置末地门的声音辐射半径”可以减少部分的网络数据包，理论上这个影响范围更大</p>
 </blockquote>
@@ -426,6 +429,9 @@ outdated-server: Outdated server! I'm still on {0}</code></pre>
 <h3>设置控制挂起实体</h3>
 <pre><code class="language-plaintext">hanging-tick-frequency: 100</code></pre>
 <p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>整数型</li>
+</ul>
 <blockquote>
   <p>控制挂起实体（绘画、物品展示框、拴绳，拌线钩等）的tick更新间隔</p>
 </blockquote>
@@ -433,6 +439,10 @@ outdated-server: Outdated server! I'm still on {0}</code></pre>
 <h3>是否禁止刷怪笼刷出的生物具有AI</h3>
 <pre><code class="language-plaintext">nerf-spawner-mobs: false</code></pre>
 <p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
 <blockquote>
   <p>在极个别的情况下可以开启此功能</p>
 </blockquote>
@@ -453,6 +463,9 @@ outdated-server: Outdated server! I'm still on {0}</code></pre>
 <h3>设置漏斗每ticks的最大传输数量</h3>
 <pre><code class="language-plaintext">hopper-amount: 1</code></pre>
 <p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>整数型</li>
+</ul>
 <blockquote>
   <p>个人建议如果不是生电服务器可以适当的调整</p>
 </blockquote>
@@ -460,6 +473,10 @@ outdated-server: Outdated server! I'm still on {0}</code></pre>
 <h3>&nbsp;</h3>
 <pre><code class="language-plaintext">hopper-can-load-chunks: false</code></pre>
 <p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
 <blockquote>
   <p>&nbsp;</p>
 </blockquote>
