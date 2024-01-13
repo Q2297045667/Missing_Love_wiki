@@ -2,7 +2,7 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-01-13T18:39:02.133Z
+date: 2024-01-13T18:43:35.839Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-01-02T16:03:02.772Z
@@ -412,12 +412,11 @@ disabled:
 <p>&nbsp;</p>
 <h2>stats:（状态）</h2>
 <h3>是否允许上传统计信息到服务器</h3>
-<pre><code class="language-plaintext">disable-saving: true
+<pre><code class="language-plaintext">disable-saving: false
 forced-stats: {}</code></pre>
 <p>以下为具体参数：</p>
-<ul>
-  <li>disable-saving: true···········································是否禁用统计信息上传<br>forced-stats: {}···················································强制禁用项目的列表</li>
-</ul>
+<p>disable-saving: false·········································是否禁用统计信息上传</p>
+<p>forced-stats: {}···················································强制禁用项目的列表</p>
 <blockquote>
-  <p>&nbsp;</p>
+  <p>服务端会上传一些统计信息（如玩家人数，在线的服务端数量）用来帮助SpigotMC统计服务端的使用数据</p>
 </blockquote>
