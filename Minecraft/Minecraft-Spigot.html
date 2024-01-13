@@ -2,7 +2,7 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-01-13T18:43:35.839Z
+date: 2024-01-13T18:55:34.806Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-01-02T16:03:02.772Z
@@ -395,7 +395,19 @@ disabled:
   <p>禁用Bukkit的命令，恢复这个命令最原始的版本，列如Bukkit的自带的setblock指令就将原版的指令覆盖了，禁用之后将使用原版的指令</p>
 </blockquote>
 <p>&nbsp;</p>
+<h3>设置TAB指令补全需要的输入数量</h3>
+<pre><code class="language-plaintext">tab-complete: 0</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>-1·········································································完全禁用此功能</li>
+  <li>0··········································································输出全部可能的指令</li>
+  <li>1~无线·······························································在输入指令的第一位的时候补全后面的指令</li>
+</ul>
+<blockquote>
+  <p>默认的情况下在你输入“/”的情况下会直接列出所有指令，建议至少设置1</p>
+</blockquote>
 <p>&nbsp;</p>
+<h3>&nbsp;</h3>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
