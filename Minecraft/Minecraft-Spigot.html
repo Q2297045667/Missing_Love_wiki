@@ -2,7 +2,7 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-01-13T19:25:36.496Z
+date: 2024-01-13T19:37:20.012Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-01-02T16:03:02.772Z
@@ -245,9 +245,14 @@ outdated-server: Outdated server! I'm still on {0}</code></pre>
 <h3><mark class="pen-red">注意：下列配置需要放在世界名称下</mark></h3>
 <h3>是否在1.18以下版本的地图数据中生成Y0以下的数据</h3>
 <pre><code class="language-plaintext">below-zero-generation-in-existing-chunks: true</code></pre>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>在检测到低于1.18的版本的时候会补全Y 0以下的数据，如果你的服务器的地图数据版本不低于1.18可以关闭</p>
+</blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
