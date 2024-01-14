@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-01-14T19:40:47.471Z
+date: 2024-01-14T19:46:09.731Z
 tags: minecraft, paper, server
 editor: ckeditor
 dateCreated: 2024-01-14T13:10:05.919Z
@@ -260,15 +260,15 @@ java.net.UnknownHostException: timings.aikar.com
 <h2>unsupported-settings:（失效配置）</h2>
 <p>与其他配置选项不一样这里面存放的是一些临时失效的配置，即不影响服务端的配置和相关功能，也可能是未来会从新加入相关的功能</p>
 <p>在上一个版本（指配置文件版本<code>_version</code>）临时失效或者未来将加入的配置也会放在这里</p>
-<h3>是否允许破坏一些方块</h3>
-<pre><code class="language-plaintext">allow-permanent-block-break-exploits: false</code></pre>
+<h3>是否允许玩家在<span style="font-family:Arial, Helvetica, sans-serif;">砂轮</span>中堆积过多的物品</h3>
+<pre><code class="language-plaintext">allow-grindstone-overstacking: false</code></pre>
 <p>&nbsp;以下为具体参数：</p>
 <ul>
   <li><strong>false</strong> -&nbsp;关闭</li>
   <li><strong>true</strong> -&nbsp;开启</li>
 </ul>
 <blockquote>
-  <p>这些方块包括基岩，末地传送门框架，末地传送门方块</p>
+  <p>这个特性不玩生电的我还真不知道有什么作用，有人说这个特性会造成服务端的大量物品堆叠，加载地图时会发生卡顿</p>
 </blockquote>
 <p>&nbsp;</p>
 <h3>是否允许创建无头活塞</h3>
@@ -282,7 +282,16 @@ java.net.UnknownHostException: timings.aikar.com
   <p>开启此项可以让玩家通过“特性”创建无头活塞</p>
 </blockquote>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
+<h3>是否允许破坏一些方块</h3>
+<pre><code class="language-plaintext">allow-permanent-block-break-exploits: false</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>这些方块包括基岩，末地传送门框架，末地传送门方块</p>
+</blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
