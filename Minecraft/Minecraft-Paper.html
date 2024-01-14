@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-01-14T22:26:04.203Z
+date: 2024-01-14T22:36:38.615Z
 tags: minecraft, paper, server
 editor: ckeditor
 dateCreated: 2024-01-14T13:10:05.919Z
@@ -205,6 +205,28 @@ dateCreated: 2024-01-14T13:10:05.919Z
 </blockquote>
 <p>&nbsp;</p>
 <h2>collisions:（碰撞）</h2>
+<h3>是否开启玩家实体碰撞</h3>
+<pre><code class="language-plaintext">enable-player-collisions: true</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>是否允许玩家相互碰撞，这个选项可以被与<strong>记分板交互</strong>的插件破坏，如果在使用此选项时遇到问题，请尝试不安装插件启动服务端</p>
+</blockquote>
+<p>&nbsp;</p>
+<h3>是否发送完整的碰撞数据</h3>
+<pre><code class="language-plaintext">send-full-pos-for-hard-colliding-entities: true</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>与船只和矿车的碰撞通常会引起客户端/服务器的分歧，这可能会导致玩家出现故障行为。此设置试图通过发送涉及冲突的实体的精确位置来缓解这种去同步。启用此功能将使用更多带宽；然而，在大多数情况下，这是一个值得权衡的问题</p>
+</blockquote>
+<p>&nbsp;</p>
 <h2>commands:（指令）</h2>
 <h2>console:（控制台）</h2>
 <h2>item-validation:（物品验证）</h2>
