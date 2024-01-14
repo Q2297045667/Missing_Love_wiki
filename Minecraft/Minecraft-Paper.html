@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-01-14T22:43:04.013Z
+date: 2024-01-14T23:02:46.392Z
 tags: minecraft, paper, server
 editor: ckeditor
 dateCreated: 2024-01-14T13:10:05.919Z
@@ -228,6 +228,22 @@ dateCreated: 2024-01-14T13:10:05.919Z
 </blockquote>
 <p>&nbsp;</p>
 <h2>commands:（指令）</h2>
+<h3>是否修复目标选择器标记完成</h3>
+<pre><code class="language-plaintext">fix-target-selector-tag-completion: true</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>修复 <a href="https://bugs.mojang.com/browse/MC-235045">MC-<i>235045</i></a><i> 客户端执行命令时的错误，大概就是执行 “</i>/kill @e[type=#minecraft:raid<i>” 这条命令不会跳出后面的建议之类的</i></p>
+</blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>suggest-player-names-when-null-tab-completions: true</p>
+<p>time-command-affects-all-worlds: false</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <h2>console:（控制台）</h2>
 <h2>item-validation:（物品验证）</h2>
 <h2>logging:（记录）</h2>
