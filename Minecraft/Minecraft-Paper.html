@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-01-14T20:08:16.780Z
+date: 2024-01-14T20:10:36.573Z
 tags: minecraft, paper, server
 editor: ckeditor
 dateCreated: 2024-01-14T13:10:05.919Z
@@ -328,7 +328,7 @@ java.net.UnknownHostException: timings.aikar.com
 </blockquote>
 <p>&nbsp;</p>
 <h2>watchdog:（看门狗）</h2>
-<h3>设置服务端挂起后打印线程转储前需要的时间</h3>
+<h3>设置服务端挂起后输出线程转储前需要的时间</h3>
 <pre><code class="language-plaintext">early-warning-delay: 10000</code></pre>
 <p>&nbsp;以下为具体参数：</p>
 <ul>
@@ -338,14 +338,14 @@ java.net.UnknownHostException: timings.aikar.com
   <p>在服务端出现卡顿或崩溃时输出错误信息前需要的时间，这个一般不建议动</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>&nbsp;</h3>
+<h3>设置服务端挂起后输出线程转储之间需要的时间</h3>
 <pre><code class="language-plaintext">early-warning-every: 5000</code></pre>
 <p>&nbsp;以下为具体参数：</p>
 <ul>
   <li>整数型································································单位为毫秒</li>
 </ul>
 <blockquote>
-  <p>&nbsp;</p>
+  <p>在服务端出现卡顿或崩溃时输出的线程转储之间的时间间隔，就是两个错误之间的时间间隔</p>
 </blockquote>
 <p>&nbsp;</p>
 <h1>config/paper-world-defaults.yml</h1>
