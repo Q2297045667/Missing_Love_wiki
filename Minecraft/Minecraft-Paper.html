@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-01-14T19:52:28.026Z
+date: 2024-01-14T20:00:50.528Z
 tags: minecraft, paper, server
 editor: ckeditor
 dateCreated: 2024-01-14T13:10:05.919Z
@@ -303,6 +303,19 @@ java.net.UnknownHostException: timings.aikar.com
 <blockquote>
   <p>这些物品包括地毯，TNT，铁轨 &nbsp;注意：这并不能控制沙子的复制，如有相关需求可以安装类似<a href="https://modrinth.com/plugin/foliaflow">FoliaFlow</a>之类的插件</p>
 </blockquote>
+<p>&nbsp;</p>
+<h3>设置服务器保存的区域文件压缩格式</h3>
+<pre><code class="language-plaintext">compression-format: ZLIB</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>ZLIB····································································使用<a href="https://www.zlib.net/">ZLIB</a>算法压缩</li>
+  <li>GZIP···································································使用<a href="https://www.gnu.org/software/gzip/">GZIP</a>算法压缩</li>
+  <li>NONE·································································不适用压缩算法</li>
+</ul>
+<blockquote>
+  <p>如果你的服务端存放的硬盘容量够大，个人建议还是不要使用算法进行压缩，这会占用多余的CPU资源用来调用算法，另外建议使用固态硬盘储存服务端文件</p>
+</blockquote>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
