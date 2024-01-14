@@ -2,7 +2,7 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-01-14T00:09:14.981Z
+date: 2024-01-14T00:20:27.889Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-01-02T16:03:02.772Z
@@ -481,7 +481,7 @@ outdated-server: Outdated server! I'm still on {0}</code></pre>
   <p>开启之后可以允许一些利用漏洞进行区块加载的装置，这是保持块加载（即保持农场工作）的多种方法之一，在区块边界上放置两个相互指向的料斗即可</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>&nbsp;</h3>
+<h3>设置实体激活的范围</h3>
 <pre><code class="language-plaintext">entity-activation-range:
   animals: 32
   monsters: 32
@@ -491,15 +491,16 @@ outdated-server: Outdated server! I'm still on {0}</code></pre>
   ignore-spectators: false</code></pre>
 <p>&nbsp;以下为具体参数：</p>
 <ul>
-  <li>animals: 32</li>
-  <li>monsters: 32</li>
-  <li>raiders: 48</li>
-  <li>misc: 16</li>
-  <li>tick-inactive-villagers: true</li>
-  <li>ignore-spectators: false</li>
+  <li>animals: 32························································动物</li>
+  <li>monsters: 32·····················································怪物</li>
+  <li>raiders: 48··························································袭击者</li>
+  <li>misc: 16·····························································杂项</li>
+  <li>tick-inactive-villagers: true·······························</li>
+  <li>ignore-spectators: false···································</li>
 </ul>
 <blockquote>
-  <p>&nbsp;</p>
+  <p>控制实体将被“激活”的区块范围，此范围之外的实体将以较低的tick，降低这些值可以大大提高性能，但代价是影响游戏生电行为</p>
+  <p>切换是否应“激活”村民，即使他们不在激活范围内，禁用这意味着村民将不会像在香草中那样工作，玩家必须在村庄附近呆一段时间，以便村民交易来补充库存。</p>
 </blockquote>
 <p>&nbsp;</p>
 <h3>&nbsp;</h3>
