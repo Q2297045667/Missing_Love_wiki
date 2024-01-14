@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-01-14T23:02:46.392Z
+date: 2024-01-14T23:04:09.028Z
 tags: minecraft, paper, server
 editor: ckeditor
 dateCreated: 2024-01-14T13:10:05.919Z
@@ -239,10 +239,27 @@ dateCreated: 2024-01-14T13:10:05.919Z
   <p>修复 <a href="https://bugs.mojang.com/browse/MC-235045">MC-<i>235045</i></a><i> 客户端执行命令时的错误，大概就是执行 “</i>/kill @e[type=#minecraft:raid<i>” 这条命令不会跳出后面的建议之类的</i></p>
 </blockquote>
 <p>&nbsp;</p>
+<h3>&nbsp;</h3>
+<pre><code class="language-plaintext">suggest-player-names-when-null-tab-completions: true</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>指示服务器在选项卡完成时返回玩家列表，此时没有其他可用的完成操作</p>
+</blockquote>
 <p>&nbsp;</p>
-<p>suggest-player-names-when-null-tab-completions: true</p>
-<p>time-command-affects-all-worlds: false</p>
-<p>&nbsp;</p>
+<h3>&nbsp;</h3>
+<pre><code class="language-plaintext">time-command-affects-all-worlds: false</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>&nbsp;</p>
+</blockquote>
 <p>&nbsp;</p>
 <h2>console:（控制台）</h2>
 <h2>item-validation:（物品验证）</h2>
