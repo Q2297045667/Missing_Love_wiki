@@ -2,7 +2,7 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-01-14T02:00:52.371Z
+date: 2024-01-14T02:03:09.886Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-01-02T16:03:02.772Z
@@ -11,8 +11,7 @@ dateCreated: 2024-01-02T16:03:02.772Z
 <h1>Spigot配置解析</h1>
 <p>&nbsp; &nbsp; Spigot是SpigotMC团队基于CraftBukkit制作的一个高性能和修复超多BUG的服务端。</p>
 <p>Spigot在其BukkitAPI的基础上添加了很多自己的API接口（Spigot API）</p>
-<p>本片文章部分内容来自：<a href="https://www.spigotmc.org/wiki/spigot/">SpigotWiki</a>，<a href="https://github.com/LingLuoyunOS/spigotmc-cn">Spigot 中文开发指南</a></p>
-<p>&nbsp;</p>
+<p>本片文章部分内容来自：<a href="https://www.spigotmc.org/wiki/spigot/">SpigotWiki</a>，<a href="https://github.com/LingLuoyunOS/spigotmc-cn">Spigot 中文开发指南</a>，<a href="https://mhy278.gitee.io/minecraftserverhostguidehtml/">我的世界服务器搭建指南</a></p>
 <p>首先我们先做一下准备工作，生成配置文件</p>
 <ol>
   <li>下载由spigotmc提供的构建工具（<a href="https://hub.spigotmc.org/jenkins/job/BuildTools/">BuildTools</a>）</li>
@@ -230,7 +229,7 @@ outdated-server: Outdated server! I'm still on {0}</code></pre>
 <p>&nbsp;以下为具体参数：</p>
 <ul>
   <li>world-settings:··················································该选项下放置世界名称：配置选项</li>
-  <li>&nbsp; default:····························································需要配置的世界名称，default为默认情况下的默认配置</li>
+  <li>default:····························································需要配置的世界名称，default为默认情况下的默认配置</li>
 </ul>
 <blockquote>
   <p>如果你想要”下界“开启或者关闭某项功能但是不影响到其他世界，就在world-settings:新建一个与世界文件夹名称一样的名字，单独创建的配置项会覆盖default的配置</p>
@@ -240,6 +239,7 @@ outdated-server: Outdated server! I'm still on {0}</code></pre>
   ...（配置项）
   world_nether
   ...（配置项）</code></pre>
+  <p>&nbsp;</p>
 </blockquote>
 <p>&nbsp;</p>
 <h3><mark class="pen-red">注意：下列配置需要放在世界名称下</mark></h3>
