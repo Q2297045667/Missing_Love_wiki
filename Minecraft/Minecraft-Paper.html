@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-01-14T20:00:50.528Z
+date: 2024-01-14T20:03:37.569Z
 tags: minecraft, paper, server
 editor: ckeditor
 dateCreated: 2024-01-14T13:10:05.919Z
@@ -316,14 +316,16 @@ java.net.UnknownHostException: timings.aikar.com
   <p>如果你的服务端存放的硬盘容量够大，个人建议还是不要使用算法进行压缩，这会占用多余的CPU资源用来调用算法，另外建议使用固态硬盘储存服务端文件</p>
 </blockquote>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>compression-format: ZLIB</p>
-<p>perform-username-validation: true</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<h3>是否验证玩家的用户名</h3>
+<pre><code class="language-plaintext">perform-username-validation: true</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>这对于离线（盗版）服务器非常有用，关闭它会允许玩家名称出现特殊字符，可能会导致命令和插件出现问题</p>
+</blockquote>
 <p>&nbsp;</p>
 <h2>watchdog:（看门狗）</h2>
 <p>&nbsp;</p>
