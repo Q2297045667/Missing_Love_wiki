@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-01-14T22:22:43.610Z
+date: 2024-01-14T22:26:04.203Z
 tags: minecraft, paper, server
 editor: ckeditor
 dateCreated: 2024-01-14T13:10:05.919Z
@@ -194,14 +194,15 @@ dateCreated: 2024-01-14T13:10:05.919Z
   <p>增加这个值的前提是你的硬盘写入和读取性能都很棒（至少是PCIE3.0的标准），设置低于0以下的值（如 -1 等）将会使用一个线程</p>
 </blockquote>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<h3>&nbsp;</h3>
+<h3>设置并发区块生成的线程</h3>
 <pre><code class="language-plaintext">worker-threads: -1</code></pre>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>整数型</li>
+</ul>
+<blockquote>
+  <p>设置低于0以下的值（如 -1 等），服务端将根据可用CPU核心的数量来确定最佳值，这会限制在可用核心的四分之一，对于核心少的服务器来说可能更少，注意：不计算超线程</p>
+</blockquote>
 <p>&nbsp;</p>
 <h2>collisions:（碰撞）</h2>
 <h2>commands:（指令）</h2>
