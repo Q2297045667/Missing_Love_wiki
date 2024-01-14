@@ -2,7 +2,7 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-01-14T01:57:32.427Z
+date: 2024-01-14T02:00:52.371Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-01-02T16:03:02.772Z
@@ -416,7 +416,7 @@ outdated-server: Outdated server! I'm still on {0}</code></pre>
   <p>禁用后，僵尸将不再试图杀死村民，但作为回报，僵尸会使用更少的时间来处理他们的AI智能，禁用后会提升一些性能</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>设置限制末影龙的死亡声音范围</h3>
+<h3>设置末影龙生成声音的限制范围</h3>
 <pre><code class="language-plaintext">dragon-death-sound-radius: 0</code></pre>
 <p>&nbsp;以下为具体参数：</p>
 <ul>
@@ -611,7 +611,7 @@ seed-portal: 34222645</code></pre>
   <li>other-multiplier: 0.0·········································其他</li>
 </ul>
 <blockquote>
-  <p>可以根据需要调整，据说这些配置还会根据你的游戏难度不同来自动调整</p>
+  <p>可以根据需要调整，据说这些配置还会根据你的游戏难度不同来自动调整，当然这只是据说</p>
 </blockquote>
 <p>&nbsp;</p>
 <h3>是否开启下界传送门的僵尸诸灵/僵尸猪人的生成</h3>
@@ -622,17 +622,17 @@ seed-portal: 34222645</code></pre>
   <li><strong>true</strong> -&nbsp;开启</li>
 </ul>
 <blockquote>
-  <p>&nbsp;</p>
+  <p>如果你关闭了下界，那么也应该关闭它，关闭这个选项不会影响僵尸诸灵/僵尸猪人使用传送门</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>设置凋零生成声音的限制</h3>
+<h3>设置凋零生成声音的限制范围</h3>
 <pre><code class="language-plaintext">wither-spawn-sound-radius: 0</code></pre>
 <p>&nbsp;以下为具体参数：</p>
 <ul>
   <li>整数型</li>
 </ul>
 <blockquote>
-  <p>&nbsp;</p>
+  <p>这个和”dragon-death-sound-radius“差不多只不过一个是末影龙一个是凋零骷髅</p>
 </blockquote>
 <p>&nbsp;</p>
 <h2>advancements:（成就）</h2>
