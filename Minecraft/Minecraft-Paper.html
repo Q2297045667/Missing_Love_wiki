@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-01-14T19:18:38.811Z
+date: 2024-01-14T19:27:45.786Z
 tags: minecraft, paper, server
 editor: ckeditor
 dateCreated: 2024-01-14T13:10:05.919Z
@@ -223,6 +223,28 @@ hidden-config-entries:
 <blockquote>
   <p>timings的前端是开源的，可以私有化部署，可以在<a href="https://github.com/aikar/timings">Github</a>找到该项目的开源链接并部署到自己的服务器，在此处设置你部署的网站或IP链接即可访问</p>
 </blockquote>
+<p><mark class="pen-red">注：如果配置错误或链接不上服务器将显示如下错误信息（这里以timings.aikar.com为例）</mark></p>
+<pre><code class="language-plaintext">[输出时间 INFO]: Error uploading timings, check your logs for more information
+[输出时间 ERROR]: Could not paste timings
+java.net.UnknownHostException: timings.aikar.com
+        at sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[?:?]
+        at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+        at java.net.Socket.connect(Socket.java:633) ~[?:?]
+        at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+        at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:174) ~[?:?]
+        at sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+        at sun.net.www.http.HttpClient.openServer(HttpClient.java:534) ~[?:?]
+        at sun.net.www.http.HttpClient.openServer(HttpClient.java:639) ~[?:?]
+        at sun.net.www.protocol.https.HttpsClient.&lt;init&gt;(HttpsClient.java:266) ~[?:?]
+        at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:380) ~[?:?]
+        at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+        at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242) ~[?:?]
+        at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128) ~[?:?]
+        at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+        at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1430) ~[?:?]
+        at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1401) ~[?:?]
+        at sun.net.www.protocol.https.HttpsURLConnectionImpl.getOutputStream(HttpsURLConnectionImpl.java:220) ~[?:?]
+        at co.aikar.timings.TimingsExport.run(TimingsExport.java:332) ~[paper-1.20.4.jar:git-Paper-388]</code></pre>
 <p>&nbsp;</p>
 <h3>是否在timings报告中显示更多的信息</h3>
 <pre><code class="language-plaintext">verbose: true</code></pre>
@@ -236,6 +258,13 @@ hidden-config-entries:
 </blockquote>
 <p>&nbsp;</p>
 <h2>unsupported-settings:（失效配置）</h2>
+<p>与其他配置选项不一样这里面存放的是一些临时失效的配置，即不影响服务端的配置和相关功能，也可能是未来会从新加入相关的功能</p>
+<p>在上一个版本（指配置文件版本<code>_version</code>）临时失效或者未来将加入的配置也会放在这里</p>
+<h3>&nbsp;</h3>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <h2>watchdog:（看门狗）</h2>
 <p>&nbsp;</p>
 <h1>config/paper-world-defaults.yml</h1>
