@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-01-14T14:48:26.562Z
+date: 2024-01-14T15:09:00.020Z
 tags: minecraft, paper, server
 editor: ckeditor
 dateCreated: 2024-01-14T13:10:05.919Z
@@ -10,3 +10,12 @@ dateCreated: 2024-01-14T13:10:05.919Z
 
 <h1>Paper配置解析</h1>
 <p>&nbsp; &nbsp; Paper是PaperMC团队基于Spigot制作的一个更高性能和更多BUG修复，同时还加入了对<a href="https://papermc.io/downloads/velocity">Velocity</a>(同样由PaperMC开发)服务端的支持</p>
+<p>Paper在其Bukkit API和Spigot API的基础上同样添加了很多自己的API接口（PaperAPI）并且加入了大量的异步化线程支持，PaperMC还改进并优化了很多Spigot中存在的缺陷，显著提高了性能</p>
+<p>相较于Spigot，Paper中的<a href="https://www.spigotmc.org/wiki/timings/">Timings</a>中包含了更多的信息（注：后续PaperMC官方会将内置的Timings逐步替换为<a href="https://spark.lucko.me/download">Spark</a>），PaperMC改写了 Bukkit API 与 Spigot API</p>
+<p>Paper改进了很多Bukkit与Spigot的API，并保留了对原有的Bukkit和Spigot插件的支持，Paper拥有更高性能的Anti X-ray反矿物透视系统，显著降低了因假矿计算所带来的CPU负载。目前几乎没有插件能够超越这一点。</p>
+<p>Paper最早的名称为<span style="font-family:Arial, Helvetica, sans-serif;">PaperSpigot，后被更名为Paper</span></p>
+<p>本片文章部分内容参考自：<a href="https://docs.papermc.io/paper">PaperWiki</a>，Spigot 中文开发指南，<a href="https://mhy278.gitee.io/minecraftserverhostguidehtml/">我的世界服务器搭建指南</a></p>
+<p>首先我们先做一下基础准备工作，生成配置文件</p>
+<ol>
+  <li>直接去<a href="https://papermc.io/downloads/paper">PaperMC</a>官网下载服务端，相较于Spigot无需其他操作直接</li>
+</ol>
