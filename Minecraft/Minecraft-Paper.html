@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-01-14T20:56:10.384Z
+date: 2024-01-14T21:34:07.414Z
 tags: minecraft, paper, server
 editor: ckeditor
 dateCreated: 2024-01-14T13:10:05.919Z
@@ -135,6 +135,39 @@ dateCreated: 2024-01-14T13:10:05.919Z
 </blockquote>
 <p>&nbsp;</p>
 <h2>chunk-loading-basic:（基本区块加载）</h2>
+<h3>设置每个玩家的区块生成的最大速度</h3>
+<pre><code class="language-plaintext">player-max-chunk-generate-rate: -1.0</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>-1·········································································禁用限制</li>
+  <li>浮点型·································································其他数字</li>
+</ul>
+<blockquote>
+  <p>为每个玩家的区块生成的最大速度限制，设置为-1可禁用此限制</p>
+</blockquote>
+<p>&nbsp;</p>
+<h3>设置每个玩家的区块加载的最大速度</h3>
+<pre><code class="language-plaintext">player-max-chunk-load-rate: 100.0</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>-1·········································································禁用限制</li>
+  <li>浮点型·································································其他数字</li>
+</ul>
+<blockquote>
+  <p>为每个玩家的区块加载的最大速度限制，设置为-1可禁用此限制，上限应该是100.0</p>
+</blockquote>
+<p>&nbsp;</p>
+<h3>设置为每个玩家每秒发送的区块最大值</h3>
+<pre><code class="language-plaintext">player-max-chunk-send-rate: 75.0</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>-1·········································································禁用限制</li>
+  <li>浮点型·································································其他数字</li>
+</ul>
+<blockquote>
+  <p>服务器将发送给每个玩家的最大值（以每秒一块为单位），设置为-1可禁用此限制。</p>
+</blockquote>
+<p>&nbsp;</p>
 <h2>chunk-system:（区块系统）</h2>
 <h2>collisions:（碰撞）</h2>
 <h2>commands:（指令）</h2>
