@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-01-15T15:13:57.807Z
+date: 2024-01-15T15:21:07.778Z
 tags: minecraft, paper, server
 editor: ckeditor
 dateCreated: 2024-01-14T13:10:05.919Z
@@ -331,21 +331,32 @@ dateCreated: 2024-01-14T13:10:05.919Z
   <li>整数型</li>
 </ul>
 <blockquote>
-  <p>物品自定义的名字的限制，需要注意的是在使用群组端，数据库同步等数据同步的时候，需要将类似这些对物品的限制改动同步到全部子服，以避免在服务器A名称限制100000但是在B限制只有1000这样的事情发生，这样会造成服务端异常</p>
+  <p>物品自定义的名字的限制，这些限制一般不需要调整</p>
+  <ul>
+    <li>需要注意的是在使用群组端，数据库同步等数据同步的时候，需要将类似这些对物品的限制改动同步到全部子服，以避免在A端名称限制100000但是在B端限制只有100这样的事情发生，这样会造成服务端异常</li>
+  </ul>
 </blockquote>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<h3>设置Lore的最大长度</h3>
 <pre><code class="language-plaintext">lore-line: 8192</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>整数型</li>
+</ul>
+<blockquote>
+  <p>Lore就是在物品栏里面把鼠标放上去就显示信息的那个UI，这个一般也不需要动，因为有一些插件会注册一些隐藏的Lore，你看见的没那么多实际上可能内容非常多</p>
+</blockquote>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p>是否解析书籍中的选择器</p>
 <pre><code class="language-plaintext">resolve-selectors-in-books: false</code></pre>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>一些插件会利用书去做一些UI功能，可能会用到这些功能，但是一般情况下不需要</p>
+</blockquote>
 <p>&nbsp;</p>
 <h2>logging:（记录）</h2>
 <h2>messages:（消息）</h2>
