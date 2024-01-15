@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-01-15T15:21:26.275Z
+date: 2024-01-15T15:23:21.439Z
 tags: minecraft, paper, server
 editor: ckeditor
 dateCreated: 2024-01-14T13:10:05.919Z
@@ -347,7 +347,7 @@ dateCreated: 2024-01-14T13:10:05.919Z
   <p>Lore就是在物品栏里面把鼠标放上去就显示信息的那个UI，这个一般也不需要动，因为有一些插件会注册一些隐藏的Lore，你看见的没那么多实际上可能内容非常多</p>
 </blockquote>
 <p>&nbsp;</p>
-<p>是否解析书籍中的选择器</p>
+<h3>是否解析书籍中的选择器</h3>
 <pre><code class="language-plaintext">resolve-selectors-in-books: false</code></pre>
 <p>&nbsp;以下为具体参数：</p>
 <ul>
@@ -359,6 +359,21 @@ dateCreated: 2024-01-14T13:10:05.919Z
 </blockquote>
 <p>&nbsp;</p>
 <h2>logging:（记录）</h2>
+<h3>是否在日志中重新映射</h3>
+<pre><code class="language-plaintext">deobfuscate-stacktraces: true</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>是否在日志中重新映射Spigot映射的stacktraces到Mojang映射，对Mojang映射的服务器没有影响</p>
+  <ul>
+    <li>什么勾巴玩意？没看明白</li>
+  </ul>
+</blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <h2>messages:（消息）</h2>
 <h2>misc:（杂项）</h2>
 <h2>packet-limiter:（数据包限制器）</h2>
