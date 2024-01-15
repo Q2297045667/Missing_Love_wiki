@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-01-15T16:38:00.126Z
+date: 2024-01-15T16:46:00.841Z
 tags: minecraft, paper, server
 editor: ckeditor
 dateCreated: 2024-01-14T13:10:05.919Z
@@ -487,14 +487,30 @@ dateCreated: 2024-01-14T13:10:05.919Z
   <p>并不是无脑越高越好，可以根据你的环境配置来适当调整，值越大占用的内存越多</p>
 </blockquote>
 <p>&nbsp;</p>
+<h3>是否使用更严格的世界维度类型检查</h3>
+<pre><code class="language-plaintext">strict-advancement-dimension-check: false</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>禁用将与“Overworld”、“下界”或“末地”使用同一代的世界转换为常规维度而非世界的特定维度，没太看明白具体的意思，应该是世界维度类型一类的</p>
+</blockquote>
+<p>&nbsp;</p>
+<h3>是否使用另外的“运气”公式</h3>
+<pre><code class="language-plaintext">use-alternative-luck-formula: false</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>使用另一个运气公式，允许将运气应用于未定义“质量”的物品，对捕鱼公式进行重大更改，这可能会对钓鱼或其他需要”运气“的事务产生一些影响</p>
+</blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<pre><code class="language-plaintext">region-file-cache-size: 256
-strict-advancement-dimension-check: false
-use-alternative-luck-formula: false
+<pre><code class="language-plaintext">use-alternative-luck-formula: false
 use-dimension-type-for-custom-spawners: false</code></pre>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
