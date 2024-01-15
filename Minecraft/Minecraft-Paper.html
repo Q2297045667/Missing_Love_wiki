@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-01-15T16:07:33.727Z
+date: 2024-01-15T16:17:30.634Z
 tags: minecraft, paper, server
 editor: ckeditor
 dateCreated: 2024-01-14T13:10:05.919Z
@@ -429,6 +429,25 @@ dateCreated: 2024-01-14T13:10:05.919Z
 <blockquote>
   <p>如果你的服务器没有每秒钟上百条消息等着输出的话就不要改动这几个配置，不要闲的蛋疼</p>
 </blockquote>
+<p>&nbsp;</p>
+<h3>设置数据压缩处理等级</h3>
+<pre><code class="language-plaintext">compression-level: default</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>-1··········································································关闭压缩</li>
+  <li>1 - 10····································································压缩等级1到10，默认为6</li>
+</ul>
+<blockquote>
+  <p>当群组端和子服处于一个网络下建议关闭，因为浪费性能且没什么卵用，数值越小（-1除外）需要耗费的CPU性能越多，同时越节省服务器带宽，反之亦然（看你的服务器性能和带宽适当调整）</p>
+  <ul>
+    <li>这个和原版服务端配置文件 server.properties 中的 network-compression-threshold 有些许的不同，那个是控制数据包的大小，这个是数据包的压缩等级</li>
+  </ul>
+</blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
