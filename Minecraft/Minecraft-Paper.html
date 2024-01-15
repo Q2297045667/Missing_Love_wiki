@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-01-15T16:20:02.870Z
+date: 2024-01-15T16:26:57.972Z
 tags: minecraft, paper, server
 editor: ckeditor
 dateCreated: 2024-01-14T13:10:05.919Z
@@ -445,17 +445,23 @@ dateCreated: 2024-01-14T13:10:05.919Z
   </ul>
 </blockquote>
 <p>&nbsp;</p>
-<h3>&nbsp;</h3>
+<h3>是否修复 <a href="https://bugs.mojang.com/browse/MC-4">MC-4</a> 的问题</h3>
+<pre><code class="language-plaintext">fix-entity-position-desync: true</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>这玩意属于是千年老痰了，大概意思是当物品落在方块的边缘时，客户端有时会让它掉到其他地方，而服务器则将其留在原地，这是因为客户端的一种预测</p>
+</blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<pre><code class="language-plaintext">fix-entity-position-desync: true
+<pre><code class="language-plaintext">
 load-permissions-yml-before-plugins: true
 max-joins-per-tick: 5
 region-file-cache-size: 256
