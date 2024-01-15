@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-01-15T16:46:00.841Z
+date: 2024-01-15T16:47:51.635Z
 tags: minecraft, paper, server
 editor: ckeditor
 dateCreated: 2024-01-14T13:10:05.919Z
@@ -509,11 +509,16 @@ dateCreated: 2024-01-14T13:10:05.919Z
   <p>使用另一个运气公式，允许将运气应用于未定义“质量”的物品，对捕鱼公式进行重大更改，这可能会对钓鱼或其他需要”运气“的事务产生一些影响</p>
 </blockquote>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<pre><code class="language-plaintext">use-alternative-luck-formula: false
-use-dimension-type-for-custom-spawners: false</code></pre>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<h3>是否允许幻影、流浪商人等在自定义的世界上生成</h3>
+<pre><code class="language-plaintext">use-dimension-type-for-custom-spawners: false</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>幻影、流浪商人等是否应该能够在自定义的世界上生成，默认为false以<i>匹配普通行为</i></p>
+</blockquote>
 <p>&nbsp;</p>
 <h2>packet-limiter:（数据包限制器）</h2>
 <h2>player-auto-save:（玩家自动保存）</h2>
