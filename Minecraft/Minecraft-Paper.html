@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-02-12T15:08:25.715Z
+date: 2024-02-12T15:15:18.479Z
 tags: paper
 editor: ckeditor
 dateCreated: 2024-02-11T16:15:47.318Z
@@ -539,6 +539,24 @@ dateCreated: 2024-02-11T16:15:47.318Z
 <h3>设置玩家被提出的消息</h3>
 <pre><code class="language-plaintext">kick-message: &lt;red&gt;&lt;lang:disconnect.exceeded_packet_rate&gt;</code></pre>
 <p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>字符串</li>
+</ul>
+<blockquote>
+  <p>玩家因为发送了太多的数据包而被踢出服务器，使用 <a href="https://docs.advntr.dev/minimessage/">MiniMessage</a> 格式化，和 messages:（消息）是一样的使用方式都是调用客户端的语言文本</p>
+</blockquote>
+<p>&nbsp;</p>
+<h3>&nbsp;</h3>
+<pre><code class="language-plaintext">overrides:
+  ServerboundPlaceRecipePacket:
+    action: DROP
+    interval: 4.0
+    max-packet-rate: 5.0</code></pre>
+<p>&nbsp;</p>
+<blockquote>
+  <p>覆盖任何单个命名数据包的全局配置。您可以找到每个数据包在时间上显示的名称。对于更有经验的用户，此处命名的数据包使用Mojang映射，而不用考虑服务器</p>
+</blockquote>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
