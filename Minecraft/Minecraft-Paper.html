@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-02-12T15:24:37.021Z
+date: 2024-02-12T15:30:23.577Z
 tags: paper
 editor: ckeditor
 dateCreated: 2024-02-11T16:15:47.318Z
@@ -569,9 +569,27 @@ dateCreated: 2024-02-11T16:15:47.318Z
 </blockquote>
 <p>&nbsp;</p>
 <h2>player-auto-save:（玩家自动保存）</h2>
-<h3>&nbsp;</h3>
+<h3>设置每tick保存玩家最大的数量</h3>
+<pre><code class="language-plaintext">max-per-tick: -1</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>-1······································································将根据玩家自动保存的速率设置10或20的推荐值</li>
+  <li>整数型······························································建议根据服务器的性能决定</li>
+</ul>
+<blockquote>
+  <p>一次tick最多应该保存多少玩家，值 -1将根据玩家自动保存的速率设置10或20的推荐值</p>
+</blockquote>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
+<h3>设置玩家数据保存的间隔时间</h3>
+<pre><code class="language-plaintext">rate: -1</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>-1······································································将根据玩家自动保存的速率设置10或20的推荐值</li>
+  <li>整数型······························································建议根据服务器的性能决定</li>
+</ul>
+<blockquote>
+  <p>&nbsp;</p>
+</blockquote>
 <p>&nbsp;</p>
 <h2>proxies:（群组端代理）</h2>
 <h2>scoreboards:（记分板）</h2>
