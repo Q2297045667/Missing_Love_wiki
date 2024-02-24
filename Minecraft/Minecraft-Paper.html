@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-02-12T17:27:06.092Z
+date: 2024-02-24T00:26:01.998Z
 tags: paper
 editor: ckeditor
 dateCreated: 2024-02-11T16:15:47.318Z
@@ -528,9 +528,9 @@ dateCreated: 2024-02-11T16:15:47.318Z
   max-packet-rate: 500.0</code></pre>
 <p>&nbsp;以下为具体参数：</p>
 <ul>
-  <li>&nbsp; &nbsp; action: KICK·····················································违反限制后要采取的操作，有DROP和KICK，DROP会忽略超过限制的数据包，KICK会因为超过限制而踢出玩家</li>
-  <li>&nbsp; &nbsp; interval: 7.0······················································最大数据包速率的间隔（以秒为单位）</li>
-  <li>&nbsp; &nbsp; max-packet-rate: 500.0···································间隔内每个玩家允许的数据包数量</li>
+  <li>action: KICK·····················································违反限制后要采取的操作，有DROP和KICK，DROP会忽略超过限制的数据包，KICK会因为超过限制而踢出玩家</li>
+  <li>interval: 7.0······················································最大数据包速率的间隔（以秒为单位）</li>
+  <li>max-packet-rate: 500.0···································间隔内每个玩家允许的数据包数量</li>
 </ul>
 <blockquote>
   <p>可以限制那些数据包异常的客户端，但是感觉没什么实际上的作用，不建议折腾默认就好，如果你的玩家因为数据包被踢出可以将 ”action“ 的 KICK 改为 DROP</p>
@@ -597,7 +597,7 @@ dateCreated: 2024-02-11T16:15:47.318Z
   online-mode: true</code></pre>
 <p>&nbsp;以下为具体参数：</p>
 <ul>
-  <li>&nbsp; online-mode: true·········································是否开启在线模式</li>
+  <li>online-mode: true·········································是否开启在线模式</li>
 </ul>
 <blockquote>
   <p>指示服务器在使用BungeeCord时如何处理玩家UUID和数据，始终设置为与代理的联机模式设置相匹配</p>
@@ -884,6 +884,71 @@ java.net.UnknownHostException: timings.aikar.com
 </blockquote>
 <p>&nbsp;</p>
 <h2>anticheat:（反作弊）</h2>
+<pre><code class="language-plaintext">anticheat:
+  anti-xray:
+    enabled: false
+    engine-mode: 1
+    hidden-blocks:
+    - copper_ore
+    - deepslate_copper_ore
+    - raw_copper_block
+    - gold_ore
+    - deepslate_gold_ore
+    - iron_ore
+    - deepslate_iron_ore
+    - raw_iron_block
+    - coal_ore
+    - deepslate_coal_ore
+    - lapis_ore
+    - deepslate_lapis_ore
+    - mossy_cobblestone
+    - obsidian
+    - chest
+    - diamond_ore
+    - deepslate_diamond_ore
+    - redstone_ore
+    - deepslate_redstone_ore
+    - clay
+    - emerald_ore
+    - deepslate_emerald_ore
+    - ender_chest
+    lava-obscures: false
+    max-block-height: 64
+    replacement-blocks:
+    - stone
+    - oak_planks
+    - deepslate
+    update-radius: 2
+    use-permission: false
+  obfuscation:
+    items:
+      hide-durability: false
+      hide-itemmeta: false
+      hide-itemmeta-with-visual-effects: false</code></pre>
+<p>以下为具体参数：</p>
+<ul>
+  <li>anticheat:</li>
+  <li>&nbsp; anti-xray:</li>
+  <li>&nbsp; &nbsp; enabled: false</li>
+  <li>&nbsp; &nbsp; engine-mode: 1</li>
+  <li>&nbsp; &nbsp; hidden-blocks:</li>
+  <li>&nbsp; &nbsp; - copper_ore</li>
+  <li>&nbsp; &nbsp; - 其他</li>
+  <li>&nbsp; &nbsp; lava-obscures: false</li>
+  <li>&nbsp; &nbsp; max-block-height: 64</li>
+  <li>&nbsp; &nbsp; replacement-blocks:</li>
+  <li>&nbsp; &nbsp; - stone</li>
+  <li>&nbsp; &nbsp; - oak_planks</li>
+  <li>&nbsp; &nbsp; - deepslate</li>
+  <li>&nbsp; &nbsp; update-radius: 2</li>
+  <li>&nbsp; &nbsp; use-permission: false</li>
+  <li>&nbsp; obfuscation:</li>
+  <li>&nbsp; &nbsp; items:</li>
+  <li>&nbsp; &nbsp; &nbsp; hide-durability: false</li>
+  <li>&nbsp; &nbsp; &nbsp; hide-itemmeta: false</li>
+  <li>&nbsp; &nbsp; &nbsp; hide-itemmeta-with-visual-effects: false</li>
+</ul>
+<p>&nbsp;</p>
 <h2>chunks:（区块）</h2>
 <h2>collisions:（碰撞）</h2>
 <h2>command-blocks:（命令方块）</h2>
