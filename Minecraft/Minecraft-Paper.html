@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-02-24T12:30:55.999Z
+date: 2024-02-24T12:59:55.464Z
 tags: paper
 editor: ckeditor
 dateCreated: 2024-02-11T16:15:47.318Z
@@ -942,11 +942,11 @@ java.net.UnknownHostException: timings.aikar.com
   <li>&nbsp; &nbsp; - 其他······························································需要替换的方块ID（太长了删除几行）</li>
   <li>&nbsp; &nbsp; update-radius: 2············································向客户端发送的真实区块半径（只接受值0到2，小于0的值将取整为0，而大于2的值将取整为2，0仅用于测试目的不建议在生产中使用）</li>
   <li>&nbsp; &nbsp; use-permission: false···································是否允许拥有paper权限的玩家绕过反X矿透，默认情况下是禁用的，因为传统的权限插件可能难以进行检查</li>
-  <li>&nbsp; obfuscation:····················································</li>
+  <li>&nbsp; obfuscation:····················································混淆</li>
   <li>&nbsp; &nbsp; items:·····························································</li>
-  <li>&nbsp; &nbsp; &nbsp; hide-durability: false···································</li>
-  <li>&nbsp; &nbsp; &nbsp; hide-itemmeta: false···································</li>
-  <li>&nbsp; &nbsp; &nbsp; hide-itemmeta-with-visual-effects: false··</li>
+  <li>&nbsp; &nbsp; &nbsp; hide-durability: false···································控制是否将耐久性信息发送到其他玩家的客户端。当观察其他玩家时，这可能会破坏依赖耐久性值的资源包</li>
+  <li>&nbsp; &nbsp; &nbsp; hide-itemmeta: false···································控制是否应将可能给作弊客户端带来优势的不必要的物品信息（如附魔、shulker盒子/捆绑包中的物品等）发送给其他玩家的客户端。这可能会破坏在观察其他玩家时依赖于附魔、传说或物品名称等信息的资源包</li>
+  <li>&nbsp; &nbsp; &nbsp; hide-itemmeta-with-visual-effects: false··控制是否应将影响项目显示方式的项目信息（如磁石罗盘位置）发送给其他玩家的客户端。这些信息可能会被作弊的客户用来给作弊的玩家带来另一个优势。然而，这将影响某些物品被另一名玩家持有时的外观</li>
 </ul>
 <blockquote>
   <p>&nbsp;</p>
