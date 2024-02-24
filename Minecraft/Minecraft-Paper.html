@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-02-24T14:56:56.127Z
+date: 2024-02-24T15:01:25.519Z
 tags: paper
 editor: ckeditor
 dateCreated: 2024-02-11T16:15:47.318Z
@@ -950,6 +950,11 @@ java.net.UnknownHostException: timings.aikar.com
 </ul>
 <blockquote>
   <p>性能对比：第三方插件 &gt; Paper自带模式2 &gt; Paper自带模式3 &gt; Paper自带模式1 ,严格来说1是性能消耗最低的模式，但是也是最容易被绕过的模式，玩家可以看到无法被隐藏的方块，可以搭配<a href="https://github.com/stonar96/RayTraceAntiXray">RayTraceAntiXray</a>使用</p>
+  <ul>
+    <li>模式1：隐藏hidden-blocks列表里面的方块，建议开启lava-obscures</li>
+    <li>模式2：随机发送方块替换未显示的方块，遮蔽作弊客户端的视野</li>
+    <li>模式3：在模式2的额方式上优化了算法，可以看到模式3是横向一层一层的随机方块，相比较模式2更加节省资源</li>
+  </ul>
 </blockquote>
 <p>以下为各个模式实机演示图：</p>
 <figure class="table">
