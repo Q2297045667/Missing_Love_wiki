@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端的文件解析说明
 published: true
-date: 2024-06-01T10:57:49.570Z
+date: 2024-06-01T11:22:11.459Z
 tags: vanilla, server
 editor: ckeditor
 dateCreated: 2024-02-11T15:13:24.915Z
@@ -68,6 +68,7 @@ dateCreated: 2024-02-11T15:13:24.915Z
 <p>server.properties是官方原版服务端自带的配置文件，所以任何基于官方服务端的第三方服务端基本都会有这个文件，他的每一项配置都关乎于服务端的运行也是大多数基于官方服务端的第三方服务端都自带的一个基础配置文件</p>
 <p>虽然配置很简陋但是同样很重要，让我们来看看都有哪些可以“优化”和“更改”的配置吧</p>
 <p>注：以下部分说明来自<a href="https://zh.minecraft.wiki/w/Server.properties">中文WIki</a></p>
+<h3><span style="font-family:Arial, Helvetica, sans-serif;">是否允许服务端接受以Transfer数据包作为登录请求的传入连接</span></h3>
 <pre><code class="language-plaintext">accepts-transfers</code></pre>
 <p>以下为具体参数：</p>
 <ul>
@@ -126,6 +127,16 @@ dateCreated: 2024-02-11T15:13:24.915Z
   <p>与上面同理但是不同的是这个可以看到的是通过RCON执行的指令</p>
 </blockquote>
 <p>&nbsp;</p>
+<h3>是否允许上传DEBUG报告到相关服务器</h3>
+<pre><code class="language-plaintext">bug-report-link=</code></pre>
+<p>以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;不允许</li>
+  <li><strong>true</strong> -&nbsp;允许</li>
+</ul>
+<blockquote>
+  <p>&nbsp;</p>
+</blockquote>
 <p>&nbsp;</p>
 <h3>是否开启Debug（调试模式）</h3>
 <pre><code class="language-plaintext">debug=false</code></pre>
@@ -587,6 +598,17 @@ dateCreated: 2024-02-11T15:13:24.915Z
   <p>需要将enable-rcon设为true</p>
 </blockquote>
 <p>&nbsp;</p>
+<h3><span style="font-family:Arial, Helvetica, sans-serif;">设置区块文件压缩算法</span></h3>
+<pre><code class="language-plaintext">region-file-compression=deflate</code></pre>
+<p>以下为具体参数：</p>
+<ul>
+  <li><strong>deflate</strong><span style="font-family:Arial, Helvetica, sans-serif;"> - 区块文件使用</span><strong>Deflate</strong><span style="font-family:Arial, Helvetica, sans-serif;">算法压缩</span></li>
+  <li><span style="font-family:Arial, Helvetica, sans-serif;">lz4 - 区块文件使用LZ4算法压缩</span></li>
+  <li><span style="font-family:Arial, Helvetica, sans-serif;">none - 区块文件不进行压缩</span></li>
+</ul>
+<blockquote>
+  <p>&nbsp;</p>
+</blockquote>
 <p>&nbsp;</p>
 <h3>是否强制启用资源包</h3>
 <pre><code class="language-plaintext">require-resource-pack=false</code></pre>
