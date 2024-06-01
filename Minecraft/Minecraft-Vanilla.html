@@ -2,20 +2,10 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端的文件解析说明
 published: true
-date: 2024-06-01T10:42:43.617Z
+date: 2024-06-01T10:57:49.570Z
 tags: vanilla, server
 editor: ckeditor
 dateCreated: 2024-02-11T15:13:24.915Z
--->
-
-<!--
-title: Minecraft-Vanilla
-description: Mojiang原版服务端的文件解析说明
-published: true
-date: 2024-01-14T15:05:05.160Z
-tags: minecraft, server, vanilla
-editor: ckeditor
-dateCreated: 2023-12-24T19:24:58.102Z
 -->
 
 <h1>原版配置文件解析说明</h1>
@@ -24,7 +14,7 @@ dateCreated: 2023-12-24T19:24:58.102Z
 <p>&nbsp;</p>
 <p>首先我们先做一下基础准备工作，生成配置文件</p>
 <ol>
-  <li>安装对应版本的<a href="https://www.oracle.com/java/technologies/downloads/">Java</a>或其他的Java发行版本，例如<a href="https://www.azul.com/downloads/#zulu">Zulu</a>，<a href="https://openjdk.org/">OpenJDK</a><strong>等</strong></li>
+  <li>安装对应版本的<a href="https://www.oracle.com/java/technologies/downloads/">Java</a>或其他的Java发行版本，例如<a href="https://www.azul.com/downloads/#zulu">Zulu</a>，<a href="https://openjdk.org/">OpenJDK</a><strong>等，鉴于篇幅限制之后的文章不在赘述</strong></li>
   <li>下载官方提供的<a href="https://minecraft.net/download/server">服务端文件</a></li>
   <li>编写启动脚本并启动服务端</li>
   <li>修改eula.txt文件中的eula为true并再次启动服务端</li>
@@ -78,6 +68,15 @@ dateCreated: 2023-12-24T19:24:58.102Z
 <p>server.properties是官方原版服务端自带的配置文件，所以任何基于官方服务端的第三方服务端基本都会有这个文件，他的每一项配置都关乎于服务端的运行也是大多数基于官方服务端的第三方服务端都自带的一个基础配置文件</p>
 <p>虽然配置很简陋但是同样很重要，让我们来看看都有哪些可以“优化”和“更改”的配置吧</p>
 <p>注：以下部分说明来自<a href="https://zh.minecraft.wiki/w/Server.properties">中文WIki</a></p>
+<pre><code class="language-plaintext">accepts-transfers</code></pre>
+<p>以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;不允许</li>
+  <li><strong>true</strong> -&nbsp;允许</li>
+</ul>
+<blockquote>
+  <p><span style="font-family:Arial, Helvetica, sans-serif;">允许服务端接受以Transfer数据包作为登录请求的传入连接</span></p>
+</blockquote>
 <p>&nbsp;</p>
 <h3><strong>是否允许玩家在安装带有飞行功能（作弊）的mod前提下在生存模式下飞行</strong></h3>
 <pre><code class="language-plaintext">allow-flight=false</code></pre>
