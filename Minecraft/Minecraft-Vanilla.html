@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端的文件解析说明
 published: true
-date: 2024-07-20T07:23:34.183Z
+date: 2024-07-20T07:41:10.319Z
 tags: vanilla, server
 editor: ckeditor
 dateCreated: 2024-02-11T15:13:24.915Z
@@ -151,7 +151,7 @@ dateCreated: 2024-02-11T15:13:24.915Z
   <li>true - 开启</li>
 </ul>
 <blockquote>
-  <p>该选项默认是隐藏的需要管理员手动添加（这功能没什么用处）</p>
+  <p>该选项默认是隐藏的需要管理员手动添加（这功能只对开发者有用，对普通用户没什么用处，而且浪费输出性能）</p>
 </blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -280,10 +280,13 @@ dateCreated: 2024-02-11T15:13:24.915Z
 <pre><code class="language-plaintext">function-permission-level=2</code></pre>
 <p>以下为具体参数：</p>
 <ul>
-  <li>整数（1-4）</li>
+  <li>1 - OP可以绕过重生点保护破环出生点的方块</li>
+  <li>2 - OP可以使用所有单人游戏作弊命令（除了/<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/publish">publish</a>，因为不能在服务器上使用；/<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/debug">debug</a>也是）并使用命令方块</li>
+  <li>3 - OP可以使用大多数多人游戏中独有的命令，包括 /<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/debug">debug</a>，以及管理玩家的命令（/<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/ban">ban</a>，/<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/op">op</a>等等）</li>
+  <li>4 - OP可以使用所有命令，包括 /<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/stop">stop</a>, /<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/save-all">save-all</a>, /<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/save-on">save-on</a> 和 /<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/save-off">save-off</a></li>
 </ul>
 <blockquote>
-  <p>具体可以参照<a href="https://zh.minecraft.wiki/w/Server.properties#op-permission-level">我的世界百科</a></p>
+  <p>权限等级具体可以参照<a href="https://zh.minecraft.wiki/w/Server.properties#op-permission-level">我的世界百科</a></p>
 </blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -507,7 +510,7 @@ dateCreated: 2024-02-11T15:13:24.915Z
   <li>true - 开启</li>
 </ul>
 <blockquote>
-  <p>盗版（离线）服务器需要第三方验证系统（或插件）（不然谁都能进来）如果有正版的话还是建议开启</p>
+  <p>盗版（离线）服务器需要第三方验证系统（或插件）（不然谁都能进来）如果有正版的话还是建议开启，</p>
 </blockquote>
 <p>&nbsp;</p>
 <h3>设置使用/<a href="https://zh.minecraft.wiki/w/%E5%91%BD%E4%BB%A4/op">op</a>命令时OP的权限等级</h3>
@@ -531,7 +534,7 @@ dateCreated: 2024-02-11T15:13:24.915Z
   <li>整数</li>
 </ul>
 <blockquote>
-  <p>一般应该没人显的发慌设置这个吧？玩家真的那么多吗？不会真有那么多吧？不会吧，不会吧？</p>
+  <p>一般应该没人闲的发慌设置这个吧？玩家真的那么多吗？不会真有那么多吧？不会吧，不会吧？</p>
 </blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -543,7 +546,7 @@ dateCreated: 2024-02-11T15:13:24.915Z
   <li><strong>false</strong> - 禁用 服务器将不会禁止玩家使用虚拟专用网络或代理</li>
 </ul>
 <blockquote>
-  <p>群组模式下建议禁止，因为这个功能选项会由群组端（Velocity，Bungee）提供</p>
+  <p>群组模式下建议禁止，因为这个功能选项会由群组端（Velocity或Bungee）提供</p>
 </blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -764,14 +767,14 @@ dateCreated: 2024-02-11T15:13:24.915Z
 </blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
-<h3>暂时未知作用</h3>
+<h3><strong>设置服务器中需要被屏蔽的文本</strong></h3>
 <pre><code class="language-plaintext">text-filtering-config=</code></pre>
 <p>以下为具体参数：</p>
 <ul>
-  <li>未知类型，猜测为字符串</li>
+  <li>字符串</li>
 </ul>
 <blockquote>
-  <p>WIKI上没写我自己也没有研究明白</p>
+  <p>屏蔽玩家输入的聊天文本，在此输入的文本会被服务器屏，其他玩家将看不见这条信息</p>
 </blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
