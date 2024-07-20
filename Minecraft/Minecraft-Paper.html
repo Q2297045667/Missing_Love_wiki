@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-07-20T10:25:00.317Z
+date: 2024-07-20T10:29:04.517Z
 tags: paper
 editor: ckeditor
 dateCreated: 2024-02-11T16:15:47.318Z
@@ -1028,10 +1028,11 @@ java.net.UnknownHostException: timings.aikar.com
 <pre><code class="language-plaintext">auto-save-interval: default</code></pre>
 <p>以下为具体参数：</p>
 <ul>
-  <li>整数型</li>
+  <li>整数型································································单位为ticks</li>
+  <li>-1········································································将使用bukkit.yml中的全局ticks-per.autosave</li>
 </ul>
 <blockquote>
-  <p>&nbsp;</p>
+  <p>配置以刻度为单位的世界保存间隔，覆盖bukkit.yml中的ticks-per.autosave，默认将使用bukkit.yml中的全局ticks-per.autosave</p>
 </blockquote>
 <p>&nbsp;</p>
 <h2>collisions:（碰撞）</h2>
