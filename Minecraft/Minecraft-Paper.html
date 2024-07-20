@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-07-20T09:57:34.540Z
+date: 2024-07-20T10:10:35.320Z
 tags: paper
 editor: ckeditor
 dateCreated: 2024-02-11T16:15:47.318Z
@@ -840,15 +840,15 @@ java.net.UnknownHostException: timings.aikar.com
   <p>服务器是否应该允许绊线钩解除漏洞攻击。这允许复制字符串</p>
 </blockquote>
 <p>&nbsp;</p>
-<h3>&nbsp;</h3>
-<pre><code class="language-plaintext">&nbsp;</code></pre>
+<p>是否允许不安全末地传送门的传送</p>
+<pre><code class="language-plaintext">allow-unsafe-end-portal-teleportation: false</code></pre>
 <p>&nbsp;以下为具体参数：</p>
 <ul>
   <li><strong>false</strong> -&nbsp;关闭</li>
   <li><strong>true</strong> -&nbsp;开启</li>
 </ul>
 <blockquote>
-  <p>&nbsp;</p>
+  <p>此设置允许与末地传送门的漏洞利用，例如复制沙子。不建议启用此设置，但此设置是为希望使用它的人提供的</p>
 </blockquote>
 <p>&nbsp;</p>
 <h3>设置服务器保存的区域文件压缩格式</h3>
@@ -873,6 +873,17 @@ java.net.UnknownHostException: timings.aikar.com
 </ul>
 <blockquote>
   <p>这对于离线（盗版）服务器非常有用，关闭它会允许玩家名称出现特殊字符，可能会导致命令和插件出现问题</p>
+</blockquote>
+<p>&nbsp;</p>
+<h3>是否屏蔽被阻挡时跳过原版伤害tick</h3>
+<pre><code class="language-plaintext">skip-vanilla-damage-tick-when-shield-blocked: false</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>当实体通过盾牌阻止伤害时，服务器是否应该跳过伤害标记。虽然香原版确实会处理一个伤害tick，但这种行为在Paper中是一个长期存在的错误。启用此选项意味着伤害标记将被跳过，这可能会导致盾牌因失去抗毁性而受到快速伤害</p>
 </blockquote>
 <p>&nbsp;</p>
 <h2>watchdog:（看门狗）</h2>
