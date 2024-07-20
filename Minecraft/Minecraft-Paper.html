@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-07-20T10:40:32.787Z
+date: 2024-07-20T10:47:10.216Z
 tags: paper
 editor: ckeditor
 dateCreated: 2024-02-11T16:15:47.318Z
@@ -1045,6 +1045,26 @@ java.net.UnknownHostException: timings.aikar.com
   <p>延迟区块卸载的时间，以单个单位表示的持续时间，例如10h或25m，支持d（天）、h（小时）、m（分钟）和s（秒）</p>
 </blockquote>
 <p>&nbsp;</p>
+<h3>设置每个区块的相应的实体保存限制</h3>
+<pre><code class="language-plaintext">entity-per-chunk-save-limit:
+  arrow: -1
+  ender_pearl: -1
+  experience_orb: -1
+  fireball: -1
+  small_fireball: -1
+  snowball: -1</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>arrow: -1··························································箭</li>
+  <li>ender_pearl: -1················································末影珍珠</li>
+  <li>experience_orb: -1·········································经验球</li>
+  <li>fireball: -1························································火焰弹</li>
+  <li>small_fireball: -1·············································小火球</li>
+  <li>snowball: -1····················································雪球</li>
+</ul>
+<blockquote>
+  <p>&nbsp;</p>
+</blockquote>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
