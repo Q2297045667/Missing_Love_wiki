@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-07-20T10:29:04.517Z
+date: 2024-07-20T10:31:15.122Z
 tags: paper
 editor: ckeditor
 dateCreated: 2024-02-11T16:15:47.318Z
@@ -1034,6 +1034,19 @@ java.net.UnknownHostException: timings.aikar.com
 <blockquote>
   <p>配置以刻度为单位的世界保存间隔，覆盖bukkit.yml中的ticks-per.autosave，默认将使用bukkit.yml中的全局ticks-per.autosave</p>
 </blockquote>
+<p>&nbsp;</p>
+<h3>设置延迟区块卸载</h3>
+<pre><code class="language-plaintext">delay-chunk-unloads-by: 10s</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>时间型</li>
+</ul>
+<blockquote>
+  <p>延迟块卸载到指定时间。以单个单位表示的持续时间，例如10小时或25m。支持d、h、m和s</p>
+</blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <h2>collisions:（碰撞）</h2>
 <h2>command-blocks:（命令方块）</h2>
