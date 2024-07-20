@@ -2,20 +2,10 @@
 title: Minecraft-Spigot
 description: Spigot的配置文件解析说明
 published: true
-date: 2024-06-07T14:21:37.666Z
+date: 2024-07-20T08:39:51.399Z
 tags: spigot
 editor: ckeditor
 dateCreated: 2024-02-11T16:14:46.711Z
--->
-
-<!--
-title: Minecraft-Spigot
-description: Spigot的配置文件解析说明
-published: true
-date: 2024-02-11T15:15:37.019Z
-tags: spigot
-editor: code
-dateCreated: 2024-02-11T15:15:37.019Z
 -->
 
 <h1>Spigot配置解析</h1>
@@ -25,13 +15,12 @@ dateCreated: 2024-02-11T15:15:37.019Z
 <p>首先我们先做一下基础准备工作，生成配置文件</p>
 <ol>
   <li>下载由spigotmc提供的构建工具（<a href="https://hub.spigotmc.org/jenkins/job/BuildTools/">BuildTools</a>）</li>
-  <li>按照<a href="https://hub.spigotmc.org/jenkins/job/BuildTools/">BuildToolsWiki</a>编写工具启动脚本，例如版本1.20.4，我们需要在脚本中写入<code><strong>java</strong> -jar BuildTools.jar --rev 1.20.4</code></li>
+  <li>按照<a href="https://hub.spigotmc.org/jenkins/job/BuildTools/">BuildToolsWiki</a>编写工具启动脚本，例如版本1.20.4，我们需要在脚本中写入<code><strong>java</strong> -jar BuildTools.jar --rev 1.21</code></li>
   <li>首次编译等待大概5分钟即可，如果编译时间过长，可以使用“科学上网”</li>
-  <li>编译过后我们得到文件“spigot-1.20.4.jar”，将其放入空文件夹</li>
+  <li>编译过后我们得到文件“spigot-1.21.jar”，将其放入空文件夹</li>
   <li>编写常规启动脚本并启动服务端</li>
   <li>修改eula.txt文件中的eula为true并再次启动服务端</li>
 </ol>
-<p>&nbsp;</p>
 <h1>基本文件结构</h1>
 <p>相比较<a href="/Minecraft/Minecraft-Bukkit">CraftBukkit</a>我们会额外得到以下文件</p>
 <p>plugins\PluginMetrics</p>
@@ -40,7 +29,6 @@ dateCreated: 2024-02-11T15:15:37.019Z
 </ul>
 <p>timings·····································································开启timings之后会生成这个文件夹</p>
 <p>spigot.yml································································Spigot的核心配置文件</p>
-<p>&nbsp;</p>
 <h1>spigot.yml</h1>
 <p>以下是对spigot.yml文件的详细解析</p>
 <p>该文件需要配合<a href="/Minecraft/Minecraft-Vanilla">server.properties</a>和<a href="/Minecraft/Minecraft-Bukkit">bukkit.yml</a>一起使用</p>
@@ -250,7 +238,6 @@ outdated-server: Outdated server! I'm still on {0}</code></pre>
   ...（配置项）
   world_nether
   ...（配置项）</code></pre>
-  <p>&nbsp;</p>
 </blockquote>
 <p>&nbsp;</p>
 <h3><mark class="pen-red">注意：下列配置需要放在世界名称下</mark></h3>
