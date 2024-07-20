@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-07-20T10:16:39.555Z
+date: 2024-07-20T10:24:15.531Z
 tags: paper
 editor: ckeditor
 dateCreated: 2024-02-11T16:15:47.318Z
@@ -908,6 +908,13 @@ java.net.UnknownHostException: timings.aikar.com
 </blockquote>
 <p>&nbsp;</p>
 <h1>config/paper-world-defaults.yml</h1>
+<p>世界配置默认设置，</p>
+<ul>
+  <li>world/paper-world.yml············································Paper的world（主世界）世界配置文件</li>
+  <li>world_nether/paper-world.yml·······························Paper的world_nether（下届）世界配置文件</li>
+  <li>world_the_end/paper-world.yml····························Paper的world_the_end（末地）世界配置文件</li>
+</ul>
+<p>&nbsp;</p>
 <h3>配置文件的版本</h3>
 <pre><code class="language-plaintext">_version: 31</code></pre>
 <p>以下为具体参数：</p>
@@ -919,7 +926,7 @@ java.net.UnknownHostException: timings.aikar.com
 </blockquote>
 <p>&nbsp;</p>
 <h2>anticheat:（反作弊）</h2>
-<h3>反矿透与混淆</h3>
+<h3>设置反矿透与混淆</h3>
 <pre><code class="language-plaintext">anticheat:
   anti-xray:
     enabled: false
@@ -1017,8 +1024,15 @@ java.net.UnknownHostException: timings.aikar.com
 </figure>
 <p>&nbsp;</p>
 <h2>chunks:（区块）</h2>
-<pre><code class="language-plaintext">&nbsp;</code></pre>
-<p>&nbsp;</p>
+<h3>设置自动保存间隔</h3>
+<pre><code class="language-plaintext">auto-save-interval: default</code></pre>
+<p>以下为具体参数：</p>
+<ul>
+  <li>整数型</li>
+</ul>
+<blockquote>
+  <p>&nbsp;</p>
+</blockquote>
 <p>&nbsp;</p>
 <h2>collisions:（碰撞）</h2>
 <h2>command-blocks:（命令方块）</h2>
