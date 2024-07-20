@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-07-20T10:54:15.796Z
+date: 2024-07-20T10:57:31.753Z
 tags: paper
 editor: ckeditor
 dateCreated: 2024-02-11T16:15:47.318Z
@@ -1070,11 +1070,34 @@ java.net.UnknownHostException: timings.aikar.com
 <pre><code class="language-plaintext">fixed-chunk-inhabited-time: -1</code></pre>
 <p>&nbsp;以下为具体参数：</p>
 <p>&nbsp;</p>
+<blockquote>
+  <p>0</p>
+</blockquote>
 <p>&nbsp;</p>
+<h3>是否保存时刷新区域</h3>
+<pre><code class="language-plaintext">flush-regions-on-save: false</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>&nbsp;</p>
+</blockquote>
 <p>&nbsp;</p>
-<p>flush-regions-on-save: false</p>
-<p>max-auto-save-chunks-per-tick: 24</p>
-<p>prevent-moving-into-unloaded-chunks: false</p>
+<h3>设置每tick最大自动保存区块数</h3>
+<pre><code class="language-plaintext">max-auto-save-chunks-per-tick: 24</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>&nbsp;</p>
+</blockquote>
+<p>&nbsp;</p>
+<h3>是否防止移动到未加载的区块中</h3>
+<pre><code class="language-plaintext">prevent-moving-into-unloaded-chunks: false</code></pre>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
