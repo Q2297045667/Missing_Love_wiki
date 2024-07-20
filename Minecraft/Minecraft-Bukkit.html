@@ -2,7 +2,7 @@
 title: Minecraft-Bukkit
 description: CraftBukkit的配置文件解析说明
 published: true
-date: 2024-07-20T08:00:50.048Z
+date: 2024-07-20T08:09:20.820Z
 tags: server, bukkit
 editor: ckeditor
 dateCreated: 2024-02-11T15:14:21.069Z
@@ -41,6 +41,18 @@ dateCreated: 2024-02-11T15:14:21.069Z
 <p>相比较server.properties，bukkit.yml的文件储存格式为yml</p>
 <p>我们将其内容分段解析</p>
 <h2>settings:（全局配置）</h2>
+<h3>是否允许注册表中的旧密钥</h3>
+<pre><code class="language-plaintext">compatibility:
+  allow-old-keys-in-registry: false</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;</li>
+  <li><strong>true</strong> -&nbsp;</li>
+</ul>
+<blockquote>
+  <p>暂时不知道具体作用</p>
+</blockquote>
+<p>&nbsp;</p>
 <h3><i>是否允许末地生成</i></h3>
 <pre><code class="language-plaintext">allow-end: true</code></pre>
 <p>&nbsp;以下为具体参数：</p>
