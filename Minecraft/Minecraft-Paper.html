@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-07-20T10:59:46.833Z
+date: 2024-07-20T11:02:00.074Z
 tags: paper
 editor: ckeditor
 dateCreated: 2024-02-11T16:15:47.318Z
@@ -1091,19 +1091,22 @@ java.net.UnknownHostException: timings.aikar.com
 <pre><code class="language-plaintext">max-auto-save-chunks-per-tick: 24</code></pre>
 <p>&nbsp;以下为具体参数：</p>
 <ul>
-  <li><strong>false</strong> -&nbsp;关闭</li>
-  <li><strong>true</strong> -&nbsp;开启</li>
+  <li>整数型</li>
 </ul>
 <blockquote>
-  <p>&nbsp;</p>
+  <p>自动保存系统在一个刻度内保存的最大块数</p>
 </blockquote>
 <p>&nbsp;</p>
 <h3>是否防止移动到未加载的区块中</h3>
 <pre><code class="language-plaintext">prevent-moving-into-unloaded-chunks: false</code></pre>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>设置服务器是否阻止玩家移动到未加载的块中</p>
+</blockquote>
 <p>&nbsp;</p>
 <h2>collisions:（碰撞）</h2>
 <h2>command-blocks:（命令方块）</h2>
