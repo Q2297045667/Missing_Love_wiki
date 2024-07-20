@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端的文件解析说明
 published: true
-date: 2024-07-20T07:47:07.449Z
+date: 2024-07-20T07:54:16.297Z
 tags: vanilla, server
 editor: ckeditor
 dateCreated: 2024-02-11T15:13:24.915Z
@@ -839,17 +839,19 @@ dateCreated: 2024-02-11T15:13:24.915Z
   <li>/pardon-ip &nbsp;&lt;IP地址&gt;（从banned-ips.json文件内删除数据）</li>
 </ul>
 <p>&nbsp;</p>
-<h3>文件内容结构</h3>
-<p>&nbsp;</p>
 <h1>whitelist.json-名单文件</h1>
+<h3>指令使用</h3>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<p>他的工作命令是这样的：</p>
+<p>开启玩家名单：</p>
+<ul>
+  <li>/whitelist on</li>
+</ul>
+<p>给予玩家名单：</p>
+<ul>
+  <li>/whitelist add &nbsp;&lt;玩家名称&gt; （写入数据到whitelist.json文件）</li>
+</ul>
+<p>解除玩家名单：</p>
+<ul>
+  <li>/whitelist remove &nbsp;&lt;玩家名称&gt;（从whitelist.json文件内删除数据）</li>
+</ul>
