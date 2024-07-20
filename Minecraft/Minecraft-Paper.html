@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-07-20T10:57:31.753Z
+date: 2024-07-20T10:59:46.833Z
 tags: paper
 editor: ckeditor
 dateCreated: 2024-02-11T16:15:47.318Z
@@ -1069,9 +1069,11 @@ java.net.UnknownHostException: timings.aikar.com
 <h3>设置固定区块占用时间</h3>
 <pre><code class="language-plaintext">fixed-chunk-inhabited-time: -1</code></pre>
 <p>&nbsp;以下为具体参数：</p>
-<p>&nbsp;</p>
+<ul>
+  <li>整数型</li>
+</ul>
 <blockquote>
-  <p>0</p>
+  <p>如果为0或更大，则将区块占用时间设置为固定数字，在这种情况下，固定意味着静态或不变。这不是修复bug，当由于玩家活动而保持区块加载时，计时器会增加</p>
 </blockquote>
 <p>&nbsp;</p>
 <h3>是否保存时刷新区域</h3>
@@ -1082,7 +1084,7 @@ java.net.UnknownHostException: timings.aikar.com
   <li><strong>true</strong> -&nbsp;开启</li>
 </ul>
 <blockquote>
-  <p>&nbsp;</p>
+  <p>设置服务器在保存块时是否将其刷新到磁盘，这可能会对性能产生影响</p>
 </blockquote>
 <p>&nbsp;</p>
 <h3>设置每tick最大自动保存区块数</h3>
