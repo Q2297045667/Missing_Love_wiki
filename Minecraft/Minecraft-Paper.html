@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-07-20T09:12:31.124Z
+date: 2024-07-20T09:57:34.540Z
 tags: paper
 editor: ckeditor
 dateCreated: 2024-02-11T16:15:47.318Z
@@ -634,8 +634,7 @@ dateCreated: 2024-02-11T16:15:47.318Z
 <p>&nbsp;</p>
 <h2>scoreboards:（记分板）</h2>
 <h3>是否保存空的记分板组</h3>
-<pre><code class="language-plaintext">save-empty-scoreboard-teams: false
-</code></pre>
+<pre><code class="language-plaintext">save-empty-scoreboard-teams: false</code></pre>
 <p>&nbsp;以下为具体参数：</p>
 <ul>
   <li><strong>false</strong> -&nbsp;关闭</li>
@@ -688,8 +687,7 @@ tab-spam-limit: 500</code></pre>
 </blockquote>
 <p>&nbsp;</p>
 <h3>设置timings报告隐藏列表</h3>
-<pre><code class="language-plaintext">
-hidden-config-entries:
+<pre><code class="language-plaintext">hidden-config-entries:
 - database
 - proxies.velocity.secret</code></pre>
 <p>&nbsp;以下为具体参数：</p>
@@ -829,6 +827,28 @@ java.net.UnknownHostException: timings.aikar.com
 </ul>
 <blockquote>
   <p>这些物品包括地毯，TNT，铁轨 &nbsp;注意：这并不能控制沙子的复制，如有相关需求可以安装类似<a href="https://modrinth.com/plugin/foliaflow">FoliaFlow</a>之类的插件</p>
+</blockquote>
+<p>&nbsp;</p>
+<h3>允许绊线钩解除攻击</h3>
+<pre><code class="language-plaintext">allow-tripwire-disarming-exploits: false</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>服务器是否应该允许绊线钩解除漏洞攻击。这允许复制字符串</p>
+</blockquote>
+<p>&nbsp;</p>
+<h3>&nbsp;</h3>
+<pre><code class="language-plaintext">&nbsp;</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>&nbsp;</p>
 </blockquote>
 <p>&nbsp;</p>
 <h3>设置服务器保存的区域文件压缩格式</h3>
