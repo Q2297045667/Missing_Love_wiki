@@ -2,7 +2,7 @@
 title: Minecraft-Vanilla
 description: Mojiang原版服务端的文件解析说明
 published: true
-date: 2024-07-20T07:18:05.396Z
+date: 2024-07-20T07:23:34.183Z
 tags: vanilla, server
 editor: ckeditor
 dateCreated: 2024-02-11T15:13:24.915Z
@@ -21,7 +21,7 @@ dateCreated: 2024-02-11T15:13:24.915Z
 </ol>
 <p>如此我们会得到以下文件</p>
 <h1>基本文件结构</h1>
-<p>我们以版本<strong>1.20.3-pre1</strong>为例它的文件结构是这样的：</p>
+<p>我们以版本<strong>1.21</strong>为例，它的文件结构是这样的：</p>
 <figure class="image image-style-align-right"><img src="/服务端文件结构.png"></figure>
 <p>libraries---------------------------------------依赖库文件夹</p>
 <ul>
@@ -38,7 +38,7 @@ dateCreated: 2024-02-11T15:13:24.915Z
 </ul>
 <p>versions---------------------------------------执行程序文件夹</p>
 <ul>
-  <li>1.20.3-pre1</li>
+  <li>1.21</li>
 </ul>
 <p>world--------------------------------------------世界数据（地图，数据包等）</p>
 <ul>
@@ -70,7 +70,7 @@ dateCreated: 2024-02-11T15:13:24.915Z
 <p>&nbsp;</p>
 <h1>server.properties</h1>
 <p>首先我们来介绍最核心也是最主要的配置文件（server.properties），这个文件包含最基本的配置和自定义功能</p>
-<p>server.properties是官方原版服务端自带的配置文件，所以任何基于官方服务端的第三方服务端基本都会有这个文件，他的每一项配置都关乎于服务端的运行也是大多数基于官方服务端的第三方服务端都自带的一个基础配置文件</p>
+<p>server.properties 是官方原版服务端自带的配置文件，所以任何基于官方服务端的第三方服务端基本都会有这个文件，他的每一项配置都关乎于服务端的运行也是大多数基于官方服务端的第三方服务端都自带的一个基础配置文件</p>
 <p>虽然配置很简陋但是同样很重要，让我们来看看都有哪些可以“优化”和“更改”的配置吧</p>
 <p>注：以下部分说明来自<a href="https://zh.minecraft.wiki/w/Server.properties">中文WIki</a></p>
 <h3><span style="font-family:Arial, Helvetica, sans-serif;">是否允许服务端接受以Transfer数据包作为登录请求的传入连接</span></h3>
