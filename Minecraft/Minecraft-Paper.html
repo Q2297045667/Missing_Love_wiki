@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-07-20T11:02:00.074Z
+date: 2024-07-21T09:49:49.804Z
 tags: paper
 editor: ckeditor
 dateCreated: 2024-02-11T16:15:47.318Z
@@ -1109,8 +1109,85 @@ java.net.UnknownHostException: timings.aikar.com
 </blockquote>
 <p>&nbsp;</p>
 <h2>collisions:（碰撞）</h2>
+<h3>是否允许玩家实体碰撞时受到伤害</h3>
+<pre><code class="language-plaintext">allow-player-cramming-damage: false</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>允许玩家在与超过maxEntityCramming游戏规则中设置的实体碰撞时，因挤压而受到伤害</p>
+</blockquote>
+<p>&nbsp;</p>
+<h3>是否允许载具在只有玩家碰撞的情况下发生碰撞</h3>
+<pre><code class="language-plaintext">allow-vehicle-collisions: true</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>使用载具是否也应该能够在只有玩家碰撞的情况下发生碰撞</p>
+</blockquote>
+<p>&nbsp;</p>
+<h3>是否允许攀爬应绕过实体堆叠限制</h3>
+<pre><code class="language-plaintext">fix-climbing-bypassing-cramming-rule: false</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>设置攀爬是否应绕过实体填充限制（maxEntityCramming游戏规则），如果设置为true，攀爬状态中的实体也将被计入实体填充极限，以便它们受到窒息伤害</p>
+</blockquote>
+<p>&nbsp;</p>
+<h3>设置服务器在达到此值后停止处理碰撞</h3>
+<pre><code class="language-plaintext">max-entity-collisions: 8</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>整数型</li>
+</ul>
+<blockquote>
+  <p>设置服务器在达到此值后停止处理碰撞，可以解决一些玄学问题</p>
+</blockquote>
+<p>&nbsp;</p>
+<h3>是否仅当玩家是碰撞的两个实体之一时才计算碰撞</h3>
+<pre><code class="language-plaintext">only-players-collide: false</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>开启之后只有玩家在碰撞事件中才处理碰撞，开启之后会极大的影响服务器特性</p>
+</blockquote>
+<p>&nbsp;</p>
 <h2>command-blocks:（命令方块）</h2>
+<h3>是否要求命令方块满足相应的权限要求</h3>
+<pre><code class="language-plaintext">force-follow-perm-level: true</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li><strong>false</strong> -&nbsp;关闭</li>
+  <li><strong>true</strong> -&nbsp;开启</li>
+</ul>
+<blockquote>
+  <p>要求命令方块满足Bukkit权限要求和Vanilla权限级别，其中之一</p>
+</blockquote>
+<p>&nbsp;</p>
+<h3>设置命令方块默认权限级别</h3>
+<pre><code class="language-plaintext">permissions-level: 2</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>整数型</li>
+</ul>
+<blockquote>
+  <p>命令方块默认执行命令需要的权限等级，完全遵守原版权限等级，有特殊需要视情况更改</p>
+</blockquote>
+<p>&nbsp;</p>
 <h2>entities:（实体）</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <h2>environment:（环境）</h2>
 <h2>feature-seeds:（特征种子）</h2>
 <h2>fishing-time-range:（钓鱼时间&amp;范围）</h2>
