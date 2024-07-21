@@ -2,7 +2,7 @@
 title: Minecraft-Paper
 description: Paper的配置文件解析说明
 published: true
-date: 2024-07-21T09:49:49.804Z
+date: 2024-07-21T09:59:19.203Z
 tags: paper
 editor: ckeditor
 dateCreated: 2024-02-11T16:15:47.318Z
@@ -1186,6 +1186,25 @@ java.net.UnknownHostException: timings.aikar.com
 </blockquote>
 <p>&nbsp;</p>
 <h2>entities:（实体）</h2>
+<h3>是否允许盔甲架进行碰撞检查与tick</h3>
+<pre><code class="language-plaintext">armor-stands:
+  do-collision-entity-lookups: true
+  tick: true</code></pre>
+<p>&nbsp;以下为具体参数：</p>
+<ul>
+  <li>do-collision-entity-lookups: true</li>
+  <li>tick: true</li>
+</ul>
+<blockquote>
+  <p>可以根据需求适当关闭，关闭之后可以防止一些卡服机的运作</p>
+  <ul>
+    <li>注意：如果服务器拥有大量需要实体碰撞的盔甲架那么关闭这个功能会造成很严重的后果</li>
+  </ul>
+</blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <h2>environment:（环境）</h2>
